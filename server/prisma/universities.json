@@ -1,0 +1,7172 @@
+[
+  {
+    "name": "AAFT UNIVERSITY",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "ABHILASHI UNIVERSITY",
+    "state": "Himachal Pradesh",
+    "district": "Mandi"
+  },
+  {
+    "name": "ABHYUDAY UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Khargone (West Nimar)"
+  },
+  {
+    "name": "Academy of Maritime Education and Training, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "ACADEMY OF SCIENTIFIC AND INNOVATIVE RESEARCH",
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad"
+  },
+  {
+    "name": "Acharya Nagarjuna University, Guntur",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "Acharya Narendra Deva University of Agriculture & Technology, Ayodhya",
+    "state": "Uttar Pradesh",
+    "district": "Ayodhya"
+  },
+  {
+    "name": "Acharya N.G. Ranga Agricultural University, Guntur",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "ADAMAS UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "ADANI UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "ADESH UNIVERSITY",
+    "state": "Punjab",
+    "district": "Bathinda"
+  },
+  {
+    "name": "ADICHUNCHANAGIRI UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Mandya"
+  },
+  {
+    "name": "Adikavi Nannaya University, Rajahmundry, East Godavari",
+    "state": "Andhra Pradesh",
+    "district": "East Godavari"
+  },
+  {
+    "name": "Aditya University",
+    "state": "Andhra Pradesh",
+    "district": "Kakinada"
+  },
+  {
+    "name": "AGRAWAN HERITAGE UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Agra"
+  },
+  {
+    "name": "AGRICULTURE UNIVERSITY, JODHPUR",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "AGRICULTURE UNIVERSITY, KOTA",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "Ahmedabad University",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "AIPH UNIVERSITY",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "AISECT UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Hazaribagh"
+  },
+  {
+    "name": "Ajeenkya DY Patil University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "AKAL UNIVERSITY BHATINDA",
+    "state": "Punjab",
+    "district": "Bathinda"
+  },
+  {
+    "name": "AKS UNIVERSITY, SATNA",
+    "state": "Madhya Pradesh",
+    "district": "Satna"
+  },
+  {
+    "name": "Alagappa University, Alagappa Nagar, Karaikudi",
+    "state": "Tamil Nadu",
+    "district": "Sivaganga"
+  },
+  {
+    "name": "ALARD UNIVERSITY, PUNE",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Al-Falah University",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "Aliah University, Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Aligarh Muslim University, Aligarh",
+    "state": "Uttar Pradesh",
+    "district": "Aligarh"
+  },
+  {
+    "name": "AL-KARIM UNIVERSITY",
+    "state": "Bihar",
+    "district": "Katihar"
+  },
+  {
+    "name": "Alliance University, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "All India Institute of Medical Science, Bathinda",
+    "state": "Punjab",
+    "district": "Bathinda"
+  },
+  {
+    "name": "All India Institute of Medical Science Bibinagar",
+    "state": "Telangana",
+    "district": "YADADRI BHUVANAGIRI"
+  },
+  {
+    "name": "All India Institute of Medical Science, Bilaspur",
+    "state": "Himachal Pradesh",
+    "district": "Bilaspur"
+  },
+  {
+    "name": "All India Institute of Medical Science Deoghar",
+    "state": "Jharkhand",
+    "district": "Deoghar"
+  },
+  {
+    "name": "All India Institute of Medical Science Gorakhpur",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur"
+  },
+  {
+    "name": "All India Institute of Medical Science, Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Samba"
+  },
+  {
+    "name": "All India Institute of Medical Science Kalyani",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "All India Institute of Medical Sciences (AIIMS), Raebareli",
+    "state": "Uttar Pradesh",
+    "district": "Rae Bareli"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Guwahati",
+    "state": "Assam",
+    "district": "Kamrup"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "All India Institute of Medical Sciences Madurai",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Mangalagiri",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "All India Institute of Medical Sciences Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, New Delhi",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Rajkot",
+    "state": "Gujarat",
+    "district": "Rajkot"
+  },
+  {
+    "name": "All India Institute of Medical Sciences, Rishikesh",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Amaltas University",
+    "state": "Madhya Pradesh",
+    "district": "Dewas"
+  },
+  {
+    "name": "AMITY UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Rural"
+  },
+  {
+    "name": "AMITY UNIVERSITY",
+    "state": "Punjab",
+    "district": "S.A.S Nagar"
+  },
+  {
+    "name": "AMITY UNIVERSITY",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "AMITY UNIVERSITY, CHHATTISGARH",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Amity University, Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "Amity University Haryana, Gurgaon",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "AMITY UNIVERSITY, JHARKHAND",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "AMITY UNIVERSITY MUMBAI",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "AMITY UNIVERSITY PATNA",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Amity University Rajasthan, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Amity University, Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Amrapali University",
+    "state": "Uttarakhand",
+    "district": "Nainital"
+  },
+  {
+    "name": "Amrita Vishwa Vidyapeetham, Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Anand Agricultural University, Anand",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "ANANT NATIONAL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "ANDHRA KESARI UNIVERSITY",
+    "state": "Andhra Pradesh",
+    "district": "Prakasam"
+  },
+  {
+    "name": "ANDHRA PRADESH FISHERIES UNIVERSITY",
+    "state": "Andhra Pradesh",
+    "district": "West Godavari"
+  },
+  {
+    "name": "Andhra University, Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "Anjaneya University",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Annamacharya University",
+    "state": "Andhra Pradesh",
+    "district": "Annamayya"
+  },
+  {
+    "name": "Annamalai University, Annamalainagar",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore"
+  },
+  {
+    "name": "Anna University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "ANURAG UNIVERSITY",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "Apeejay Stya University, Sohna",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "APEX PROFESSIONAL UNIVERSITY",
+    "state": "Arunachal Pradesh",
+    "district": "East Siang"
+  },
+  {
+    "name": "APEX UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "AP GOYAL SHIMLA UNIVERSITY",
+    "state": "Himachal Pradesh",
+    "district": "Shimla"
+  },
+  {
+    "name": "APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "ARKA JAIN University, Jharkhand",
+    "state": "Jharkhand",
+    "district": "Saraikela Kharsawan"
+  },
+  {
+    "name": "Arni University, Kathgarh (Indora), Kangra",
+    "state": "Himachal Pradesh",
+    "district": "Kangra"
+  },
+  {
+    "name": "ARUNACHAL PRADESH UNIVERSITY",
+    "state": "Arunachal Pradesh",
+    "district": "East Siang"
+  },
+  {
+    "name": "ARUNACHAL UNIVERSITY OF STUDIES",
+    "state": "Arunachal Pradesh",
+    "district": "Lohit"
+  },
+  {
+    "name": "Arunodaya University",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare"
+  },
+  {
+    "name": "Aryabhatta Knowledge University, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "ARYAVART INTERNATIONAL UNIVERSITY",
+    "state": "Tripura",
+    "district": "North Tripura"
+  },
+  {
+    "name": "Aryavart University",
+    "state": "Madhya Pradesh",
+    "district": "Sehore"
+  },
+  {
+    "name": "ASBM UNIVERSITY",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "ASHOKA UNIVERSITY",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "ASIAN INTERNATIONAL UNIVERSITY",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "Assam Agricultural University, Jorhat",
+    "state": "Assam",
+    "district": "Jorhat"
+  },
+  {
+    "name": "Assam Don Bosco University, Guwahati",
+    "state": "Assam",
+    "district": "Kamrup"
+  },
+  {
+    "name": "ASSAM DOWN TOWN UNIVERSITY",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "ASSAM SCIENCE AND TECHNOLOGY UNIVERSITY",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "Assam Skill University, Assam",
+    "state": "Assam",
+    "district": "Darrang"
+  },
+  {
+    "name": "Assam University, Silchar",
+    "state": "Assam",
+    "district": "Cachar"
+  },
+  {
+    "name": "Assam Veterinary and Fishery University",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "ASSAM WOMEN'S UNIVERSITY",
+    "state": "Assam",
+    "district": "Jorhat"
+  },
+  {
+    "name": "ATAL BIHARI VAJPAYEE HINDI VISHWAVIDYALAYA",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "ATAL BIHARI VAJPAYEE MEDICAL UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Atal Bihari Vajpayee Skill University",
+    "state": "Sikkim",
+    "district": "Pakyong"
+  },
+  {
+    "name": "ATAL BIHARI VAJPAYEE VISHWAVIDYALAYA",
+    "state": "Chhattisgarh",
+    "district": "Bilaspur"
+  },
+  {
+    "name": "ATAL MEDICAL AND RESEARCH UNIVERSITY",
+    "state": "Himachal Pradesh",
+    "district": "Mandi"
+  },
+  {
+    "name": "Atharva University",
+    "state": "Maharashtra",
+    "district": "Mumbai Suburban"
+  },
+  {
+    "name": "ATLAS SKILLTECH UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "ATMIYA UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Rajkot"
+  },
+  {
+    "name": "Atria University",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Audisankara University",
+    "state": "Andhra Pradesh",
+    "district": "Tirupati"
+  },
+  {
+    "name": "Auniati University",
+    "state": "Assam",
+    "district": "Jorhat"
+  },
+  {
+    "name": "Aurora Higher Education and Research Academy",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "AURO UNIVERSITY OF HOSPITALITY AND MANAGEMENT",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "AVANTIKA UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Ujjain"
+  },
+  {
+    "name": "Avinashilingam Institute for Home Science & Higher Education for Women, Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Awadhesh Pratap Singh University, Rewa",
+    "state": "Madhya Pradesh",
+    "district": "Rewa"
+  },
+  {
+    "name": "AZIM PREMJI UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Azim Premji University, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Baba Farid University of Health Sciences, Faridkot",
+    "state": "Punjab",
+    "district": "Faridkot"
+  },
+  {
+    "name": "Baba Ghulam Shah Badshah University, Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Rajouri"
+  },
+  {
+    "name": "BABA MASTNATH UNIVERSITY",
+    "state": "Haryana",
+    "district": "Rohtak"
+  },
+  {
+    "name": "Baba Saheb Ambedkar Education University",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Babasaheb Bhimrao Ambedkar Bihar University, Muzaffarpur",
+    "state": "Bihar",
+    "district": "Muzaffarpur"
+  },
+  {
+    "name": "Babasaheb Bhimrao Ambedkar University, Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Babu Banarasi Das University, Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "BABU DINESH SINGH UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Garhwa"
+  },
+  {
+    "name": "Baddi University of Emerging Sciences and Technology, Baddi (Makhnumajra), Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "BAGALKOT UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bagalkote"
+  },
+  {
+    "name": "Bahra University, Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "Banaras Hindu University, Banaras",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi"
+  },
+  {
+    "name": "Banasthali Vidyapith",
+    "state": "Rajasthan",
+    "district": "Tonk"
+  },
+  {
+    "name": "BANDA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY, BANDA",
+    "state": "Uttar Pradesh",
+    "district": "Banda"
+  },
+  {
+    "name": "Bangalore University, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "BANKURA UNIVERSITY, BANKURA",
+    "state": "West Bengal",
+    "district": "Bankura"
+  },
+  {
+    "name": "Bareilly International University, Bareilly",
+    "state": "Uttar Pradesh",
+    "district": "Bareilly"
+  },
+  {
+    "name": "Barkatullah University, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "BENGALURU CITY UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "BENGALURU DR. B.R. AMBEDKAR SCHOOL OF ECONOMICS UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "BENGALURU NORTH UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Kolar"
+  },
+  {
+    "name": "Bennett University, Greater Noida",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Berhampur University, Berhampur",
+    "state": "Odisha",
+    "district": "Ganjam"
+  },
+  {
+    "name": "Bhabha University, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Bhagat Phool Singh Mahila University, Khanpur Kalan, Sonipat",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "BHAGWAN MAHAVIR UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Bhagwant Global University",
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal"
+  },
+  {
+    "name": "Bhagwant University, Ajmer",
+    "state": "Rajasthan",
+    "district": "Ajmer"
+  },
+  {
+    "name": "BHAIKAKA UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "BHAKTA KAVI NARSINH MEHTA UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Junagadh"
+  },
+  {
+    "name": "Bharathiar University, Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Bharathidasan University, Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Bharath Institute of Higher Education & Research",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Bharati Vidyapeeth, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "BHARATIYA ENGINEERING SCIENCE AND TECHNOLOGY INNOVATION UNIVERSITY",
+    "state": "Andhra Pradesh",
+    "district": "Ananthapuramu"
+  },
+  {
+    "name": "BHARTI VISHWAVIDYALAYA",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "Bhartiya Skill Development University",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Bhatkhande Sanskriti Vishwavidyalaya",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "BHATTADEV UNIVERSITY, BAJALI",
+    "state": "Assam",
+    "district": "Barpeta"
+  },
+  {
+    "name": "BHUPAL NOBLES UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "Bhupendra Narayan Mandal University, Madhepura",
+    "state": "Bihar",
+    "district": "Madhepura"
+  },
+  {
+    "name": "Bidar University",
+    "state": "Karnataka",
+    "district": "Bidar"
+  },
+  {
+    "name": "Bidhan Chandra Krishi Vishwavidyalaya, Nadia",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "Bihar Agricultural University, Sabour",
+    "state": "Bihar",
+    "district": "Bhagalpur"
+  },
+  {
+    "name": "BIHAR ANIMAL SCIENCES UNIVERSITY",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "BIHAR ENGINEERING UNIVERSITY",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Bihar Sports University",
+    "state": "Bihar",
+    "district": "Nalanda"
+  },
+  {
+    "name": "Bihar University of Health Sciences",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Biju Patnaik University of Technology, Rourkela",
+    "state": "Odisha",
+    "district": "Sundargarh"
+  },
+  {
+    "name": "BIKANER TECHNICAL UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Bikaner"
+  },
+  {
+    "name": "BINOD BIHARI MAHTO KOYALANCHAL UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Dhanbad"
+  },
+  {
+    "name": "BIRANGANA SATI SADHANI RAJYIK VISHWAVIDYALAYA",
+    "state": "Assam",
+    "district": "Golaghat"
+  },
+  {
+    "name": "BIRLA GLOBAL UNIVERSITY",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "Birla Institute of Technology, Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Birla Institute of Technology & Science, Pilani",
+    "state": "Rajasthan",
+    "district": "Jhunjhunu"
+  },
+  {
+    "name": "Birsa Agricultural University, Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "BIRSA MUNDA TRIBAL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Narmada"
+  },
+  {
+    "name": "BIR TIKENDRAJIT UNIVERSITY",
+    "state": "Manipur",
+    "district": "Thoubal"
+  },
+  {
+    "name": "BISWA BANGLA BISWABIDYALAY",
+    "state": "West Bengal",
+    "district": "Birbhum"
+  },
+  {
+    "name": "BLDE (Deemed to be University)",
+    "state": "Karnataka",
+    "district": "Vijayapura"
+  },
+  {
+    "name": "BML MUNJAL UNIVERSITY",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "BMS University",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "BODOLAND UNIVERSITY",
+    "state": "Assam",
+    "district": "Kokrajhar"
+  },
+  {
+    "name": "Bongaigaon University",
+    "state": "Assam",
+    "district": "Bongaigaon"
+  },
+  {
+    "name": "BRAINWARE UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "B.S. Abdur Rahman Crescent Institute of Science & Technology",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Bundelkhand University, Jhansi",
+    "state": "Uttar Pradesh",
+    "district": "Jhansi"
+  },
+  {
+    "name": "Capital University",
+    "state": "Sikkim",
+    "district": "Soreng"
+  },
+  {
+    "name": "CAPITAL UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Koderma"
+  },
+  {
+    "name": "Captain Williamson Sangma State University",
+    "state": "Meghalaya",
+    "district": "South West Garo Hills"
+  },
+  {
+    "name": "Career Point University",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "CAREER POINT UNIVERSITY, HAMIRPUR",
+    "state": "Himachal Pradesh",
+    "district": "Hamirpur"
+  },
+  {
+    "name": "Central Agricultural University, Imphal",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "CENTRAL INSTITUTE OF BUDDHIST STUDIES",
+    "state": "Ladakh",
+    "district": "Leh Ladakh"
+  },
+  {
+    "name": "Central Institute of Fisheries Education, Fisheries University, Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Central Institute of Higher Tibetan Studies, Varanasi",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi"
+  },
+  {
+    "name": "CENTRAL INSTITUTE OF TECHNOLOGY, KOKRAJHAR",
+    "state": "Assam",
+    "district": "Kokrajhar"
+  },
+  {
+    "name": "Central Sanskrit University",
+    "state": "Delhi",
+    "district": "West"
+  },
+  {
+    "name": "Central Tribal University",
+    "state": "Andhra Pradesh",
+    "district": "Vizianagaram"
+  },
+  {
+    "name": "Central University of Kerala, Kasaragod",
+    "state": "Kerala",
+    "district": "Kasaragod"
+  },
+  {
+    "name": "Central University of Andhra Pradesh",
+    "state": "Andhra Pradesh",
+    "district": "Ananthapuramu"
+  },
+  {
+    "name": "Central University of Gujarat",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Central University of Haryana, Mahendergarh",
+    "state": "Haryana",
+    "district": "Mahendragarh"
+  },
+  {
+    "name": "Central University of Himachal Pradesh, Dharmshala, Kangra",
+    "state": "Himachal Pradesh",
+    "district": "Kangra"
+  },
+  {
+    "name": "Central University of Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Samba"
+  },
+  {
+    "name": "Central University of Jharkhand, Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Central University of Karnataka, Gulbarga",
+    "state": "Karnataka",
+    "district": "Kalaburagi"
+  },
+  {
+    "name": "Central University of Kashmir, Srinagar",
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "Central University of Orissa, Koraput",
+    "state": "Odisha",
+    "district": "Koraput"
+  },
+  {
+    "name": "Central University of Punjab, Bathinda",
+    "state": "Punjab",
+    "district": "Bathinda"
+  },
+  {
+    "name": "Central University of Rajasthan, Jaipur",
+    "state": "Rajasthan",
+    "district": "Ajmer"
+  },
+  {
+    "name": "Central University of South Bihar",
+    "state": "Bihar",
+    "district": "Gaya"
+  },
+  {
+    "name": "Central University of Tamil Nadu, Tiruvarur",
+    "state": "Tamil Nadu",
+    "district": "Thiruvarur"
+  },
+  {
+    "name": "Centurion University of Technology and Management",
+    "state": "Odisha",
+    "district": "Gajapati"
+  },
+  {
+    "name": "CENTURION UNIVERSITY OF TECHNOLOGY AND MANAGEMENT",
+    "state": "Andhra Pradesh",
+    "district": "Vizianagaram"
+  },
+  {
+    "name": "CEPT UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "CGC University",
+    "state": "Punjab",
+    "district": "S.A.S Nagar"
+  },
+  {
+    "name": "CHAITANYA (DEEMED TO BE UNIVERSITY)",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "CHAMARAJANAGARA UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Chamarajanagar"
+  },
+  {
+    "name": "Chanakya National Law University, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "CHANAKYA UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Rural"
+  },
+  {
+    "name": "Chandigarh University",
+    "state": "Uttar Pradesh",
+    "district": "Unnao"
+  },
+  {
+    "name": "CHANDIGARH UNIVERSITY",
+    "state": "Punjab",
+    "district": "S.A.S Nagar"
+  },
+  {
+    "name": "Chandra Shekhar Azad University of Agriculture & Technology, Kanpur",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Nagar"
+  },
+  {
+    "name": "Charotar University of Science & Technology, Anand",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "Chatrapati Sahuji Maharaj Kanpur University, Kanpur",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Nagar"
+  },
+  {
+    "name": "CHAUDHARY BANSI LAL UNIVERSITY",
+    "state": "Haryana",
+    "district": "Bhiwani"
+  },
+  {
+    "name": "Chaudhary Charan Singh Haryana Agricultural University, Hisar",
+    "state": "Haryana",
+    "district": "Hisar"
+  },
+  {
+    "name": "Chaudhary Charan Singh University, Meerut",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "CHAUDHARY RANBIR SINGH UNIVERSITY, JIND",
+    "state": "Haryana",
+    "district": "Jind"
+  },
+  {
+    "name": "Chaudhary Sarwan Kumar Himachal Pardesh Krishi Vishvavidyalaya, Palampur",
+    "state": "Himachal Pradesh",
+    "district": "Kangra"
+  },
+  {
+    "name": "Ch. Devi Lal University, Sirsa",
+    "state": "Haryana",
+    "district": "Sirsa"
+  },
+  {
+    "name": "Chennai Mathematical Institute, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Chettinad Academy of Research & Education, Kancheepuram",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "CHHATRAPATI SHIVAJI MAHARAJ UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "Chhattisgarh Swami Vivekanand Technical University, Bhilai",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "CHILDREN'S RESEARCH UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Chinmaya Vishwavidyapeeth",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "CHIRAYU UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Chitkara University, Kalu Jhanda (Barotiwala), Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "Chitkara University, Patiala",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "Christ University, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "CLUSTER UNIVERSITY",
+    "state": "Andhra Pradesh",
+    "district": "Kurnool"
+  },
+  {
+    "name": "Cluster University of Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "Cluster University Srinagar",
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "CMJ University",
+    "state": "Meghalaya",
+    "district": "Ri Bhoi"
+  },
+  {
+    "name": "CMR UNIVERSITY, BANGALORE",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Cochin University of Science & Technology, Kochi",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "COEP Technological University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "COER ROORKEE",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "COOCH BEHAR PANCHANAN BARMA UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Cooch Behar"
+  },
+  {
+    "name": "COTTON UNIVERSITY",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "CT University, Ludhiana",
+    "state": "Punjab",
+    "district": "Ludhiana"
+  },
+  {
+    "name": "C.U. SHAH UNIVERSITY, SURENDRANAGAR",
+    "state": "Gujarat",
+    "district": "Surendranagar"
+  },
+  {
+    "name": "C.V. RAMAN GLOBAL UNIVERSITY, ODISHA",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "DADA LAKHMI CHAND STATE UNIVERSITY OF PERFORMING AND VISUAL ARTS",
+    "state": "Haryana",
+    "district": "Rohtak"
+  },
+  {
+    "name": "Dakshina Bharat Hindi Prachar Sabha",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "DAKSHIN DINAJPUR UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Dakshin Dinajpur"
+  },
+  {
+    "name": "Damodaram Sanjivayya National Law University",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "DARJEELING HILLS UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Darjeeling"
+  },
+  {
+    "name": "DARSHAN UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Rajkot"
+  },
+  {
+    "name": "Datta Meghe Institute of Higher Education & Research (Deemed to be University)",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "DAU SHRI VASUDEV CHANDRAKAR KAMDHENU",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "Davangere University, Davangere",
+    "state": "Karnataka",
+    "district": "Davanagere"
+  },
+  {
+    "name": "DAV University",
+    "state": "Punjab",
+    "district": "Jalandhar"
+  },
+  {
+    "name": "Dayalbagh Educational Institute, Agra",
+    "state": "Uttar Pradesh",
+    "district": "Agra"
+  },
+  {
+    "name": "DAYANANDA SAGAR UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "DBS Global University",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Deccan College Postgraduate & Research Institute, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Deenbandhu Chhotu Ram University of Science & Technology, Murthal (Sonepat)",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "Deen Dayal Upadhyaya Gorakhpur University, Gorakhpur",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur"
+  },
+  {
+    "name": "Defence Institute of Advanced Technology, Girinagar, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "DELHI PHARMACEUTICAL SCIENCES AND RESEARCH UNIVERSITY",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "Delhi Skill and Entrepreneurship University",
+    "state": "Delhi",
+    "district": "South West"
+  },
+  {
+    "name": "Delhi Teachers University",
+    "state": "Delhi",
+    "district": "North West"
+  },
+  {
+    "name": "Delhi Technological University",
+    "state": "Delhi",
+    "district": "North West"
+  },
+  {
+    "name": "DESH BHAGAT UNIVERSITY",
+    "state": "Punjab",
+    "district": "Fatehgarh Sahib"
+  },
+  {
+    "name": "DES PUNE UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "DEV BHOOMI UTTARAKHAND UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Devi Ahilya Vishwavidyalaya, Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Dev Sanskriti Vishwavidyalaya, Gayatrikunj",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Dhamma Dipa International Buddhist University",
+    "state": "Tripura",
+    "district": "South Tripura"
+  },
+  {
+    "name": "Dhanalakshmi Srinivasan Institute of Research and Technology",
+    "state": "Tamil Nadu",
+    "district": "Perambalur"
+  },
+  {
+    "name": "DHANALAKSHMI SRINIVASAN UNIVERSITY",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "DHANAMANJURI UNIVERSITY",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "Dharandidhar University",
+    "state": "Odisha",
+    "district": "Kendujhar"
+  },
+  {
+    "name": "DHARMASHASTRA NATIONAL LAW UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "Dharmsinh Desai University, Nadiad",
+    "state": "Gujarat",
+    "district": "Kheda"
+  },
+  {
+    "name": "Dhirubhai Ambani University",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "DIAMOND HARBOUR WOMEN'S UNIVERSITY",
+    "state": "West Bengal",
+    "district": "South 24 Parganas"
+  },
+  {
+    "name": "Dibrugarh University, Dibrugarh",
+    "state": "Assam",
+    "district": "Dibrugarh"
+  },
+  {
+    "name": "DIT UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Dnyaan Prasad Global University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Doon University, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "DR. ABDUL HAQ URDU UNIVERSITY",
+    "state": "Andhra Pradesh",
+    "district": "Kurnool"
+  },
+  {
+    "name": "Dr APJ ABDUL KALAM TECHNICAL UNIVERSITY LUCKNOW",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Dr. APJ ABDUL KALAM UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Dravidian University, Kuppam, Chittoor District",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Dr. Babasaheb Ambedkar Marathwada University, Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "district": "Chhatrapati Sambhajinagar"
+  },
+  {
+    "name": "Dr. Babasaheb Ambedkar Open University, Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Dr. Babasaheb Ambedkar Technological University, Lonere",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "Dr. Balasaheb Sawant Konkan Krishi Vidyapeeth, Ratnagiri",
+    "state": "Maharashtra",
+    "district": "Ratnagiri"
+  },
+  {
+    "name": "DR BHIMRAO AMBEDKAR LAW UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+    "state": "Punjab",
+    "district": "Jalandhar"
+  },
+  {
+    "name": "Dr. BR Ambedkar National Law University",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "Dr. B.R. Ambedkar Open University",
+    "state": "Andhra Pradesh",
+    "district": "NTR"
+  },
+  {
+    "name": "Dr. B. R. Ambedkar Open University, Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Dr. B. R. Ambedkar University, Agra",
+    "state": "Uttar Pradesh",
+    "district": "Agra"
+  },
+  {
+    "name": "Dr. B. R. Ambedkar University Delhi",
+    "state": "Delhi",
+    "district": "North"
+  },
+  {
+    "name": "Dr. B.R Ambedkar University, Etcherla",
+    "state": "Andhra Pradesh",
+    "district": "Srikakulam"
+  },
+  {
+    "name": "DR BR AMBEDKAR UNIVERSITY OF SOCIAL SCIENCES",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Dr. C.V. Raman University",
+    "state": "Bihar",
+    "district": "Vaishali"
+  },
+  {
+    "name": "Dr. C.V. RAMAN UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Khandwa (East Nimar)"
+  },
+  {
+    "name": "Dr. C. V. Raman University, Kota Bilaspur",
+    "state": "Chhattisgarh",
+    "district": "Bilaspur"
+  },
+  {
+    "name": "Dr. DY Patil Vidyapeeth, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Dr. Harisingh Gour Vishwavidyalaya, Sagar",
+    "state": "Madhya Pradesh",
+    "district": "Sagar"
+  },
+  {
+    "name": "DR HOMI BHABHA STATE UNIVERSITY MUMBAI",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "DRIEMS UNIVERSITY",
+    "state": "Odisha",
+    "district": "Cuttack"
+  },
+  {
+    "name": "Dr. K N Modi University",
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad"
+  },
+  {
+    "name": "Dr K. N. Modi University, Tonk",
+    "state": "Rajasthan",
+    "district": "Tonk"
+  },
+  {
+    "name": "Dr. N.T.R. University of Health Sciences, Vijayawada",
+    "state": "Andhra Pradesh",
+    "district": "Krishna"
+  },
+  {
+    "name": "Dr P A Inamdar University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Dr. Panjabrao Deshmukh Krishi Vidyapeeth, Akola",
+    "state": "Maharashtra",
+    "district": "Akola"
+  },
+  {
+    "name": "DR PREETI GLOBAL UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Shivpuri"
+  },
+  {
+    "name": "Dr Rajendra Prasad Central Agricultural University, Samastipur",
+    "state": "Bihar",
+    "district": "Samastipur"
+  },
+  {
+    "name": "Dr. Rajendra Prasad National Law University",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Dr. Ram Manohar Lohia Avadh University, Faizabad",
+    "state": "Uttar Pradesh",
+    "district": "Ayodhya"
+  },
+  {
+    "name": "Dr. Ram Manohar Lohia Institute of Medical Sciences",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Dr. Ram Manohar Lohiya National Law University, Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Dr RVR NRI Institute of Technology",
+    "state": "Andhra Pradesh",
+    "district": "Eluru"
+  },
+  {
+    "name": "Dr Sarvepalli Radhakrishnan Rajasthan Ayurved University, Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "DR SHAKUNTALA MISRA NATIONAL REHABILITATION UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "DR SHYAMA PRASAD MUKHERJEE INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY-NAYA RAIPUR",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "DR. SHYAMA PRASAD MUKHERJEE UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Drs Kiran and Pallavi Patel Global University",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "DR SUBHASH UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Junagadh"
+  },
+  {
+    "name": "Dr. Vishwanath Karad MIT World Peace University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Dr. Y.S. Parmar University of Horticulture and Forestry, Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "Dr YSR Architecture and Fine Arts University",
+    "state": "Andhra Pradesh",
+    "district": "Y.S.R. Kadapa"
+  },
+  {
+    "name": "Dr YSR Horticulture University",
+    "state": "Andhra Pradesh",
+    "district": "West Godavari"
+  },
+  {
+    "name": "DURGA SOREN UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Deoghar"
+  },
+  {
+    "name": "DY PATIL AGRICULTURE AND TECHNICAL UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Kolhapur"
+  },
+  {
+    "name": "D. Y. Patil Deemed to be University, Navi Mumbai",
+    "state": "Maharashtra",
+    "district": "Thane"
+  },
+  {
+    "name": "D.Y. Patil Educational Society, Kolhapur",
+    "state": "Maharashtra",
+    "district": "Kolhapur"
+  },
+  {
+    "name": "DY PATIL INTERNATIONAL UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "DY PATIL UNIVERSITY PUNE AMBI",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "EdTech Skills University",
+    "state": "Assam",
+    "district": "Tinsukia"
+  },
+  {
+    "name": "EKLAVYA UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Damoh"
+  },
+  {
+    "name": "ERA UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Eternal University, Baru Sahib Sirmour",
+    "state": "Himachal Pradesh",
+    "district": "Sirmaur"
+  },
+  {
+    "name": "Ethics University",
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal"
+  },
+  {
+    "name": "Fakir Mohan University, Balasore",
+    "state": "Odisha",
+    "district": "Baleshwar"
+  },
+  {
+    "name": "Film and Television Institute of India Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "FLAME UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Footwear Design and Development Institute",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Forest Research Institute, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "FS University",
+    "state": "Uttar Pradesh",
+    "district": "Firozabad"
+  },
+  {
+    "name": "Future University",
+    "state": "Uttar Pradesh",
+    "district": "Bareilly"
+  },
+  {
+    "name": "GALGOTIAS UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Gandhigram Rural Institute, Dindigul",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "GANDHI INSTITUTE OF ENGINEERING AND TECHNOLOGY UNIVERSITY, ODISHA, GUNUPUR (GIET UNIVERSITY)",
+    "state": "Odisha",
+    "district": "Rayagada"
+  },
+  {
+    "name": "Gandhi Institute of Technology & Management (GITAM) University, Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "GANDHINAGAR UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "GANGADHAR MEHER UNIVERSITY",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "Ganpat University, Ganpat Vidyanagar, Kherwa",
+    "state": "Gujarat",
+    "district": "Mahesana"
+  },
+  {
+    "name": "Garden City University",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Gati Shakti Vishwavidyalaya",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Gauhati University, Guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "Gautam Buddha University, Greater Noida, Gautam Budh Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "G.B. Pant University of Agriculture and Technology, Pantnagar",
+    "state": "Uttarakhand",
+    "district": "Udham Singh Nagar"
+  },
+  {
+    "name": "G.D. GOENKA UNIVERSITY",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "GEETANJALI UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "GEETA UNIVERSITY",
+    "state": "Haryana",
+    "district": "Panipat"
+  },
+  {
+    "name": "GH Raisoni International Skill Tech University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "GH Raisoni Skill Tech University Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "G.H. RAISONI UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara"
+  },
+  {
+    "name": "GH RAISONI UNIVERSITY, AMRAVATI",
+    "state": "Maharashtra",
+    "district": "Amravati"
+  },
+  {
+    "name": "GIRIJANANDA CHOWDHURY UNIVERSITY",
+    "state": "Assam",
+    "district": "Kamrup"
+  },
+  {
+    "name": "GLA University, Mathura",
+    "state": "Uttar Pradesh",
+    "district": "Mathura"
+  },
+  {
+    "name": "GLOCAL UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Saharanpur"
+  },
+  {
+    "name": "GLS UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "GMR Institute of Technology GMRIT",
+    "state": "Andhra Pradesh",
+    "district": "Vizianagaram"
+  },
+  {
+    "name": "GM UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Davanagere"
+  },
+  {
+    "name": "GNA UNIVERSITY",
+    "state": "Punjab",
+    "district": "Kapurthala"
+  },
+  {
+    "name": "Goa University, Goa",
+    "state": "Goa",
+    "district": "North Goa"
+  },
+  {
+    "name": "Godavari Global University",
+    "state": "Andhra Pradesh",
+    "district": "East Godavari"
+  },
+  {
+    "name": "Gokhale Institute of Politics & Economics, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "GOKUL GLOBAL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Patan"
+  },
+  {
+    "name": "GONDWANA UNIVERSITY, GADCHIROLI",
+    "state": "Maharashtra",
+    "district": "Gadchiroli"
+  },
+  {
+    "name": "GOPAL NARAYAN SINGH UNIVERSITY",
+    "state": "Bihar",
+    "district": "Rohtas"
+  },
+  {
+    "name": "Govind Guru Tribal University, Banswara",
+    "state": "Rajasthan",
+    "district": "Banswara"
+  },
+  {
+    "name": "GRAPHIC ERA HILL UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Graphic Era University, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "GSFC UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "G.S. UNIVERSITY, HAPUR",
+    "state": "Uttar Pradesh",
+    "district": "Hapur"
+  },
+  {
+    "name": "Gujarat Ayurved University, Jamnagar",
+    "state": "Gujarat",
+    "district": "Jamnagar"
+  },
+  {
+    "name": "GUJARAT BIOTECHNOLOGY UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "GUJARAT MARITIME UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Gujarat National Law University, Gandhinagar",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Gujarat Technological University, Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Gujarat University, Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "GUJARAT UNIVERSITY OF TRANSPLANTATION SCIENCES",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Gujarat Vidyapith, Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Gulbarga University, Gulbarga",
+    "state": "Karnataka",
+    "district": "Kalaburagi"
+  },
+  {
+    "name": "Guru Angad Dev Veterinary & Animal Sciences University, Ludhiana",
+    "state": "Punjab",
+    "district": "Ludhiana"
+  },
+  {
+    "name": "Gurucharan University",
+    "state": "Assam",
+    "district": "Cachar"
+  },
+  {
+    "name": "Guru Ghasidas Vishwavidyalaya, Bilaspur",
+    "state": "Chhattisgarh",
+    "district": "Bilaspur"
+  },
+  {
+    "name": "Guru Gobind Singh Indraprastha University",
+    "state": "Delhi",
+    "district": "West"
+  },
+  {
+    "name": "GURUGRAM UNIVERSITY, GURUGRAM",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "Guru Jambheshwar University",
+    "state": "Uttar Pradesh",
+    "district": "Moradabad"
+  },
+  {
+    "name": "Guru Jambheshwar University of Science and Technology, Hisar",
+    "state": "Haryana",
+    "district": "Hisar"
+  },
+  {
+    "name": "GURU KASHI UNIVERSITY",
+    "state": "Punjab",
+    "district": "Bathinda"
+  },
+  {
+    "name": "Gurukul Kangri Vishwavidyalaya, Haridwar",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Gurukul Vidyapeeth University",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "Guru Nanak Dev University, Amritsar",
+    "state": "Punjab",
+    "district": "Amritsar"
+  },
+  {
+    "name": "Guru Nanak University",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "GURU RAVIDAS AYURVED UNIVERSITY",
+    "state": "Punjab",
+    "district": "Hoshiarpur"
+  },
+  {
+    "name": "GYANMANJARI INNOVATIVE UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Bhavnagar"
+  },
+  {
+    "name": "Gyanodaya University",
+    "state": "Madhya Pradesh",
+    "district": "Neemuch"
+  },
+  {
+    "name": "Gyanveer University",
+    "state": "Madhya Pradesh",
+    "district": "Sagar"
+  },
+  {
+    "name": "HARCOURT BUTLER TECHNICAL UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Nagar"
+  },
+  {
+    "name": "HARICHAND GURUCHAND UNIVERSITY",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "Haridev Joshi University of Journalism & Mass Communication",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "HARIDWAR UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Hassan University",
+    "state": "Karnataka",
+    "district": "Hassan"
+  },
+  {
+    "name": "HAVERI UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Haveri"
+  },
+  {
+    "name": "Heartfulness Academy of Research and Innovation HARI University",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "Hemchandracharya North Gujarat University, Patan",
+    "state": "Gujarat",
+    "district": "Patan"
+  },
+  {
+    "name": "HEMCHAND YADAV VISHWAVIDYALAYA",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "Hemwati Nandan Bahuguna Garhwal University, Srinagar, Garhwal",
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal"
+  },
+  {
+    "name": "HEMWATI NANDAN BAHUGUNA MEDICAL EDUCATION UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Hidayatullah National Law University, Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "HIMACHAL PRADESH NATIONAL LAW UNIVERSITY SHIMLA",
+    "state": "Himachal Pradesh",
+    "district": "Shimla"
+  },
+  {
+    "name": "Himachal Pradesh Technical University, Hamirpur",
+    "state": "Himachal Pradesh",
+    "district": "Hamirpur"
+  },
+  {
+    "name": "Himachal Pradesh University, Shimla",
+    "state": "Himachal Pradesh",
+    "district": "Shimla"
+  },
+  {
+    "name": "HIMALAYAN GARHWAL UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal"
+  },
+  {
+    "name": "HIMALAYAN UNIVERSITY, ITANAGAR",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare"
+  },
+  {
+    "name": "HIMALAYIYA UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "HINDI UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Howrah"
+  },
+  {
+    "name": "Hindustan Institute of Technology and Science, Kancheepuram",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Homi Bhabha National Institute, Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Homoeopathy University, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "HRIT University, Ghaziabad",
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad"
+  },
+  {
+    "name": "Hyderabad (SIND) National Collegiate University",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "ICFAI Foundation for Higher Education, Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "ICFAI UNIVERSITY",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "IEC (INDIA EDUCATION CENTRE) UNIVERSITY",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "IES UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "IFTM University, Moradabad",
+    "state": "Uttar Pradesh",
+    "district": "Moradabad"
+  },
+  {
+    "name": "IIHMR UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "IILM UNIVERSITY",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "IILM UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "IIMT University",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "IIS (Deemed to be University), Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "IK Gujral Punjab Technical University, Jalandhar",
+    "state": "Punjab",
+    "district": "Kapurthala"
+  },
+  {
+    "name": "IMS UNISON UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "INDIA INTERNATIONAL UNIVERSITY OF LEGAL EDUCATION AND RESEARCH",
+    "state": "Goa",
+    "district": "South Goa"
+  },
+  {
+    "name": "Indian Agricultural Research Institute (KRISHI PUSA), New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "INDIAN ASSOCIATION FOR THE CULTIVATION OF SCIENCE",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "INDIAN INSTITUTE OF ENGINEERING SCIENCE AND TECHNOLOGY, SHIBPUR",
+    "state": "West Bengal",
+    "district": "Howrah"
+  },
+  {
+    "name": "Indian Institute of Foreign Trade, Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "INDIAN INSTITUTE OF FOREST MANAGEMENT, BHOPAL",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Indian Institute of Information Technology",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Indian Institute of Information Technology Agartala",
+    "state": "Tripura",
+    "district": "West Tripura"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Allahabad",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Indian Institute of Information Technology Bhagalpur",
+    "state": "Bihar",
+    "district": "Bhagalpur"
+  },
+  {
+    "name": "Indian Institute of Information Technology Design And Manufacturing, Kurnool",
+    "state": "Andhra Pradesh",
+    "district": "Kurnool"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Design & Manufacturing, Kancheepuram",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Dharwad",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Kalyani",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Kota",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Kottayam",
+    "state": "Kerala",
+    "district": "Kottayam"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Indian Institute of Information Technology Raichur",
+    "state": "Karnataka",
+    "district": "Raichur"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Senapati",
+    "state": "Manipur",
+    "district": "Senapati"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Sonipat",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Sri City",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Srirangam",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Indian Institute of Information Technology Surat",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Indian Institute of Information Technology, UNA",
+    "state": "Himachal Pradesh",
+    "district": "Una"
+  },
+  {
+    "name": "Indian Institute of Information Technology, Vadodara",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Indian Institute of Management Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Indian Institute of Management Amritsar",
+    "state": "Punjab",
+    "district": "Amritsar"
+  },
+  {
+    "name": "Indian Institute of Management Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Indian Institute of Management Bodh Gaya",
+    "state": "Bihar",
+    "district": "Gaya"
+  },
+  {
+    "name": "Indian Institute of Management Guwahati",
+    "state": "Assam",
+    "district": "Kamrup"
+  },
+  {
+    "name": "Indian Institute of Management Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Indian Institute of Management, Jammu And Kashmir",
+    "state": "Jammu and Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "Indian Institute of Management Kashipur",
+    "state": "Uttarakhand",
+    "district": "Udham Singh Nagar"
+  },
+  {
+    "name": "Indian Institute of Management, Kolkata",
+    "state": "West Bengal",
+    "district": "South 24 Parganas"
+  },
+  {
+    "name": "Indian Institute of Management Kozhikode",
+    "state": "Kerala",
+    "district": "Kozhikode"
+  },
+  {
+    "name": "Indian Institute of Management Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Indian Institute of Management Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Indian Institute of Management, Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Indian Institute of Management Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Indian Institute of Management Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Indian Institute of Management Rohtak",
+    "state": "Haryana",
+    "district": "Rohtak"
+  },
+  {
+    "name": "Indian Institute of Management Sambalpur",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "Indian Institute of Management, Shillong",
+    "state": "Meghalaya",
+    "district": "East Khasi Hills"
+  },
+  {
+    "name": "Indian Institute of Management Sirmaur",
+    "state": "Himachal Pradesh",
+    "district": "Sirmaur"
+  },
+  {
+    "name": "Indian Institute of Management Tiruchirapalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Indian Institute of Management Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "Indian Institute of Management Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "INDIAN INSTITUTE OF MASS COMMUNICATION, NEW DELHI",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "INDIAN INSTITUTE OF PETROLEUM & ENERGY",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "INDIAN INSTITUTE OF PUBLIC HEALTH GANDHINAGAR",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Indian Institute of Science, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Indian Institute of Science Education & Research (IISER), Berhampur",
+    "state": "Odisha",
+    "district": "Ganjam"
+  },
+  {
+    "name": "Indian Institute of Science Education & Research (IISER), Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Indian Institute of Science Education & Research (IISER), Kolkata",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "Indian Institute of Science Education & Research (IISER), Mohali",
+    "state": "Punjab",
+    "district": "S.A.S Nagar"
+  },
+  {
+    "name": "Indian Institute of Science Education & Research (IISER), Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Indian Institute of Science Education & Research (IISER), Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "Indian Institute of Science Education & Research (IISER), Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Indian Institute of Space Science and Technology, Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "INDIAN INSTITUTE OF TEACHER EDUCATION, GANDHINAGAR",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Indian Institute of Technology (Banaras Hindu University), Varanasi",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi"
+  },
+  {
+    "name": "Indian Institute of Technology Bhilai",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "Indian Institute of Technology, Bhubaneshwar",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "Indian Institute of Technology, Bombay",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Indian Institute of Technology, Delhi",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "Indian Institute of Technology, Dharwad",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "Indian Institute of Technology, Gandhinagar",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Indian Institute of Technology, Goa",
+    "state": "Goa",
+    "district": "South Goa"
+  },
+  {
+    "name": "Indian Institute of Technology, Guwahati",
+    "state": "Assam",
+    "district": "Kamrup"
+  },
+  {
+    "name": "Indian Institute of Technology, Hyderabad",
+    "state": "Telangana",
+    "district": "Medak"
+  },
+  {
+    "name": "Indian Institute of Technology (Indian School of Mines), Dhanbad",
+    "state": "Jharkhand",
+    "district": "Dhanbad"
+  },
+  {
+    "name": "Indian Institute of Technology, Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Indian Institute of Technology Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "Indian Institute of Technology, Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "Indian Institute of Technology, Kanpur",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Nagar"
+  },
+  {
+    "name": "Indian Institute of Technology, Kharagpur",
+    "state": "West Bengal",
+    "district": "Paschim Medinipur"
+  },
+  {
+    "name": "Indian Institute of Technology, Madras",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Indian Institute of Technology, Mandi",
+    "state": "Himachal Pradesh",
+    "district": "Mandi"
+  },
+  {
+    "name": "Indian Institute of Technology, Palakkad",
+    "state": "Kerala",
+    "district": "Palakkad"
+  },
+  {
+    "name": "Indian Institute of Technology, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Indian Institute of Technology, Roorkee",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Indian Institute of Technology, Ropar",
+    "state": "Punjab",
+    "district": "Rupnagar"
+  },
+  {
+    "name": "Indian Institute of Technology, Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Indian Law Institute, Bhagwandas Road, New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Indian Maritime University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Indian Statistical Institute, Kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "Indian Veterinary Research Institute, Izatnagar",
+    "state": "Uttar Pradesh",
+    "district": "Bareilly"
+  },
+  {
+    "name": "INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN",
+    "state": "Delhi",
+    "district": "Central"
+  },
+  {
+    "name": "Indira Gandhi Institute of Development Research, Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Indira Gandhi Institute of Medical Sciences, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Indira Gandhi Krishi Vishwavidyalaya, Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Indira Gandhi National Open University",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "Indira Gandhi National Tribal University, Amarkantak",
+    "state": "Madhya Pradesh",
+    "district": "Anuppur"
+  },
+  {
+    "name": "INDIRA GANDHI TECHNOLOGICAL AND MEDICAL SCIENCES UNIVERSITY, ZIRO",
+    "state": "Arunachal Pradesh",
+    "district": "Lower Subansiri"
+  },
+  {
+    "name": "INDIRA GANDHI UNIVERSITY, MEERPUR",
+    "state": "Haryana",
+    "district": "Rewari"
+  },
+  {
+    "name": "Indira University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Indraprastha Institute of Information Technology, Delhi",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "Indrashil University",
+    "state": "Gujarat",
+    "district": "Mahesana"
+  },
+  {
+    "name": "Indus International University, Bathu, Una",
+    "state": "Himachal Pradesh",
+    "district": "Una"
+  },
+  {
+    "name": "INDUS UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "INSTITUTE OF ADVANCED RESEARCH, GANDHINAGAR",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Institute of Advanced Studies in Education Churu",
+    "state": "Rajasthan",
+    "district": "Churu"
+  },
+  {
+    "name": "Institute of Chartered Financial Analysts of India University, Meghalaya",
+    "state": "Meghalaya",
+    "district": "West Garo Hills"
+  },
+  {
+    "name": "INSTITUTE OF CHARTERED FINANCIAL ANALYSTS OF INDIA UNIVERSITY, SOLAN",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "Institute of Chemical Technology, Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "INSTITUTE OF INFRASTRUCTURE TECHNOLOGY RESEARCH AND MANAGEMENT (IITRAM)",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Institute of Liver and Biliary Sciences New Delhi",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "INSTITUTE OF TEACHING AND RESEARCH IN AYURVEDA",
+    "state": "Gujarat",
+    "district": "Jamnagar"
+  },
+  {
+    "name": "Integral University, Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "International Institute for Population Sciences, Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "International Institute of Information Technology, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Rural"
+  },
+  {
+    "name": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY BHUBANESHWAR",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "International Institute of Information Technology, Hyderabad",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "Invertis University, Bareilly",
+    "state": "Uttar Pradesh",
+    "district": "Bareilly"
+  },
+  {
+    "name": "ISBM University",
+    "state": "Chhattisgarh",
+    "district": "Gariaband"
+  },
+  {
+    "name": "Islamic University of Science & Technology, Pulwama",
+    "state": "Jammu and Kashmir",
+    "district": "Pulwama"
+  },
+  {
+    "name": "ITM SKILLS UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "ITM (SLS) BARODA UNIVERSITY, VADODARA",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "ITM UNIVERSITY",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "ITM UNIVERSITY, GWALIOR",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "ITM VOCATIONAL UNIVERSITY, VADODARA",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Jadavpur University, Kolkata",
+    "state": "West Bengal",
+    "district": "South 24 Parganas"
+  },
+  {
+    "name": "Jagadguru Kripalu University",
+    "state": "Odisha",
+    "district": "Cuttack"
+  },
+  {
+    "name": "Jagadguru Ramanandacharya Rajasthan Sanskrit University, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Jagadguru Rambhadracharya Divyang University, Chitrakoot",
+    "state": "Uttar Pradesh",
+    "district": "Chitrakoot"
+  },
+  {
+    "name": "Jagannath Barooah University",
+    "state": "Assam",
+    "district": "Jorhat"
+  },
+  {
+    "name": "Jagannath University, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "JAGAN NATH UNIVERSITY, JHAJJAR",
+    "state": "Haryana",
+    "district": "Jhajjar"
+  },
+  {
+    "name": "JAGAT GURU NANAK DEV PUNJAB STATE OPEN UNIVERSITY",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "JAGRAN LAKECITY UNIVERSITY, BHOPAL",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "JAI MINESH ADIVASI UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "Jai Narain Vyas University, Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "Jain University, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru South"
+  },
+  {
+    "name": "Jain Vishva Bharati Institute, Nagaur",
+    "state": "Rajasthan",
+    "district": "Didwana-Kuchaman"
+  },
+  {
+    "name": "Jai Prakash Vishwavidyalaya, Chapra",
+    "state": "Bihar",
+    "district": "Saran"
+  },
+  {
+    "name": "Jaipur National University, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Jamia Hamdard",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "Jamia Millia Islamia University",
+    "state": "Delhi",
+    "district": "South East"
+  },
+  {
+    "name": "JAMSHEDPUR WOMEN'S UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "East Singhbhum"
+  },
+  {
+    "name": "Janardan Rai Nagar Rajasthan Vidyapeeth, Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "JANNAYAK CHANDRASHEKHAR UNIVERSITY BALLIA",
+    "state": "Uttar Pradesh",
+    "district": "Ballia"
+  },
+  {
+    "name": "Jawaharlal Institute of Post Graduate Medical Education & Research, Puducherry",
+    "state": "Puducherry",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Jawaharlal Nehru Centre for Advanced Scientific Research, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Jawaharlal Nehru Krishi Vishwavidyalaya, Jabalpur",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "Jawaharlal Nehru Technological University, Anantapur",
+    "state": "Andhra Pradesh",
+    "district": "Ananthapuramu"
+  },
+  {
+    "name": "JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY GURAJADA VIZIANAGARAM",
+    "state": "Andhra Pradesh",
+    "district": "Vizianagaram"
+  },
+  {
+    "name": "Jawaharlal Nehru Technological University, Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Jawaharlal Nehru Technological University, Kakinada",
+    "state": "Andhra Pradesh",
+    "district": "Kakinada"
+  },
+  {
+    "name": "Jawaharlal Nehru University",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "Jawaharlal Nehru Architecture and Fine Arts University Hyderabad",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "Jayoti Vidyapeeth Women's University, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Jaypee Institute of Information Technology, Noida",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "JAYPEE UNIVERSITY, ANOOPSHAHR",
+    "state": "Uttar Pradesh",
+    "district": "Bulandshahr"
+  },
+  {
+    "name": "Jaypee University of Engineering & Technology, Guna",
+    "state": "Madhya Pradesh",
+    "district": "Guna"
+  },
+  {
+    "name": "Jaypee University of Information Technology, Waknaghat, Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "J.C. BOSE UNIVERSITY OF SCIENCE AND TECHNOLOGY, YMCA, FARIDABAD",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "JECRC UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "JEPPIAAR UNIVERSITY",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "JG UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "JHARKHAND RAI UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "JHARKHAND RAKSHA SHAKTI UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "JHARKHAND STATE OPEN UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Jharkhand University of Technology, Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Jigyasa University, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "JIS UNIVERSITY",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "Jiwaji University, Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "JK LAKSHMIPAT UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "JNCT Professional University",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Joy University",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "JSPM University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "JSS ACADEMY OF HIGHER EDUCATION & RESEARCH",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "JSS Science and Technology University",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "JSS University",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "JS University",
+    "state": "Uttar Pradesh",
+    "district": "Firozabad"
+  },
+  {
+    "name": "Junagadh Agricultural University",
+    "state": "Gujarat",
+    "district": "Junagadh"
+  },
+  {
+    "name": "Kadi Sarva Vishwavidyalaya, Gandhinagar",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Kakatiya University, Warangal",
+    "state": "Telangana",
+    "district": "Hanumakonda"
+  },
+  {
+    "name": "KALAHANDI UNIVERSITY",
+    "state": "Odisha",
+    "district": "Kalahandi"
+  },
+  {
+    "name": "Kalasalingam Academy of Research and Education",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Kalinga Institute of Industrial Technology, Bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "KALINGA INSTITUTE OF SOCIAL SCIENCES (KISS) DEEMED TO BE UNIVERSITY",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "KALINGA UNIVERSITY, RAIPUR",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "KALOJI NARAYANA RAO UNIVERSITY OF HEALTH SCIENCES",
+    "state": "Telangana",
+    "district": "Hanumakonda"
+  },
+  {
+    "name": "Kalyani University, Kalyani",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "KAMDHENU UNIVERSITY, GANDHINAGAR",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Kameshwar Singh Darbhanga Sanskrit Vishwavidyalaya, Darbhanga",
+    "state": "Bihar",
+    "district": "Darbhanga"
+  },
+  {
+    "name": "Kannada University, Hampi, Kamalapura",
+    "state": "Karnataka",
+    "district": "Vijayanagara"
+  },
+  {
+    "name": "Kannur University, Kannur",
+    "state": "Kerala",
+    "district": "Kannur"
+  },
+  {
+    "name": "KANYASHREE UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "KARMAVEER BHAURAO PATIL UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Satara"
+  },
+  {
+    "name": "KARNATAKA JANAPADA VISHWAVIDYALAYA GOTAGODI",
+    "state": "Karnataka",
+    "district": "Haveri"
+  },
+  {
+    "name": "Karnataka Sanskrit University",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Karnataka State Dr. Gangubai Hangal Music And Performing Arts University",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "Karnataka State Law University, Hubli",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "Karnataka State Open University, Mysore",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "Karnataka State Rural Development and Panchayat Raj University",
+    "state": "Karnataka",
+    "district": "Gadag"
+  },
+  {
+    "name": "Karnataka State Women University, Bijapur",
+    "state": "Karnataka",
+    "district": "Vijayapura"
+  },
+  {
+    "name": "Karnataka University, Dharwad",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "Karnataka Veterinary, Animal & Fisheries Science University, Nandinagar",
+    "state": "Karnataka",
+    "district": "Bidar"
+  },
+  {
+    "name": "Karnavati University",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Karpagam Academy of Higher Education, Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Karunya Institute of Technology and Sciences, Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Kashi Naresh University",
+    "state": "Uttar Pradesh",
+    "district": "Bhadohi"
+  },
+  {
+    "name": "KAUSHALYA THE SKILL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon",
+    "state": "Maharashtra",
+    "district": "Jalgaon"
+  },
+  {
+    "name": "Kaveri University",
+    "state": "Telangana",
+    "district": "Siddipet"
+  },
+  {
+    "name": "Kavi Kulguru Kalidas Sanskrit Vishwavidyalaya, Ramtek",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "KAZI NAZRUL UNIVERSITY, ASANSOL",
+    "state": "West Bengal",
+    "district": "Paschim Bardhaman"
+  },
+  {
+    "name": "K. D. University",
+    "state": "Uttar Pradesh",
+    "district": "Mathura"
+  },
+  {
+    "name": "Kerala Agricultural University, Thrissur",
+    "state": "Kerala",
+    "district": "Thrissur"
+  },
+  {
+    "name": "Kerala Kalamandalam, Thrissur",
+    "state": "Kerala",
+    "district": "Thrissur"
+  },
+  {
+    "name": "KERALA UNIVERSITY OF DIGITAL SCIENCES INNOVATION AND TECHNOLOGY",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "Kerala University of Fisheries & Ocean Studies, Kochi",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "KERALA UNIVERSITY OF HEALTH SCIENCES",
+    "state": "Kerala",
+    "district": "Thrissur"
+  },
+  {
+    "name": "Kerala Veterinary & Animal Science University, Wayanad",
+    "state": "Kerala",
+    "district": "Wayanad"
+  },
+  {
+    "name": "KHAJA BANDANAWAZ UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Kalaburagi"
+  },
+  {
+    "name": "Khallikote Unitary University",
+    "state": "Odisha",
+    "district": "Ganjam"
+  },
+  {
+    "name": "Khalsa University",
+    "state": "Punjab",
+    "district": "Amritsar"
+  },
+  {
+    "name": "KHANGCHENDZONGA STATE UNIVERSITY",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "KHONGNANGTHABA UNIVERSITY",
+    "state": "Manipur",
+    "district": "Imphal East"
+  },
+  {
+    "name": "KHWAJA MOINUDDIN CHISHTI BHASHA VISHWAVIDYALAYA LUCKNOW",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "KING GEORGE MEDICAL UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Kishkinda University",
+    "state": "Karnataka",
+    "district": "Ballari"
+  },
+  {
+    "name": "KK MODI UNIVERSITY",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "KK University",
+    "state": "Bihar",
+    "district": "Nalanda"
+  },
+  {
+    "name": "K.L.E. Academy of Higher Education and Research, Belgaum",
+    "state": "Karnataka",
+    "district": "Belagavi"
+  },
+  {
+    "name": "KLE TECHNOLOGICAL UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "KM KRISHNA MOHAN UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Mathura"
+  },
+  {
+    "name": "KN UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "KODAGU UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Kodagu"
+  },
+  {
+    "name": "Kokrajhar University",
+    "state": "Assam",
+    "district": "Kokrajhar"
+  },
+  {
+    "name": "Kolhan University, West Singhbhum",
+    "state": "Jharkhand",
+    "district": "West Singhbhum"
+  },
+  {
+    "name": "Koneru Lakshmaiah Education Foundation, Guntur",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "KOPPAL UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Koppal"
+  },
+  {
+    "name": "Kota University, Kota",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "Krntiguru Shyamji Krishna Verma Kachchh University, Kachchh",
+    "state": "Gujarat",
+    "district": "Kachchh"
+  },
+  {
+    "name": "Krantisurya Tantya Bhil University",
+    "state": "Madhya Pradesh",
+    "district": "Khargone (West Nimar)"
+  },
+  {
+    "name": "Krantivir Tatya Tope Vishwavidyalaya",
+    "state": "Madhya Pradesh",
+    "district": "Guna"
+  },
+  {
+    "name": "KREA UNIVERSITY",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "KRISHNAGURU ADHYATMIK VISVAVIDYALAYA",
+    "state": "Assam",
+    "district": "Barpeta"
+  },
+  {
+    "name": "Krishna Institute of Engineering and Technology KIET",
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad"
+  },
+  {
+    "name": "Krishna Kanta Handiqui State Open University, Guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "Krishna University, Machilipatnam",
+    "state": "Andhra Pradesh",
+    "district": "Krishna"
+  },
+  {
+    "name": "Krishna Vishwa Vidyapeeth, Karad, Maharashtra",
+    "state": "Maharashtra",
+    "district": "Satara"
+  },
+  {
+    "name": "Kristu Jayanti University",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "K.R. MANGALAM UNIVERSITY, GURGAON",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "KUMAR BHASKAR VARMA SANSKRIT AND ANCIENT STUDIES UNIVERSITY",
+    "state": "Assam",
+    "district": "Nalbari"
+  },
+  {
+    "name": "Kumaun University, Nainital",
+    "state": "Uttarakhand",
+    "district": "Nainital"
+  },
+  {
+    "name": "Kurukshetra University, Kurukshetra",
+    "state": "Haryana",
+    "district": "Kurukshetra"
+  },
+  {
+    "name": "Kushabhau Thakre Patrakarita Avam Jansanchar Vishwavidyalaya, Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Kuvempu University, Shankaraghatta, Shimoga",
+    "state": "Karnataka",
+    "district": "Shivamogga"
+  },
+  {
+    "name": "Lakshmibai National Institute of Physical Education, Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "LAKULISH YOGA UNIVERSITY, AHMEDABAD",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Lala Lajpat Rai University of Veterinary and Animal Sciences",
+    "state": "Haryana",
+    "district": "Hisar"
+  },
+  {
+    "name": "Lalit Narayan Mithila University, Darbhanga",
+    "state": "Bihar",
+    "district": "Darbhanga"
+  },
+  {
+    "name": "LAMRIN TECH SKILLS UNIVERSITY PUNJAB",
+    "state": "Punjab",
+    "district": "Shahid Bhagat Singh Nagar"
+  },
+  {
+    "name": "Laxminarayan Innovation Technological (LIT) University",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Lingaya's Vidyapeeth, Faridabad",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "LNCT UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "LNCT VIDHYAPEETH UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "LNMIIT, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "LOKBHARTI UNIVERSITY FOR RURAL INNOVATION",
+    "state": "Gujarat",
+    "district": "Bhavnagar"
+  },
+  {
+    "name": "LOK JAGRUTI KENDRA UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "LORDS UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Alwar"
+  },
+  {
+    "name": "Lovely Professional University",
+    "state": "Punjab",
+    "district": "Kapurthala"
+  },
+  {
+    "name": "Maa Pateshwari University",
+    "state": "Uttar Pradesh",
+    "district": "Balrampur"
+  },
+  {
+    "name": "MAA SHAKUMBHARI UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Saharanpur"
+  },
+  {
+    "name": "Maa Vindhyavasini University",
+    "state": "Uttar Pradesh",
+    "district": "Mirzapur"
+  },
+  {
+    "name": "Madanapalle Institute of Technology and Science MITS",
+    "state": "Andhra Pradesh",
+    "district": "Annamayya"
+  },
+  {
+    "name": "MADAN MOHAN MALAVIYA UNIVERSITY OF TECHNOLOGY",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur"
+  },
+  {
+    "name": "Madhabdev University",
+    "state": "Assam",
+    "district": "Lakhimpur"
+  },
+  {
+    "name": "Madhav Institute of Technology and Science",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "MADHAV UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Sirohi"
+  },
+  {
+    "name": "MADHUSUDAN LAW UNIVERSITY",
+    "state": "Odisha",
+    "district": "Cuttack"
+  },
+  {
+    "name": "Madhyanchal Professional University",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "MADHYA PRADESH AYURVIGYAN VISHWAVIDYALAYA, JABALPUR",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "Madhya Pradesh Bhoj Open University, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Madras University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Madurai Kamaraj University, Madurai",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Magadh University, Bodh Gaya",
+    "state": "Bihar",
+    "district": "Gaya"
+  },
+  {
+    "name": "MAGANBHAI ADENWALA MAHAGUJARAT UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Kheda"
+  },
+  {
+    "name": "MAHAKAUSHAL UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "MAHAPURUSHA SRIMANTA SANKARADEVA VISWAVIDYALAYA",
+    "state": "Assam",
+    "district": "Nagaon"
+  },
+  {
+    "name": "MAHARAJA AGRASEN UNIVERSITY",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "MAHARAJA BIR BIKRAM UNIVERSITY, AGARTALA",
+    "state": "Tripura",
+    "district": "West Tripura"
+  },
+  {
+    "name": "MAHARAJA CHHATRASAL BUNDELKHAND UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Chhatarpur"
+  },
+  {
+    "name": "Maharaja Ganga Singh University, Bikaner",
+    "state": "Rajasthan",
+    "district": "Bikaner"
+  },
+  {
+    "name": "Maharaja Krishnakumarsinhji Bhavnagar University",
+    "state": "Gujarat",
+    "district": "Bhavnagar"
+  },
+  {
+    "name": "MAHARAJA RANJIT SINGH PUNJAB TECHNICAL UNIVERSITY, BATHINDA",
+    "state": "Punjab",
+    "district": "Bathinda"
+  },
+  {
+    "name": "Maharaja Sayajirao University of Baroda, Vadodara",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Maharaja Sriram Chandra Bhanja Deo University",
+    "state": "Odisha",
+    "district": "Mayurbhanj"
+  },
+  {
+    "name": "Maharaja Suhel Dev State University",
+    "state": "Uttar Pradesh",
+    "district": "Azamgarh"
+  },
+  {
+    "name": "MAHARAJA SURAJMAL BRIJ UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Bharatpur"
+  },
+  {
+    "name": "MAHARAJ VINAYAK GLOBAL UNIVERSITY, JAIPUR",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "MAHARANA PRATAP HORTICULTURAL UNIVERSITY",
+    "state": "Haryana",
+    "district": "Karnal"
+  },
+  {
+    "name": "Maharana Pratap University of Agriculture & Technology, Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "MAHARANI CLUSTER UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Maharishi Markandeshwar University, Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "Maharashtra Animal & Fishery Sciences University, Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Maharashtra Institute of Technology University of Meghalaya",
+    "state": "Meghalaya",
+    "district": "East Khasi Hills"
+  },
+  {
+    "name": "Maharashtra National Law University, Aurangabad",
+    "state": "Maharashtra",
+    "district": "Chhatrapati Sambhajinagar"
+  },
+  {
+    "name": "Maharashtra National Law University Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai Suburban"
+  },
+  {
+    "name": "Maharashtra National Law University, Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "MAHARASHTRA STATE SKILLS UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Maharashtra University of Health Sciences, Nashik",
+    "state": "Maharashtra",
+    "district": "Nashik"
+  },
+  {
+    "name": "MAHARISHI ARVIND UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Maharishi Mahesh Yogi Ramayan Vishwavidyalaya",
+    "state": "Uttar Pradesh",
+    "district": "Ayodhya"
+  },
+  {
+    "name": "Maharishi Mahesh Yogi Vedic Vishwavidyalaya",
+    "state": "Madhya Pradesh",
+    "district": "Katni"
+  },
+  {
+    "name": "Maharishi Markandeshwar University, Mullana-Ambala",
+    "state": "Haryana",
+    "district": "Ambala"
+  },
+  {
+    "name": "MAHARISHI MARKANDESHWAR UNIVERSITY, SADOPUR-AMBALA",
+    "state": "Haryana",
+    "district": "Ambala"
+  },
+  {
+    "name": "MAHARISHI UNIVERSITY OF INFORMATION TECHNOLOGY",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "MAHARISHI UNIVERSITY OF MANAGEMENT AND TECHNOLOGY",
+    "state": "Chhattisgarh",
+    "district": "Bilaspur"
+  },
+  {
+    "name": "Maharshi Dayanand Saraswati University, Ajmer",
+    "state": "Rajasthan",
+    "district": "Ajmer"
+  },
+  {
+    "name": "Maharshi Dayanand University, Rohtak",
+    "state": "Haryana",
+    "district": "Rohtak"
+  },
+  {
+    "name": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya, Ujjain",
+    "state": "Madhya Pradesh",
+    "district": "Ujjain"
+  },
+  {
+    "name": "Maharshi Valmiki Sanskrit University",
+    "state": "Haryana",
+    "district": "Kaithal"
+  },
+  {
+    "name": "Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya, Wardha",
+    "state": "Maharashtra",
+    "district": "Wardha"
+  },
+  {
+    "name": "Mahatma Gandhi Gramodaya Vishwavidyalaya, Chitrakoot, Satna",
+    "state": "Madhya Pradesh",
+    "district": "Satna"
+  },
+  {
+    "name": "Mahatma Jyotiba Phule Rohilkhand University, Bareilly",
+    "state": "Uttar Pradesh",
+    "district": "Bareilly"
+  },
+  {
+    "name": "Mahatma Gandhi Central University, Motihari",
+    "state": "Bihar",
+    "district": "Purbi Champaran"
+  },
+  {
+    "name": "Mahatma Gandhi Kashi Vidyapith Varanasi",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi"
+  },
+  {
+    "name": "MAHATMA GANDHI UDHYANIKEE EVAM VANIKEE VISHWAVIDYALAYA, DURG, C.G",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "Mahatma Gandhi University",
+    "state": "Sikkim",
+    "district": "Soreng"
+  },
+  {
+    "name": "MAHATMA GANDHI UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Purba Medinipur"
+  },
+  {
+    "name": "Mahatma Gandhi University, Kottayam",
+    "state": "Kerala",
+    "district": "Kottayam"
+  },
+  {
+    "name": "Mahatma Gandhi University, Nalgonda",
+    "state": "Telangana",
+    "district": "Nalgonda"
+  },
+  {
+    "name": "MAHATMA GANDHI UNIVERSITY OF MEDICAL SCIENCES AND TECHNOLOGY, JAIPUR",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Mahatma Gandhi University, Tura, West Garo Hills",
+    "state": "Meghalaya",
+    "district": "Ri Bhoi"
+  },
+  {
+    "name": "Mahatma Jyoti Rao Phoole University, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Mahatma Phule Krishi Vidyapeeth, Rahuri",
+    "state": "Maharashtra",
+    "district": "Ahilyanagar"
+  },
+  {
+    "name": "Mahaveer University",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "MAHAYOGI GORAKHNATH UNIVERSITY GORAKHPUR",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur"
+  },
+  {
+    "name": "MAHAYOGI GURU GORAKHNATH AYUSH UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur"
+  },
+  {
+    "name": "MAHINDRA UNIVERSITY",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "Major Dhyan Chand Sports University",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "Major SD Singh University",
+    "state": "Uttar Pradesh",
+    "district": "Farrukhabad"
+  },
+  {
+    "name": "MAJULI UNIVERSITY OF CULTURE",
+    "state": "Assam",
+    "district": "Majuli"
+  },
+  {
+    "name": "Makhanlal Chaturvedi National University of Journalism and Communication, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Malla Reddy MR University",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "MALLA REDDY UNIVERSITY",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "Malla Reddy Vishwavidyapeeth",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "Malaviya National Institute of Technology, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "MALWANCHAL UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Management and Information Technology University",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "Manav Rachna International Institute of Research & Studies",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "Manav Rachna University",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "MANDSAUR UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Mandsaur"
+  },
+  {
+    "name": "MANDYA UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Mandya"
+  },
+  {
+    "name": "MANGALAYATAN UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "Mangalayatan University, Aligarh",
+    "state": "Uttar Pradesh",
+    "district": "Aligarh"
+  },
+  {
+    "name": "Mangalore University, Mangalore",
+    "state": "Karnataka",
+    "district": "Dakshina Kannada"
+  },
+  {
+    "name": "Manipal Academy of Higher Education, Manipal",
+    "state": "Karnataka",
+    "district": "Udupi"
+  },
+  {
+    "name": "MANIPAL UNIVERSITY, JAIPUR",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "MANIPUR INTERNATIONAL UNIVERSITY",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "MANIPUR TECHNICAL UNIVERSITY",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "Manipur University, Imphal",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "MANIPUR UNIVERSITY OF CULTURE",
+    "state": "Manipur",
+    "district": "Imphal East"
+  },
+  {
+    "name": "Manonmaniam Sundaranar University, Tirunelveli",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "MANSAROVAR GLOBAL UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Sehore"
+  },
+  {
+    "name": "Marathi Bhasha Vidyapeeth",
+    "state": "Maharashtra",
+    "district": "Amravati"
+  },
+  {
+    "name": "Martin Luther Christian University, Shillong",
+    "state": "Meghalaya",
+    "district": "East Khasi Hills"
+  },
+  {
+    "name": "Marwadi University",
+    "state": "Gujarat",
+    "district": "Rajkot"
+  },
+  {
+    "name": "Marwar Medical University",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "MATA GUJRI UNIVERSITY",
+    "state": "Bihar",
+    "district": "Kishanganj"
+  },
+  {
+    "name": "Mata Tripura Sundari Open University",
+    "state": "Tripura",
+    "district": "Gomati"
+  },
+  {
+    "name": "MATS University, Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Maulana Abul Kalam Azad University of Technology, West Bengal",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "Maulana Azad National Institute of Technology, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Maulana Azad National Urdu University, Hyderabad",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "MAULANA AZAD UNIVERSITY, JODHPUR",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "Maulana Mazharul Haque Arabic & Persian University, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Maya Devi University",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "MBM UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "MEDHAVI SKILLS UNIVERSITY",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "MEDI-CAPS UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Meenakshi Academy of Higher Education and Research, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Mewar University, Chittorgarh",
+    "state": "Rajasthan",
+    "district": "Chittorgarh"
+  },
+  {
+    "name": "MGM Institute of Health Sciences, Navi Mumbai",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "MGM UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Chhatrapati Sambhajinagar"
+  },
+  {
+    "name": "M.G.R. Educational and Research Institute, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur"
+  },
+  {
+    "name": "Mind Power University",
+    "state": "Uttarakhand",
+    "district": "Nainital"
+  },
+  {
+    "name": "MIT Art, Design and Technology University, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "MIT VISHWAPRAYAG UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Solapur"
+  },
+  {
+    "name": "Mizoram University, Aizawl",
+    "state": "Mizoram",
+    "district": "Aizawl"
+  },
+  {
+    "name": "MK University",
+    "state": "Gujarat",
+    "district": "Patan"
+  },
+  {
+    "name": "MNR University",
+    "state": "Telangana",
+    "district": "Sangareddy"
+  },
+  {
+    "name": "Mody University of Science and Technology",
+    "state": "Rajasthan",
+    "district": "Sikar"
+  },
+  {
+    "name": "Mohammad Ali Jauhar University, Rampur",
+    "state": "Uttar Pradesh",
+    "district": "Rampur"
+  },
+  {
+    "name": "MOHAN BABU UNIVERSITY",
+    "state": "Andhra Pradesh",
+    "district": "Tirupati"
+  },
+  {
+    "name": "Mohan Lal Sukhadia University, Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "MONAD UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Hapur"
+  },
+  {
+    "name": "MONARK UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "MOTHERHOOD UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Mother Teresa Women's University, Kodaikanal",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "Motilal Nehru National Institute of Technology, Allahabad",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Mount Carmel",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "M.S. RAMAIAH UNIVERSITY OF APPLIED SCIENCES, BANGALORE",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "MUNGER UNIVERSITY",
+    "state": "Bihar",
+    "district": "Munger"
+  },
+  {
+    "name": "MURSHIDABAD UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Murshidabad"
+  },
+  {
+    "name": "MVN University, Palwal",
+    "state": "Haryana",
+    "district": "Palwal"
+  },
+  {
+    "name": "Nagaland University",
+    "state": "Nagaland",
+    "district": "Zunheboto"
+  },
+  {
+    "name": "Nagaon University",
+    "state": "Assam",
+    "district": "Nagaon"
+  },
+  {
+    "name": "Nalanda Open University, Patna",
+    "state": "Bihar",
+    "district": "Nalanda"
+  },
+  {
+    "name": "Nalanda University",
+    "state": "Bihar",
+    "district": "Nalanda"
+  },
+  {
+    "name": "Nana Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya, Jabalpur",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "National Academy of Legal Studies & Research (NALSAR) University, Hyderabad",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "National Brain Research Centre, Gurgaon",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "National Dairy Research Institute, Karnal",
+    "state": "Haryana",
+    "district": "Karnal"
+  },
+  {
+    "name": "National Forensic Sciences University",
+    "state": "Delhi",
+    "district": "North West"
+  },
+  {
+    "name": "NATIONAL FORENSIC SCIENCES UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "National Institute of Advanced Manufacturing Technology",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "National Institute of Ayurveda, Rajasthan",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF DESIGN",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF DESIGN ANDHRA PRADESH",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF DESIGN, ASSAM",
+    "state": "Assam",
+    "district": "Jorhat"
+  },
+  {
+    "name": "National Institute of Design Haryana",
+    "state": "Haryana",
+    "district": "Kurukshetra"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF DESIGN (NID) MADHYA PRADESH",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "National Institute of Educational Planning & Administration",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "National Institute of Electronics and Information Technology NIELIT",
+    "state": "Punjab",
+    "district": "Rupnagar"
+  },
+  {
+    "name": "National Institute of Fashion Technology, Hauz Khas",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF FOOD TECHNOLOGY ENTREPRENEURSHIP AND MANAGEMENT",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF FOOD TECHNOLOGY, ENTREPRENEURSHIP AND MANAGEMENT-THANJAVUR",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "National Institute of Mental Health & Neuro Sciences, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "National Institute of Pharmaceutical Education and Research Mohali",
+    "state": "Punjab",
+    "district": "S.A.S Nagar"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH GUWAHATI",
+    "state": "Assam",
+    "district": "Kamrup"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH HAJIPUR",
+    "state": "Bihar",
+    "district": "Vaishali"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH (NIPER) HYDERABAD",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "National Institute of Pharmaceutical Education and Research Rae Bareli",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF TECHNICAL TEACHERS TRAINING AND RESEARCH CHENNAI",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "National Institute of Technical Teachers Training and Research Kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "NATIONAL INSTITUTE OF TECHNICAL TEACHERS TRAINING & RESEARCH, BHOPAL",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "National Institute of Technical Teachers Training & Research Chandigarh",
+    "state": "Chandigarh",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "National Institute of Technology, Agartala",
+    "state": "Tripura",
+    "district": "West Tripura"
+  },
+  {
+    "name": "National Institute of Technology, Andhra Pradesh",
+    "state": "Andhra Pradesh",
+    "district": "West Godavari"
+  },
+  {
+    "name": "National Institute of Technology Arunachal Pradesh",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare"
+  },
+  {
+    "name": "National Institute of Technology, Calicut",
+    "state": "Kerala",
+    "district": "Kozhikode"
+  },
+  {
+    "name": "National Institute of Technology Delhi",
+    "state": "Delhi",
+    "district": "North West"
+  },
+  {
+    "name": "National Institute of Technology, Durgapur",
+    "state": "West Bengal",
+    "district": "Purba Bardhaman"
+  },
+  {
+    "name": "National Institute of Technology Goa",
+    "state": "Goa",
+    "district": "South Goa"
+  },
+  {
+    "name": "National Institute of Technology, Hamirpur",
+    "state": "Himachal Pradesh",
+    "district": "Hamirpur"
+  },
+  {
+    "name": "National Institute of Technology, Jamshedpur",
+    "state": "Jharkhand",
+    "district": "Saraikela Kharsawan"
+  },
+  {
+    "name": "National Institute of Technology, Karnataka",
+    "state": "Karnataka",
+    "district": "Dakshina Kannada"
+  },
+  {
+    "name": "National Institute of Technology, Kurukshetra",
+    "state": "Haryana",
+    "district": "Kurukshetra"
+  },
+  {
+    "name": "National Institute of Technology Manipur",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "National Institute of Technology Meghalaya",
+    "state": "Meghalaya",
+    "district": "East Khasi"
+  },
+  {
+    "name": "National Institute of Technology Mizoram",
+    "state": "Mizoram",
+    "district": "Aizawl"
+  },
+  {
+    "name": "National Institute of Technology Nagaland",
+    "state": "Nagaland",
+    "district": "Dimapur"
+  },
+  {
+    "name": "National Institute of Technology, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "National Institute of Technology Puducherry",
+    "state": "Puducherry",
+    "district": "Karaikal"
+  },
+  {
+    "name": "National Institute of Technology, Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "National Institute of Technology, Rourkela",
+    "state": "Odisha",
+    "district": "Sundargarh"
+  },
+  {
+    "name": "National Institute of Technology Sikkim",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "National Institute of Technology, Silchar",
+    "state": "Assam",
+    "district": "Cachar"
+  },
+  {
+    "name": "National Institute of Technology, Srinagar",
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "National Institute of Technology, Tiruchirapalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "National Institute of Technology Uttarakhand",
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal"
+  },
+  {
+    "name": "National Institute of Technology, Warangal",
+    "state": "Telangana",
+    "district": "Warangal"
+  },
+  {
+    "name": "National Law Institute University, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "National Law School of India University, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "NATIONAL LAW UNIVERSITY",
+    "state": "Tripura",
+    "district": "West Tripura"
+  },
+  {
+    "name": "NATIONAL LAW UNIVERSITY AND JUDICIAL ACADEMY",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "National Law University, Cuttack",
+    "state": "Odisha",
+    "district": "Cuttack"
+  },
+  {
+    "name": "National Law University, Delhi",
+    "state": "Delhi",
+    "district": "South West"
+  },
+  {
+    "name": "National Law University, Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "NATIONAL LAW UNIVERSITY OF MEGHALAYA",
+    "state": "Meghalaya",
+    "district": "East Khasi Hills"
+  },
+  {
+    "name": "National Museum Institute of History of Art Conservation and Museology",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "National Sanskrit University, Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "National Sports University",
+    "state": "Manipur",
+    "district": "Imphal West"
+  },
+  {
+    "name": "National University of Advanced Legal Studies Kochi",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "National University of Study & Research in Law, Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Nava Nalanda Mahavihara, Nalanda",
+    "state": "Bihar",
+    "district": "Nalanda"
+  },
+  {
+    "name": "Navrachana University",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Navsari Agricultural University",
+    "state": "Gujarat",
+    "district": "Navsari"
+  },
+  {
+    "name": "Nayanta University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Nehru Gram Bharati (Deemed to be University), Prayagraj",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Netaji Subhash Chandra Bose Institute of Higher Learning",
+    "state": "Andaman and Nicobar Islands",
+    "district": "South Andaman"
+  },
+  {
+    "name": "Netaji Subhash Open University, Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "NETAJI SUBHAS UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "East Singhbhum"
+  },
+  {
+    "name": "NETAJI SUBHAS UNIVERSITY OF TECHNOLOGY",
+    "state": "Delhi",
+    "district": "South West"
+  },
+  {
+    "name": "NICMAR University of Construction Studies, Hyderabad Telangana",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "NICMAR UNIVERSITY, PUNE",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "NIILM UNIVERSITY",
+    "state": "Haryana",
+    "district": "Kaithal"
+  },
+  {
+    "name": "NIIT UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Alwar"
+  },
+  {
+    "name": "Nilamber-Pitamber University, Palamu",
+    "state": "Jharkhand",
+    "district": "Palamu"
+  },
+  {
+    "name": "Nims University Rajasthan, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Nirma University, Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "NIRWAN UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "NIST University",
+    "state": "Odisha",
+    "district": "Ganjam"
+  },
+  {
+    "name": "NITTE University, Mangalore",
+    "state": "Karnataka",
+    "district": "Dakshina Kannada"
+  },
+  {
+    "name": "Nizam's Institute of Medical Sciences, Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "NMV University",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "NOBLE UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Junagadh"
+  },
+  {
+    "name": "Noida International University",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Noorul Islam Centre for Higher Education, Kanyakumari",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "North Bengal University, Darjeeling",
+    "state": "West Bengal",
+    "district": "Darjeeling"
+  },
+  {
+    "name": "NORTH EAST ADVENTIST UNIVERSITY",
+    "state": "Meghalaya",
+    "district": "West Jaintia Hills"
+  },
+  {
+    "name": "NORTH EAST CHRISTIAN UNIVERSITY",
+    "state": "Nagaland",
+    "district": "Dimapur"
+  },
+  {
+    "name": "North-Eastern Hill University, Shillong",
+    "state": "Meghalaya",
+    "district": "East Khasi Hills"
+  },
+  {
+    "name": "North Eastern Regional Institute of Science & Technology, Papum Pare, Itanagar",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare"
+  },
+  {
+    "name": "NORTH EAST FRONTIER TECHNICAL UNIVERSITY",
+    "state": "Arunachal Pradesh",
+    "district": "West Siang"
+  },
+  {
+    "name": "North Lakhimpur University",
+    "state": "Assam",
+    "district": "Lakhimpur"
+  },
+  {
+    "name": "NRUPATHUNGA UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "ODIA UNIVERSITY",
+    "state": "Odisha",
+    "district": "Puri"
+  },
+  {
+    "name": "Odisha State Open University",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "ODISHA UNIVERSITY OF HEALTH SCIENCES",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "ODISHA UNIVERSITY OF TECHNOLOGY AND RESEARCH",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "OM STERLING GLOBAL UNIVERSITY",
+    "state": "Haryana",
+    "district": "Hisar"
+  },
+  {
+    "name": "O.P. Jindal Global University, Sonipat",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "OP JINDAL UNIVERSITY",
+    "state": "Chhattisgarh",
+    "district": "Raigarh"
+  },
+  {
+    "name": "ORIENTAL UNIVERSITY INDORE",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Orissa University of Agriculture & Technology, Bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "Osmania University, Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Pacific Academy of Higher Education Research University, Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "PACIFIC MEDICAL UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "Palamuru University, Mahabubnagar",
+    "state": "Telangana",
+    "district": "Mahabubnagar"
+  },
+  {
+    "name": "Pandit Dwarka Prasad Mishra Indian Institute of Information Technology & Manufacturing, Jabalpur",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "PANDIT DEENDAYAL ENERGY UNIVERSITY, GANDHINAGAR",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "PANDIT DEENDAYAL UPADHYAYA SHEKHAWATI UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Sikar"
+  },
+  {
+    "name": "Pandit S.N. Shukla University, Shahdol",
+    "state": "Madhya Pradesh",
+    "district": "Shahdol"
+  },
+  {
+    "name": "Panjab University, Chandigarh",
+    "state": "Chandigarh",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "Pannadhay University",
+    "state": "Sikkim",
+    "district": "Soreng"
+  },
+  {
+    "name": "PARUL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "PATLIPUTRA UNIVERSITY, PATNA",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Patna University, Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "PDM University",
+    "state": "Haryana",
+    "district": "Jhajjar"
+  },
+  {
+    "name": "PEOPLES UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Periyar Maniammai Institute of Science & Technology, Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Periyar University, Salem",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "PES UNIVERSITY, BANGALORE",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "PHFI Institute of Public Health Sciences",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "Phonics University",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Pillai University",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "PIMPRI CHINCHWAD UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "P.K. UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Shivpuri"
+  },
+  {
+    "name": "PLAKSHA UNIVERSITY",
+    "state": "Punjab",
+    "district": "S.A.S Nagar"
+  },
+  {
+    "name": "PLASTINDIA INTERNATIONAL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Valsad"
+  },
+  {
+    "name": "Pondicherry University, Puducherry",
+    "state": "Puducherry",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Ponnaiyah Ramajayam Institute of Science & Technology, Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "POORNIMA UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Post Graduate Institute of Medical Education and Research",
+    "state": "Chandigarh",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "P.P. Savani University",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Pragjyotishpur University",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "PRATAP UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Pravara Institute of Medical Sciences, Ahmednagar",
+    "state": "Maharashtra",
+    "district": "Ahilyanagar"
+  },
+  {
+    "name": "Presidency University",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "PRESIDENCY UNIVERSITY, BENGALURU",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Prestige Institute of Management and Research",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "PRESTIGE UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "PROFESSOR JAYASHANKAR TELANGANA AGRICULTURAL UNIVERSITY (PJTSAU)",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Professor Rajendra Singh (Rajju Bhaiya) University, Prayagraj, Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Pt. Bhagwat Dayal Sharma University of Health Sciences",
+    "state": "Haryana",
+    "district": "Rohtak"
+  },
+  {
+    "name": "Pt. Deendayal Upadhyay Memorial Health Sciences and Ayush University of Chhattisgarh",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Pt. Ravishankar Shukla University, Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "Pt. Sundarlal Sharma (Open) University, Bilaspur",
+    "state": "Chhattisgarh",
+    "district": "Bilaspur"
+  },
+  {
+    "name": "Puducherry Technological University, Puducherry",
+    "state": "Puducherry",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Punjab Agricultural University, Ludhiana",
+    "state": "Punjab",
+    "district": "Ludhiana"
+  },
+  {
+    "name": "Punjab Engineering College Chandigarh",
+    "state": "Chandigarh",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "Punjabi University, Patiala",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "Punyashlok Ahilyadevi Holkar Solapur University, Solapur",
+    "state": "Maharashtra",
+    "district": "Solapur"
+  },
+  {
+    "name": "PURNEA UNIVERSITY, PURNIA",
+    "state": "Bihar",
+    "district": "Purnia"
+  },
+  {
+    "name": "P.V. NARSIMHA RAO TELANGANA VETERINARY UNIVERSITY",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "Quantum University",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Rabindra Bharati University, Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "RABINDRANATH TAGORE UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Raisen"
+  },
+  {
+    "name": "RABINDRANATH THAKUR VISHWAVIDYALAYA",
+    "state": "Assam",
+    "district": "Nagaon"
+  },
+  {
+    "name": "Radha Govind University",
+    "state": "Uttar Pradesh",
+    "district": "Sambhal"
+  },
+  {
+    "name": "RADHA GOVIND UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ramgarh"
+  },
+  {
+    "name": "RAFFLES UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Alwar"
+  },
+  {
+    "name": "RAICHUR UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Raichur"
+  },
+  {
+    "name": "RAIGANJ UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Uttar Dinajpur"
+  },
+  {
+    "name": "RAI TECHNOLOGY UNIVERSITY, BANGALORE",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "RAI UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "RAJA MAHENDRA PRATAP SINGH UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Aligarh"
+  },
+  {
+    "name": "Raja Mansingh Tomar Music & Arts University, Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "Raja Shankar Shah University, Chhindwara",
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara"
+  },
+  {
+    "name": "RAJASTHAN AYURVEDIC NURSING COUNCIL",
+    "state": "Rajasthan",
+    "district": ""
+  },
+  {
+    "name": "Rajasthan Technical University, Kota",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "Rajasthan University of Health Sciences, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Rajasthan University of Veterinary and Animal Sciences, Bikaner",
+    "state": "Rajasthan",
+    "district": "Bikaner"
+  },
+  {
+    "name": "RAJENDRA UNIVERSITY",
+    "state": "Odisha",
+    "district": "Balangir"
+  },
+  {
+    "name": "Rajiv Gandhi Institute of Petroleum Technology, Amethi",
+    "state": "Uttar Pradesh",
+    "district": "Amethi"
+  },
+  {
+    "name": "Rajiv Gandhi National Aviation University",
+    "state": "Uttar Pradesh",
+    "district": "Amethi"
+  },
+  {
+    "name": "Rajiv Gandhi National Institute of Youth Development, Sriperumbudur",
+    "state": "Tamil Nadu",
+    "district": "Kancheepuram"
+  },
+  {
+    "name": "Rajiv Gandhi National University of Law, Punjab",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Rajiv Gandhi University, Itanagar",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare"
+  },
+  {
+    "name": "Rajiv Gandhi University of Health Sciences, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "RAJIV GANDHI UNIVERSITY OF KNOWLEDGE TECHNOLOGIES",
+    "state": "Andhra Pradesh",
+    "district": "Y.S.R. Kadapa"
+  },
+  {
+    "name": "RAJIV GANDHI UNIVERSITY OF KNOWLEDGE TECHNOLOGIES, BASAR",
+    "state": "Telangana",
+    "district": "Nirmal"
+  },
+  {
+    "name": "RAJU SHROFF ROFEL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Valsad"
+  },
+  {
+    "name": "Rajkumari Indira Singh Kala Sangit Vishwavidyalaya, Khairagarh",
+    "state": "Chhattisgarh",
+    "district": "Rajnandgaon"
+  },
+  {
+    "name": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya, Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "RAJ RISHI BHARTRIHARI MATSYA UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Alwar"
+  },
+  {
+    "name": "RAMA DEVI WOMEN'S UNIVERSITY, BHUBANESWAR",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "Ramakrishna Mission Vivekananda Educational and Research Institute, Howrah",
+    "state": "West Bengal",
+    "district": "Howrah"
+  },
+  {
+    "name": "RAMA UNIVERSITY UTTAR PRADESH",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Nagar"
+  },
+  {
+    "name": "RAMCHANDRA CHANDRAVANSI UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Palamu"
+  },
+  {
+    "name": "Ramdeobaba University",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "RAM KRISHNA DHARMARTH FOUNDATION (RKDF) UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Ranchi University, Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Rani Avantibai Lodhi Vishwavidyalaya, Sagar",
+    "state": "Madhya Pradesh",
+    "district": "Sagar"
+  },
+  {
+    "name": "Rani Channamma University, Belagavi",
+    "state": "Karnataka",
+    "district": "Belagavi"
+  },
+  {
+    "name": "Rani Durgavati Vishwavidyalaya, Jabalpur",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "Rani Lakshmi Bai Central Agricultural University",
+    "state": "Uttar Pradesh",
+    "district": "Jhansi"
+  },
+  {
+    "name": "RANI RASHMONI GREEN UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Hooghly"
+  },
+  {
+    "name": "Ras Bihari Bose Subharti University",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Rashtriya Raksha University, Gujarat",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Rathinam Global University",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Ravenshaw University, Cuttack",
+    "state": "Odisha",
+    "district": "Cuttack"
+  },
+  {
+    "name": "Rayalaseema University, Kurnool",
+    "state": "Andhra Pradesh",
+    "district": "Kurnool"
+  },
+  {
+    "name": "Rayat Bahra Professional University",
+    "state": "Punjab",
+    "district": "Hoshiarpur"
+  },
+  {
+    "name": "RAYAT BAHRA UNIVERSITY",
+    "state": "Punjab",
+    "district": "S.A.S Nagar"
+  },
+  {
+    "name": "REGIONAL CENTRE FOR BIOTECHNOLOGY",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "Renaissance University",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "REVA UNIVERSITY, BANGALORE",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "RIMT UNIVERSITY",
+    "state": "Punjab",
+    "district": "Fatehgarh Sahib"
+  },
+  {
+    "name": "RISHIHOOD UNIVERSITY",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "RKDF UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "RK University, Rajkot",
+    "state": "Gujarat",
+    "district": "Rajkot"
+  },
+  {
+    "name": "RNB GLOBAL UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Bikaner"
+  },
+  {
+    "name": "Rungta International Skills University",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "RV UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Sabarmati University",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "SADHU RAM CHAND MURMU UNIVERSITY OF JHARGRAM",
+    "state": "West Bengal",
+    "district": "Jhargram"
+  },
+  {
+    "name": "SAGE UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "SAI NATH UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "SAI TIRUPATI UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "SAI UNIVERSITY",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sambalpur University, Sambalpur",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "SAM GLOBAL UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Raisen"
+  },
+  {
+    "name": "Sam Higginbottom University of Agriculture, Technology And Sciences, Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Sammakka Sarakka Central Tribal University",
+    "state": "Telangana",
+    "district": "Mulugu"
+  },
+  {
+    "name": "Sampurnanand Sanskrit Vishwavidyalaya, Varanasi",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi"
+  },
+  {
+    "name": "SANCHI UNIVERSITY OF BUDDHIST INDIC STUDIES",
+    "state": "Madhya Pradesh",
+    "district": "Raisen"
+  },
+  {
+    "name": "Sandip University",
+    "state": "Maharashtra",
+    "district": "Nashik"
+  },
+  {
+    "name": "SANDIP UNIVERSITY",
+    "state": "Bihar",
+    "district": "Madhubani"
+  },
+  {
+    "name": "SANGAM UNIVERSITY, BHILWARA",
+    "state": "Rajasthan",
+    "district": "Bhilwara"
+  },
+  {
+    "name": "Sanjay Gandhi Post Graduate Institute of Medical Sciences Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "SANJAY GHODAWAT UNIVERSITY, KOLHAPUR",
+    "state": "Maharashtra",
+    "district": "Kolhapur"
+  },
+  {
+    "name": "SANJEEV AGRAWAL GLOBAL EDUCATIONAL UNIVERSITY BHOPAL",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Sanjivani University",
+    "state": "Maharashtra",
+    "district": "Ahilyanagar"
+  },
+  {
+    "name": "Sankalchand Patel University, Visnagar",
+    "state": "Gujarat",
+    "district": "Mahesana"
+  },
+  {
+    "name": "Sanskaram University",
+    "state": "Haryana",
+    "district": "Jhajjar"
+  },
+  {
+    "name": "Sanskriti University",
+    "state": "Uttar Pradesh",
+    "district": "Mathura"
+  },
+  {
+    "name": "SANT BABA BHAG SINGH UNIVERSITY",
+    "state": "Punjab",
+    "district": "Jalandhar"
+  },
+  {
+    "name": "Sant Gadge Baba Amravati University, Amravati",
+    "state": "Maharashtra",
+    "district": "Amravati"
+  },
+  {
+    "name": "Sant Gahira Guru Vishwavidyalaya Sarguja, Ambikapur, Chhattisgarh",
+    "state": "Chhattisgarh",
+    "district": "Surguja"
+  },
+  {
+    "name": "Sant Longowal Institute of Engg. & Tech., Longowal",
+    "state": "Punjab",
+    "district": "Sangrur"
+  },
+  {
+    "name": "Santosh University, Ghaziabad",
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad"
+  },
+  {
+    "name": "SAPTHAGIRI NPS UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "SARALA BIRLA UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Sardar Beant Singh State University Gurdaspur",
+    "state": "Punjab",
+    "district": "Gurdaspur"
+  },
+  {
+    "name": "SARDAR BHAGWAN SINGH UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Sardarkrushinagar Dantiwada Agricultural University, Banaskantha",
+    "state": "Gujarat",
+    "district": "Banas Kantha"
+  },
+  {
+    "name": "Sardar Patel University",
+    "state": "Himachal Pradesh",
+    "district": "Mandi"
+  },
+  {
+    "name": "SARDAR PATEL UNIVERSITY, BALAGHAT",
+    "state": "Madhya Pradesh",
+    "district": "Balaghat"
+  },
+  {
+    "name": "SARDAR PATEL UNIVERSITY OF POLICE, SECURITY AND CRIMINAL JUSTICE",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "Sardar Patel University, Vallabh Vidyanagar",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "SARDAR VALLABHBHAI GLOBAL UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Sardar Vallabhbhai National Institute of Technology, Surat",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Sardar Vallabh Bhai Patel University of Agriculture & Technology, Meerut",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "Saroj International University",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "SARVAJANIK UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "SARVEPALLI RADHAKRISHNAN UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Satavahana University, Karimnagar",
+    "state": "Telangana",
+    "district": "Karimnagar"
+  },
+  {
+    "name": "Sathyabama Institute of Science & Technology, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Kancheepuram"
+  },
+  {
+    "name": "Satyajit Ray Film and Television Institute SRFTI",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Saurashtra University, Rajkot",
+    "state": "Gujarat",
+    "district": "Rajkot"
+  },
+  {
+    "name": "SAVEETHA INSTITUTE OF MEDICAL AND TECHNICAL SCIENCES (DEEMED TO BE UNIVERSITY)",
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur"
+  },
+  {
+    "name": "Savitribai Phule Pune University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "School of Planning & Architecture, Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "School of Planning & Architecture, New Delhi",
+    "state": "Delhi",
+    "district": "Central"
+  },
+  {
+    "name": "School of Planning & Architecture, Vijayawada",
+    "state": "Andhra Pradesh",
+    "district": "Krishna"
+  },
+  {
+    "name": "SCOPE GLOBAL SKILLS UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "SDGI GLOBAL UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad"
+  },
+  {
+    "name": "SEACOM SKILLS UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Birbhum"
+  },
+  {
+    "name": "Shaheed Bhagat Singh State University",
+    "state": "Punjab",
+    "district": "Firozepur"
+  },
+  {
+    "name": "Shaheed Mahendra Karma Vishwavidyalaya, Jagdalpur",
+    "state": "Chhattisgarh",
+    "district": "Bastar"
+  },
+  {
+    "name": "SHAHEED NANDKUMAR PATEL VISHWAVIDYALAYA",
+    "state": "Chhattisgarh",
+    "district": "Raigarh"
+  },
+  {
+    "name": "Shanmugha Arts, Science, Technology & Research Academy (SASTRA), Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Sharda University Agra",
+    "state": "Uttar Pradesh",
+    "district": "Agra"
+  },
+  {
+    "name": "Sharda University, Gautam Budh Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Sharnbasva University",
+    "state": "Karnataka",
+    "district": "Kalaburagi"
+  },
+  {
+    "name": "Sher-i-Kashmir Institute of Medical Sciences, Srinagar",
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "Sher-e-Kashmir University of Agricultural Sciences & Technology of Jammu, Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "Sher-e-Kashmir University of Agricultural Sciences & Technology of Kashmir, Srinagar",
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "Shivaji University, Kolhapur",
+    "state": "Maharashtra",
+    "district": "Kolhapur"
+  },
+  {
+    "name": "Shiv Nadar (Institution of Eminence Deemed to be University)",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "SHIV NADAR UNIVERSITY",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Shobhit Institute of Engineering & Technology, Meerut",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "SHOBHIT UNIVERSITY, GANGOH",
+    "state": "Uttar Pradesh",
+    "district": "Saharanpur"
+  },
+  {
+    "name": "Shoolini University of Biotechnology and Management Sciences, Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY, GURGAON",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "Shree Somnath Sanskrit University, Junagadh",
+    "state": "Gujarat",
+    "district": "Gir Somnath"
+  },
+  {
+    "name": "SHREYARTH UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Sabar Kantha"
+  },
+  {
+    "name": "Shri Rawatpura Sarkar University",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "SHRI DHARMASTHALA MANJUNATHESHWARA UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "Shridhar University, Pilani",
+    "state": "Rajasthan",
+    "district": "Jhunjhunu"
+  },
+  {
+    "name": "SHRI GOVIND GURU UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Panch Mahals"
+  },
+  {
+    "name": "Shri Guru Ram Rai University, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Shri Jagannath Sanskrit Vishvavidyalaya, Puri",
+    "state": "Odisha",
+    "district": "Puri"
+  },
+  {
+    "name": "Shri Jagdishprasad Jhabarmal Tibrewala University, Jhunjhunu",
+    "state": "Rajasthan",
+    "district": "Jhunjhunu"
+  },
+  {
+    "name": "SHRI KALLAJI VEDIC VISHVAVIDYALAYA",
+    "state": "Rajasthan",
+    "district": "Chittorgarh"
+  },
+  {
+    "name": "SHRI KHUSHAL DAS UNIVERSITY, PILIBANGA",
+    "state": "Rajasthan",
+    "district": "Hanumangarh"
+  },
+  {
+    "name": "SHRI KRISHNA AYUSH UNIVERSITY",
+    "state": "Haryana",
+    "district": "Kurukshetra"
+  },
+  {
+    "name": "SHRI KRISHNA UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Chhatarpur"
+  },
+  {
+    "name": "Shri Lal Bahadur Shastri National Sanskrit University",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "Shri Mata Vaishno Devi University, Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Reasi"
+  },
+  {
+    "name": "SHRI RAMASAMY MEMORIAL UNIVERSITY",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "SHRI RAMSWAROOP MEMORIAL UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Bara Banki"
+  },
+  {
+    "name": "SHRI RAWATPURA SARKAR UNIVERSITY",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "SHRI SHANKARACHARYA PROFESSIONAL UNIVERSITY",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "Shri Vaishnav Vidyapeeth Vishwavidyalaya",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Shri Venkateshwara University, Gajraula, J.P. Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Amroha"
+  },
+  {
+    "name": "SHRI VILE PARLE KELAVANI MANDAL'S NARSEE MONJEE INSTITUTE OF MANAGEMENT STUDIES (SVKM'S NMIMS)",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "SHRI VISHWAKARMA SKILL UNIVERSITY",
+    "state": "Haryana",
+    "district": "Palwal"
+  },
+  {
+    "name": "SHUBHAM UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "SHYAM UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Dausa"
+  },
+  {
+    "name": "Sibsagar University",
+    "state": "Assam",
+    "district": "Sivasagar"
+  },
+  {
+    "name": "SIDDHARTHA ACADEMY OF HIGHER EDUCATION",
+    "state": "Andhra Pradesh",
+    "district": "Krishna"
+  },
+  {
+    "name": "SIDDHARTH UNIVERSITY, KAPILVASTU",
+    "state": "Uttar Pradesh",
+    "district": "Siddharthnagar"
+  },
+  {
+    "name": "Sidho-Kanho-Birsha University",
+    "state": "West Bengal",
+    "district": "Purulia"
+  },
+  {
+    "name": "Sido Kanhu Murmu University, Dumka",
+    "state": "Jharkhand",
+    "district": "Dumka"
+  },
+  {
+    "name": "SIGMA UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "SIKKIM ALPINE UNIVERSITY",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "Sikkim Global Technical University",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "Sikkim Manipal University, Gangtok",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "Sikkim National Law University",
+    "state": "Sikkim",
+    "district": "Pakyong"
+  },
+  {
+    "name": "Sikkim Organic Agriculture University",
+    "state": "Sikkim",
+    "district": "Soreng"
+  },
+  {
+    "name": "Sikkim Professional University, Tadong",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "Sikkim Sardar Patel University",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "SIKKIM SKILL UNIVERSITY",
+    "state": "Sikkim",
+    "district": "Namchi"
+  },
+  {
+    "name": "Sikkim University, Gangtok",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "Siksha 'O' Anusandhan",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "Silicon University",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "SILVER OAK UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Sindhu Central University (SCU), Ladakh",
+    "state": "Ladakh",
+    "district": "Leh Ladakh"
+  },
+  {
+    "name": "Singhania University, Jhunjhunu",
+    "state": "Rajasthan",
+    "district": "Jhunjhunu"
+  },
+  {
+    "name": "Sir JJ School of Art Architecture and Design",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Sir Padampat Singhania University, Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "SISTER NIVEDITA UNIVERSITY",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "SKIPS University",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "SKN AGRICULTURE UNIVERSITY, JOBNER",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "SKS International University",
+    "state": "Uttar Pradesh",
+    "district": "Mathura"
+  },
+  {
+    "name": "Smt Manjira Devi University",
+    "state": "Uttarakhand",
+    "district": "Uttarkashi"
+  },
+  {
+    "name": "SMT. NATHIBAI DAMODAR THACKERSEY WOMEN'S UNIVERSITY, MUMBAI",
+    "state": "Maharashtra",
+    "district": "Mumbai Suburban"
+  },
+  {
+    "name": "SOBAN SINGH JEENA UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Almora"
+  },
+  {
+    "name": "SOMAIYA VIDYAVIHAR UNIVERSITY, MUMBAI",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Sona Devi University",
+    "state": "Jharkhand",
+    "district": "East Singhbhum"
+  },
+  {
+    "name": "South Asian University, New Delhi",
+    "state": "Delhi",
+    "district": "South"
+  },
+  {
+    "name": "SPICER ADVENTIST UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Sports University of Haryana",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "Sree Chitra Tirunal Institute for Medical Sciences and Technology, Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "SREENARAYANAGURU OPEN UNIVERSITY",
+    "state": "Kerala",
+    "district": "Kollam"
+  },
+  {
+    "name": "Sreenidhi University",
+    "state": "Telangana",
+    "district": "MEDCHAL MALKAJGIRI"
+  },
+  {
+    "name": "Sree Sankaracharya University of Sanskrit, Kalady",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "SRI AUROBINDO UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "SRI BALAJI UNIVERSITY, PUNE",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Sri Balaji Vidyapeeth (Deemed to be University)",
+    "state": "Puducherry",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya, Kancheepuram",
+    "state": "Tamil Nadu",
+    "district": "Kancheepuram"
+  },
+  {
+    "name": "Sri Devaraj Urs Academy of Higher Education and Research, Kolar",
+    "state": "Karnataka",
+    "district": "Kolar"
+  },
+  {
+    "name": "SRI DEV SUMAN UTTARAKHAND UNIVERSITY, BADSHAHITHOL TEHRI",
+    "state": "Uttarakhand",
+    "district": "Tehri Garhwal"
+  },
+  {
+    "name": "Sri Guru Granth Sahib World University, Fatehgarh Sahib",
+    "state": "Punjab",
+    "district": "Fatehgarh Sahib"
+  },
+  {
+    "name": "Sri Guru Ram Das University of Health Sciences",
+    "state": "Punjab",
+    "district": "Amritsar"
+  },
+  {
+    "name": "Sri Jagadguru Murugharajendra University",
+    "state": "Karnataka",
+    "district": "Chitradurga"
+  },
+  {
+    "name": "SRI KONDA LAXMAN TELANGANA STATE HORTICULTURAL UNIVERSITY (SKLTSHU)",
+    "state": "Telangana",
+    "district": "Siddipet"
+  },
+  {
+    "name": "Sri Krishnadevaraya University, Anantapur",
+    "state": "Andhra Pradesh",
+    "district": "Ananthapuramu"
+  },
+  {
+    "name": "SRIMANTA SANKARADEVA UNIVERSITY OF HEALTH SCIENCES, GUWAHATI",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "SRINATH UNIVERSITY",
+    "state": "Jharkhand",
+    "district": "Saraikela Kharsawan"
+  },
+  {
+    "name": "SRINIVAS UNIVERSITY",
+    "state": "Karnataka",
+    "district": "Dakshina Kannada"
+  },
+  {
+    "name": "Sri Padmavati Mahila Visvavidyalayam, Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Sri Ramachandra Institute of Higher Education and Research",
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur"
+  },
+  {
+    "name": "Sri Sai University, Palampur",
+    "state": "Himachal Pradesh",
+    "district": "Kangra"
+  },
+  {
+    "name": "Sri Sathya Sai Institute of Higher Learning",
+    "state": "Andhra Pradesh",
+    "district": "Sri Sathya Sai"
+  },
+  {
+    "name": "SRI SATHYA SAI UNIVERSITY FOR HUMAN EXCELLENCE",
+    "state": "Karnataka",
+    "district": "Kalaburagi"
+  },
+  {
+    "name": "SRI SATYA SAI UNIVERSITY OF TECHNOLOGY & MEDICAL SCIENCES, SEHORE",
+    "state": "Madhya Pradesh",
+    "district": "Sehore"
+  },
+  {
+    "name": "Sri Siddhartha Academy of Higher Education",
+    "state": "Karnataka",
+    "district": "Tumakuru"
+  },
+  {
+    "name": "SRI SRI ANIRUDDHADEVA SPORTS UNIVERSITY",
+    "state": "Assam",
+    "district": "Dibrugarh"
+  },
+  {
+    "name": "SRI SRI UNIVERSITY",
+    "state": "Odisha",
+    "district": "Cuttack"
+  },
+  {
+    "name": "Sri Venkateshwara University",
+    "state": "Sikkim",
+    "district": "Pakyong"
+  },
+  {
+    "name": "Sri Venkateswaraa University",
+    "state": "Tamil Nadu",
+    "district": "Thoothukudi"
+  },
+  {
+    "name": "Sri Venkateswara Institute of Medical Sciences, Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Sri Venkateswara University, Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Sri Venkateswara Vedic University, Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Sri Venkateswara Veterinary University, Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "S.R.M. Institute of Science & Technology, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "SRM University AP, Amaravati",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "SRM UNIVERSITY, SONEPAT",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "SR University",
+    "state": "Telangana",
+    "district": "Warangal"
+  },
+  {
+    "name": "St. Aloysius",
+    "state": "Karnataka",
+    "district": "Dakshina Kannada"
+  },
+  {
+    "name": "STAREX UNIVERSITY",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "St. Joseph's University",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "St. Joseph University",
+    "state": "Tamil Nadu",
+    "district": "Viluppuram"
+  },
+  {
+    "name": "ST. JOSEPH UNIVERSITY, DIMAPUR",
+    "state": "Nagaland",
+    "district": "Dimapur"
+  },
+  {
+    "name": "St Marys Rehabilitation University",
+    "state": "Telangana",
+    "district": "YADADRI BHUVANAGIRI"
+  },
+  {
+    "name": "St. Peter's Institute of Higher Education and Research, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur"
+  },
+  {
+    "name": "ST. XAVIER'S UNIVERSITY, KOLKATA",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "Sumandeep Vidyapeeth, Vadodara",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "SUN RISE UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Alwar"
+  },
+  {
+    "name": "SURAJMAL UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Udham Singh Nagar"
+  },
+  {
+    "name": "Suravaram Pratapa Reddy Telugu University, Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "SURENDRANAGAR UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Surendranagar"
+  },
+  {
+    "name": "Suresh Gyan Vihar University, Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Sushant University",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "SVKM NMIMS Global University",
+    "state": "Maharashtra",
+    "district": "Dhule"
+  },
+  {
+    "name": "Swami Keshwanand Rajasthan Agricultural University, Bikaner",
+    "state": "Rajasthan",
+    "district": "Bikaner"
+  },
+  {
+    "name": "SWAMINARAYAN UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "SWAMI RAMA HIMALAYAN UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Swami Ramanand Teerth Marathwada University, Nanded",
+    "state": "Maharashtra",
+    "district": "Nanded"
+  },
+  {
+    "name": "Swami Shukdevanand University",
+    "state": "Uttar Pradesh",
+    "district": "Shahjahanpur"
+  },
+  {
+    "name": "SWAMI VIVEKANANDA UNIVERSITY",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "Swami Vivekananda Yoga Anusandhana Samsthana, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "Swami Vivekanand Subharti University, Meerut",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "Swami Vivekanand University",
+    "state": "Assam",
+    "district": "Kokrajhar"
+  },
+  {
+    "name": "SWAMI VIVEKANAND UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Sagar"
+  },
+  {
+    "name": "SWARNIM GUJARAT SPORTS UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Swarnim Startup & Innovation University",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Symbiosis International (Deemed University), Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "SYMBIOSIS SKILLS AND PROFESSIONAL UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Symbiosis University of Applied Sciences, Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Takshashila University",
+    "state": "Tamil Nadu",
+    "district": "Viluppuram"
+  },
+  {
+    "name": "Tamilnadu Agricultural University, Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Tamil Nadu Dr. Ambedkar Law University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamil Nadu Dr. M.G.R. Medical University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "TAMIL NADU FISHERIES UNIVERSITY",
+    "state": "Tamil Nadu",
+    "district": "Nagapattinam"
+  },
+  {
+    "name": "TAMIL NADU NATIONAL LAW UNIVERSITY",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Tamil Nadu Open University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamilnadu Physical Education and Sports University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Tamil Nadu Teachers Education University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamilnadu Veterinary & Animal Sciences University, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur"
+  },
+  {
+    "name": "Tamil University, Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "TANTIA UNIVERSITY, SRI GANGANAGAR",
+    "state": "Rajasthan",
+    "district": "Ganganagar"
+  },
+  {
+    "name": "Tata Institute of Fundamental Research, Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Tata Institute of Social Sciences, Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "TCG CREST University",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "TEAM LEASE SKILLS UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "TECHNO GLOBAL UNIVERSITY, SIRONJ",
+    "state": "Madhya Pradesh",
+    "district": "Vidisha"
+  },
+  {
+    "name": "TECHNO INDIA UNIVERSITY TRIPURA",
+    "state": "Tripura",
+    "district": "West Tripura"
+  },
+  {
+    "name": "TECHNO INDIA UNIVERSITY, WEST BENGAL",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Teerthanker Mahaveer University, Moradabad",
+    "state": "Uttar Pradesh",
+    "district": "Moradabad"
+  },
+  {
+    "name": "Telangana University, Nizamabad",
+    "state": "Telangana",
+    "district": "Nizamabad"
+  },
+  {
+    "name": "TERI School of Advanced Studies, New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Tezpur University, Tezpur",
+    "state": "Assam",
+    "district": "Sonitpur"
+  },
+  {
+    "name": "Thapar Institute of Engineering and Technology Patiala",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "THE ALIPURDUAR UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Alipurduar"
+  },
+  {
+    "name": "The Apollo University",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "THE ASSAM KAZIRANGA UNIVERSITY",
+    "state": "Assam",
+    "district": "Jorhat"
+  },
+  {
+    "name": "THE ASSAM ROYAL GLOBAL UNIVERSITY",
+    "state": "Assam",
+    "district": "Kamrup Metro"
+  },
+  {
+    "name": "THE CHARUTAR VIDYA MANDAL (CVM) UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "The English and Foreign Languages University, Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "The Global Open University Nagaland, Dimapur",
+    "state": "Nagaland",
+    "district": "Dimapur"
+  },
+  {
+    "name": "THE GLOBAL UNIVERSITY",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare"
+  },
+  {
+    "name": "The ICFAI University, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "THE ICFAI UNIVERSITY, JAIPUR",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "The ICFAI University Sikkim",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "The Institute of Chartered Financial Analysts of India University, Agartala",
+    "state": "Tripura",
+    "district": "West Tripura"
+  },
+  {
+    "name": "The Institute of Chartered Financial Analysts of India University, Aizawl",
+    "state": "Mizoram",
+    "district": "Aizawl"
+  },
+  {
+    "name": "The Institute of Chartered Financial Analysts of India University, Dimapur",
+    "state": "Nagaland",
+    "district": "Dimapur"
+  },
+  {
+    "name": "The Institute of Chartered Financial Analysts of India University, Jharkhand",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "THE MAHARAJA BHUPINDER SINGH PUNJAB SPORTS UNIVERSITY",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "THE NEOTIA UNIVERSITY",
+    "state": "West Bengal",
+    "district": "South 24 Parganas"
+  },
+  {
+    "name": "The Northcap University, Gurgaon",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "The Rajasthan University of Veterinary and Animal Sciences Jobner",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "THE SANSKRIT COLLEGE AND UNIVERSITY",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "THE TAMILNADU DR. J JAYALALITHAA MUSIC AND FINE ARTS UNIVERSITY",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "The University of Burdwan",
+    "state": "West Bengal",
+    "district": "Purba Bardhaman"
+  },
+  {
+    "name": "The University of North West Himalayas",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "THE UNIVERSITY OF TRANS-DISCIPLINARY HEALTH SCIENCES AND TECHNOLOGY",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "The West Bengal National University of Juridical Sciences, Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "The West Bengal University of Health Sciences, Kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "Thiruvalluvar University, Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "THUNCHATH EZHUTHACHAN MALAYALAM UNIVERSITY, TIRUR",
+    "state": "Kerala",
+    "district": "Malappuram"
+  },
+  {
+    "name": "Tilak Maharashtra Vidyapeeth, Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "T.M. Bhagalpur University, Bhagalpur",
+    "state": "Bihar",
+    "district": "Bhagalpur"
+  },
+  {
+    "name": "TransStadia University",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Tribhuvan Sahkari University",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "Trident University of Applied Sciences",
+    "state": "Sikkim",
+    "district": "Gyalshing"
+  },
+  {
+    "name": "Tripura University, Agartala",
+    "state": "Tripura",
+    "district": "West Tripura"
+  },
+  {
+    "name": "TS Mishra University",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Tumkur University, Tumkur",
+    "state": "Karnataka",
+    "district": "Tumakuru"
+  },
+  {
+    "name": "UKA TARSADIA UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "UNITED UNIVERSITY",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "UNIVERSAL AI UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "Universal SkillTech University",
+    "state": "Maharashtra",
+    "district": "Palghar"
+  },
+  {
+    "name": "UNIVERSITY OF AGRICULTURAL AND HORTICULTURAL SCIENCES, SHIMOGA",
+    "state": "Karnataka",
+    "district": "Shivamogga"
+  },
+  {
+    "name": "University of Agricultural Sciences, Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "University of Agricultural Sciences, Dharwad",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "University of Agricultural Sciences Mandya",
+    "state": "Karnataka",
+    "district": "Mandya"
+  },
+  {
+    "name": "University of Agricultural Sciences, Raichur",
+    "state": "Karnataka",
+    "district": "Raichur"
+  },
+  {
+    "name": "University of Allahabad, Allahabad",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "UNIVERSITY OF CALCUTTA",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "UNIVERSITY OF CALICUT, MALAPPURAM",
+    "state": "Kerala",
+    "district": "Malappuram"
+  },
+  {
+    "name": "University of Delhi",
+    "state": "Delhi",
+    "district": "North"
+  },
+  {
+    "name": "University of Design, Innovation and Technology, Haryana",
+    "state": "Haryana",
+    "district": "Gurugram"
+  },
+  {
+    "name": "UNIVERSITY OF ENGINEERING AND MANAGEMENT",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "UNIVERSITY OF ENGINEERING AND MANAGEMENT KOLKATA",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "University of Gour Banga, Malda",
+    "state": "West Bengal",
+    "district": "Malda"
+  },
+  {
+    "name": "University of Horticultural Sciences, Bagalkot",
+    "state": "Karnataka",
+    "district": "Bagalkote"
+  },
+  {
+    "name": "University of Hyderabad, Hyderabad",
+    "state": "Telangana",
+    "district": "Ranga Reddy"
+  },
+  {
+    "name": "University of Jammu, Jammu Tawi",
+    "state": "Jammu and Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "University of Kashmir, Srinagar",
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "University of Kerala, Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "UNIVERSITY OF LADAKH",
+    "state": "Ladakh",
+    "district": "Leh Ladakh"
+  },
+  {
+    "name": "UNIVERSITY OF LUCKNOW",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "University of Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "University of Mysore, Mysore",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "University of Patanjali Patanjali Yogpeeth, Haridwar",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "University of Petroleum and Energy Studies, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "University of Rajasthan",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+    "state": "Meghalaya",
+    "district": "Ri Bhoi"
+  },
+  {
+    "name": "University of Technology",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "UNIVERSITY OF VISVESVARAYA COLLEGE OF ENGINEERING",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "name": "UPL University of Sustainable Technology",
+    "state": "Gujarat",
+    "district": "Bharuch"
+  },
+  {
+    "name": "UP Pandit Deen Dayal Upadhyaya Veterinary University & Gau-Anusandhan Sansthan, Mathura",
+    "state": "Uttar Pradesh",
+    "district": "Mathura"
+  },
+  {
+    "name": "U.P. Rajarshi Tandon Open University, Allahabad",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Usha Martin University",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Utkal University, Bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "Utkal University of Culture, Bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha"
+  },
+  {
+    "name": "UTTARAKHAND AYURVED UNIVERSITY",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Uttarakhand Open University",
+    "state": "Uttarakhand",
+    "district": "Nainital"
+  },
+  {
+    "name": "Uttarakhand Sanskrit University, Haridwar",
+    "state": "Uttarakhand",
+    "district": "Haridwar"
+  },
+  {
+    "name": "Uttarakhand State Sports University USSU",
+    "state": "Uttarakhand",
+    "district": "Nainital"
+  },
+  {
+    "name": "UTTARAKHAND UNIVERSITY OF HORTICULTURE AND FORESTRY, BHARSAR",
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal"
+  },
+  {
+    "name": "UTTARANCHAL UNIVERSITY, DEHRADUN",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Uttar Banga Krishi Vishwavidyalaya, Cooch Behar",
+    "state": "West Bengal",
+    "district": "Cooch Behar"
+  },
+  {
+    "name": "UTTAR PRADESH UNIVERSITY OF MEDICAL SCIENCES",
+    "state": "Uttar Pradesh",
+    "district": "Etawah"
+  },
+  {
+    "name": "Uttarakhand Technical University, Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "VANITA VISHRAM WOMEN'S UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Vardhman Mahaveer Open University, Kota",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "Varun Arjun University",
+    "state": "Uttar Pradesh",
+    "district": "Shahjahanpur"
+  },
+  {
+    "name": "Vasantrao Naik Marathwada Krishi Vidyapeeth, Parbhani",
+    "state": "Maharashtra",
+    "district": "Parbhani"
+  },
+  {
+    "name": "Vasireddy Venkatadri International Technological University",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "Veeranari Chakali Ilamma Womens University",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Veer Bahadur Singh Purvanchal University, Jaunpur",
+    "state": "Uttar Pradesh",
+    "district": "Jaunpur"
+  },
+  {
+    "name": "Veer Kunwar Singh University, Arrah",
+    "state": "Bihar",
+    "district": "Bhojpur"
+  },
+  {
+    "name": "Veer Narmad South Gujarat University, Surat",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "VEER SURENDRA SAI INSTITUTE OF MEDICAL SCIENCES AND RESEARCH",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "Veer Surendra Sai University of Technology, Sambalpur",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "Vellore Institute of Technology Andhra Pradesh",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "Vellore Institute of Technology, Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Vels Institute of Science, Technology and Advanced Studies, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chengalpattu"
+  },
+  {
+    "name": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science & Technology, Chennai",
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur"
+  },
+  {
+    "name": "VENKATESHWARA OPEN UNIVERSITY",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare"
+  },
+  {
+    "name": "VIDHYADEEP UNIVERSITY",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Vidyasagar University, Midnapore",
+    "state": "West Bengal",
+    "district": "Paschim Medinipur"
+  },
+  {
+    "name": "Vidyashilp University",
+    "state": "Karnataka",
+    "district": "Bengaluru Rural"
+  },
+  {
+    "name": "Vidya University",
+    "state": "Uttar Pradesh",
+    "district": "Meerut"
+  },
+  {
+    "name": "Vignan's Foundation of Science, Technology & Research, Guntur",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "Vijayanagara Sri Krishnadevaraya University, Ballari",
+    "state": "Karnataka",
+    "district": "Ballari"
+  },
+  {
+    "name": "VIJAYBHOOMI UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "VIKRAM DEV UNIVERSITY",
+    "state": "Odisha",
+    "district": "Koraput"
+  },
+  {
+    "name": "Vikram Simhapuri University, Nellore",
+    "state": "Andhra Pradesh",
+    "district": "Sri Potti Sriramulu Nellore"
+  },
+  {
+    "name": "Vikram University, Ujjain",
+    "state": "Madhya Pradesh",
+    "district": "Ujjain"
+  },
+  {
+    "name": "VIKRANT UNIVERSITY",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "VINAYAKA MISSION RESEARCH FOUNDATION, SALEM",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Vinoba Bhave University, Hazaribagh",
+    "state": "Jharkhand",
+    "district": "Hazaribagh"
+  },
+  {
+    "name": "VISHWAKARMA SKILLS UNIVERSITY, JAIPUR",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "VISHWAKARMA UNIVERSITY",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Visva Bharati, Shantiniketan",
+    "state": "West Bengal",
+    "district": "Birbhum"
+  },
+  {
+    "name": "Visvesvaraya National Institute of Technology, Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Visvesvaraya Technological University, Belagavi",
+    "state": "Karnataka",
+    "district": "Belagavi"
+  },
+  {
+    "name": "VIT Bhopal University, Sehore",
+    "state": "Madhya Pradesh",
+    "district": "Sehore"
+  },
+  {
+    "name": "VIVEKANANDA GLOBAL UNIVERSITY",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Vivek University",
+    "state": "Uttar Pradesh",
+    "district": "Bijnor"
+  },
+  {
+    "name": "Warana University",
+    "state": "Maharashtra",
+    "district": "Kolhapur"
+  },
+  {
+    "name": "WEST BENGAL STATE UNIVERSITY (BARASAT NORTH 24 PARGANAS)",
+    "state": "West Bengal",
+    "district": "North 24 Parganas"
+  },
+  {
+    "name": "West Bengal University of Animal and Fishery Sciences, Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "William Carey University, Shillong",
+    "state": "Meghalaya",
+    "district": "East Khasi Hills"
+  },
+  {
+    "name": "World University of Design",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "WOXSEN UNIVERSITY",
+    "state": "Telangana",
+    "district": "Sangareddy"
+  },
+  {
+    "name": "Xavier University",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "XIM UNIVERSITY, BHUBANESWAR",
+    "state": "Odisha",
+    "district": "Puri"
+  },
+  {
+    "name": "Yashwantrao Chavan Maharashtra Open University",
+    "state": "Maharashtra",
+    "district": "Nashik"
+  },
+  {
+    "name": "YBN University",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Yenepoya (deemed to be University), Mangalore",
+    "state": "Karnataka",
+    "district": "Dakshina Kannada"
+  },
+  {
+    "name": "Yogi Vemana University, Kadapa",
+    "state": "Andhra Pradesh",
+    "district": "Y.S.R. Kadapa"
+  }
+]
