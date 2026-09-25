@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import {
     FiUser,
@@ -10,9 +10,19 @@ import {
     FiLock,
     FiChevronDown,
     FiArrowRight,
+    FiMapPin,
+    FiLoader,
+    FiX,
 } from 'react-icons/fi'
 import { FaGraduationCap } from 'react-icons/fa'
 import logo from '../assets/logo.png'
+
+interface UniversityOption {
+    id: number
+    name: string
+    state: string
+    district: string
+}
 
 const SignUp = () => {
     const currentYear = new Date().getFullYear()
@@ -26,9 +36,109 @@ const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false)
     const [showConfirmPassword, setShowConfirmPassword] = useState(false)
     const [university, setUniversity] = useState('')
+    const [selectedUniversityId, setSelectedUniversityId] = useState<number | null>(null)
+    const [searchResults, setSearchResults] = useState<UniversityOption[]>([])
+    const [isLoadingUniversities, setIsLoadingUniversities] = useState(false)
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+    const [highlightedIndex, setHighlightedIndex] = useState(-1)
+    const dropdownRef = useRef<HTMLDivElement>(null)
+    const isSelectingRef = useRef(false)
+
     const [department, setDepartment] = useState('')
     const [gradYear, setGradYear] = useState('')
     const [agreedToTerms, setAgreedToTerms] = useState(false)
+
+    // Close dropdown on click outside
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setIsDropdownOpen(false)
+            }
+        }
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [])
+
+    // Search universities when typing
+    useEffect(() => {
+        if (isSelectingRef.current) {
+            isSelectingRef.current = false
+            return
+        }
+
+        const trimmed = university.trim()
+        if (trimmed.length < 2) {
+            setSearchResults([])
+            setIsDropdownOpen(false)
+            setIsLoadingUniversities(false)
+            return
+        }
+
+        const controller = new AbortController()
+        setIsLoadingUniversities(true)
+
+        const timeoutId = setTimeout(async () => {
+            try {
+                const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+                const res = await fetch(`${apiBase}/api/universities?q=${encodeURIComponent(trimmed)}`, {
+                    signal: controller.signal,
+                })
+                if (!res.ok) throw new Error('Failed to fetch')
+                const data: UniversityOption[] = await res.json()
+                setSearchResults(data)
+                setIsDropdownOpen(true)
+                setHighlightedIndex(-1)
+            } catch (err: unknown) {
+                if (err instanceof Error && err.name !== 'AbortError') {
+                    console.error('Error fetching universities:', err)
+                    setSearchResults([])
+                }
+            } finally {
+                setIsLoadingUniversities(false)
+            }
+        }, 250)
+
+        return () => {
+            clearTimeout(timeoutId)
+            controller.abort()
+        }
+    }, [university])
+
+    const handleSelectUniversity = (item: UniversityOption) => {
+        isSelectingRef.current = true
+        setUniversity(item.name)
+        setSelectedUniversityId(item.id)
+        setIsDropdownOpen(false)
+        setSearchResults([])
+    }
+
+    const handleClearUniversity = () => {
+        setUniversity('')
+        setSelectedUniversityId(null)
+        setSearchResults([])
+        setIsDropdownOpen(false)
+    }
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (!isDropdownOpen || searchResults.length === 0) return
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault()
+            setHighlightedIndex((prev) => (prev < searchResults.length - 1 ? prev + 1 : 0))
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault()
+            setHighlightedIndex((prev) => (prev > 0 ? prev - 1 : searchResults.length - 1))
+        } else if (e.key === 'Enter') {
+            if (highlightedIndex >= 0 && highlightedIndex < searchResults.length) {
+                e.preventDefault()
+                handleSelectUniversity(searchResults[highlightedIndex])
+            }
+        } else if (e.key === 'Escape') {
+            setIsDropdownOpen(false)
+        }
+    }
 
     const isAcademicEmail =
         email.includes('.edu') ||
@@ -47,6 +157,8 @@ const SignUp = () => {
                     Project<span className="text-blue-600">Forge</span>
                 </span>
             </Link>
+
+            
 
             {/* Main Card */}
             <div className="w-full max-w-xl rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-10 shadow-xl shadow-slate-200/60">
@@ -208,11 +320,19 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    {/* University */}
-                    <div>
-                        <label className="block text-xs font-semibold text-slate-700">
-                            University <span className="text-rose-500">*</span>
-                        </label>
+                    {/* University Autocomplete */}
+                    <div className="relative" ref={dropdownRef}>
+                        <div className="flex items-center justify-between">
+                            <label className="block text-xs font-semibold text-slate-700">
+                                University <span className="text-rose-500">*</span>
+                            </label>
+                            {selectedUniversityId && (
+                                <span className="flex items-center gap-1 text-[11px] font-medium text-emerald-600">
+                                    <FiCheckCircle className="h-3 w-3" />
+                                    Verified institution
+                                </span>
+                            )}
+                        </div>
                         <div className="relative mt-1.5 flex items-center">
                             <div className="pointer-events-none absolute left-3.5 text-slate-400">
                                 <FiSearch className="h-4 w-4" />
@@ -220,12 +340,108 @@ const SignUp = () => {
                             <input
                                 type="text"
                                 value={university}
-                                onChange={(e) => setUniversity(e.target.value)}
+                                onChange={(e) => {
+                                    setUniversity(e.target.value)
+                                    setSelectedUniversityId(null)
+                                }}
+                                onFocus={() => {
+                                    if (searchResults.length > 0) setIsDropdownOpen(true)
+                                }}
+                                onKeyDown={handleKeyDown}
                                 placeholder="Search your university (e.g. IIT Bombay, BITS Pilani, NIT Trichy)"
                                 required
-                                className="h-11 w-full rounded-xl border border-slate-200 bg-white pl-10 pr-4 text-sm text-slate-800 placeholder-slate-400 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                                autoComplete="off"
+                                className={`h-11 w-full rounded-xl border bg-white pl-10 pr-10 text-sm text-slate-800 placeholder-slate-400 outline-none transition ${
+                                    selectedUniversityId
+                                        ? 'border-emerald-500 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100'
+                                        : 'border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100'
+                                }`}
                             />
+
+                            {/* Right action button: Spinner / Clear */}
+                            <div className="absolute right-3 flex items-center gap-1">
+                                {isLoadingUniversities ? (
+                                    <FiLoader className="h-4 w-4 animate-spin text-blue-600" />
+                                ) : university.length > 0 ? (
+                                    <button
+                                        type="button"
+                                        onClick={handleClearUniversity}
+                                        className="rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600 cursor-pointer"
+                                        title="Clear university"
+                                    >
+                                        <FiX className="h-3.5 w-3.5" />
+                                    </button>
+                                ) : null}
+                            </div>
                         </div>
+
+                        {/* Dropdown Results */}
+                        {isDropdownOpen && university.trim().length >= 2 && (
+                            <div className="absolute z-50 mt-1.5 w-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl shadow-slate-300/50">
+                                {isLoadingUniversities && searchResults.length === 0 ? (
+                                    <div className="flex items-center justify-center gap-2.5 py-6 text-xs font-medium text-slate-500">
+                                        <FiLoader className="h-4 w-4 animate-spin text-blue-600" />
+                                        <span>Searching registered universities...</span>
+                                    </div>
+                                ) : searchResults.length === 0 ? (
+                                    <div className="px-4 py-5 text-center">
+                                        <p className="text-xs font-medium text-slate-600">
+                                            No universities found matching "{university}"
+                                        </p>
+                                        <p className="mt-1 text-[11px] text-slate-400">
+                                            You can keep typing to use a custom university name.
+                                        </p>
+                                    </div>
+                                ) : (
+                                    <>
+                                        <div className="max-h-60 overflow-y-auto divide-y divide-slate-100">
+                                            {searchResults.map((item, idx) => {
+                                                const isHighlighted = idx === highlightedIndex
+                                                const isSelected = selectedUniversityId === item.id
+
+                                                return (
+                                                    <div
+                                                        key={item.id}
+                                                        onClick={() => handleSelectUniversity(item)}
+                                                        onMouseEnter={() => setHighlightedIndex(idx)}
+                                                        className={`flex items-start justify-between gap-3 px-4 py-3 text-left transition cursor-pointer ${
+                                                            isSelected
+                                                                ? 'bg-blue-50/80'
+                                                                : isHighlighted
+                                                                ? 'bg-slate-50'
+                                                                : 'hover:bg-slate-50/70'
+                                                        }`}
+                                                    >
+                                                        <div className="flex-1 min-w-0">
+                                                            <div className="text-xs sm:text-sm font-semibold text-slate-800 truncate">
+                                                                {item.name}
+                                                            </div>
+                                                            <div className="mt-0.5 flex items-center gap-1.5 text-[11px] text-slate-500">
+                                                                <FiMapPin className="h-3 w-3 shrink-0 text-slate-400" />
+                                                                <span>
+                                                                    {item.district ? `${item.district}, ` : ''}
+                                                                    {item.state}
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        {isSelected && (
+                                                            <div className="mt-0.5 shrink-0 rounded-full bg-blue-600 p-0.5 text-white">
+                                                                <FiCheck className="h-3 w-3 stroke-[3]" />
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+                                        <div className="bg-slate-50/90 px-3.5 py-2 text-[11px] text-slate-400 flex items-center justify-between border-t border-slate-100">
+                                            <span>Found {searchResults.length} universities</span>
+                                            <span className="hidden sm:inline">Use ↑ ↓ to navigate, Enter to select</span>
+                                        </div>
+                                    </>
+                                )}
+                            </div>
+                        )}
                     </div>
 
                     {/* Department & Graduation Year */}

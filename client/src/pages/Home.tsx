@@ -16,52 +16,14 @@ import {
   FiUsers,
 } from 'react-icons/fi'
 import logo from '../assets/logo.png'
+import Navbar from '../components/shared/Navbar'
+import Footer from '../components/shared/footer'
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-[#fafbfc] text-slate-900 selection:bg-blue-100 selection:text-blue-900">
       {/* ─── Navigation Bar ────────────────────────────────────────── */}
-      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="flex items-center gap-2.5">
-            <img src={logo} alt="ProjectForge" className="h-8 w-8 object-contain" />
-            <span className="text-xl font-bold tracking-tight text-slate-900">
-              Project<span className="text-blue-600">Forge</span>
-            </span>
-          </Link>
-
-          <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
-            <a href="#features" className="transition-colors hover:text-blue-600">
-              Features
-            </a>
-            <a href="#how-it-works" className="transition-colors hover:text-blue-600">
-              How it Works
-            </a>
-            <a href="#dimensions" className="transition-colors hover:text-blue-600">
-              Rubric
-            </a>
-            <a href="#colleges" className="transition-colors hover:text-blue-600">
-              For Colleges
-            </a>
-          </nav>
-
-          <div className="flex items-center gap-3">
-            <Link
-              to="/login"
-              className="rounded-lg px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 hover:text-slate-900"
-            >
-              Sign In
-            </Link>
-            <Link
-              to="/analyse"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-blue-500/25 transition hover:bg-blue-700"
-            >
-              Analyze Repo
-              <FiArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* ─── Hero Section ─────────────────────────────────────────── */}
       <section className="relative overflow-hidden pt-16 pb-20 sm:pt-20 sm:pb-28">
@@ -769,110 +731,7 @@ const Home = () => {
       </section>
 
       {/* ─── Section 7: Footer ─────────────────────────────────────── */}
-      <footer className="border-t border-slate-200 bg-white py-12 text-sm text-slate-600">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
-            {/* Brand Col */}
-            <div className="col-span-2">
-              <div className="flex items-center gap-2.5">
-                <img src={logo} alt="ProjectForge" className="h-7 w-7 object-contain" />
-                <span className="text-lg font-bold text-slate-900">
-                  Project<span className="text-blue-600">Forge</span>
-                </span>
-              </div>
-              <p className="mt-3 max-w-sm text-xs leading-relaxed text-slate-500">
-                Automated student project evaluation platform turning raw GitHub repositories into
-                verified placement-ready proof.
-              </p>
-              <p className="mt-4 text-xs text-slate-400">
-                © {new Date().getFullYear()} ProjectForge. All rights reserved.
-              </p>
-            </div>
-
-            {/* Links 1 */}
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
-                Product
-              </span>
-              <ul className="mt-3 space-y-2 text-xs">
-                <li>
-                  <a href="#features" className="hover:text-blue-600">
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a href="#how-it-works" className="hover:text-blue-600">
-                    How it Works
-                  </a>
-                </li>
-                <li>
-                  <a href="#dimensions" className="hover:text-blue-600">
-                    Rubric
-                  </a>
-                </li>
-                <li>
-                  <Link to="/analyse" className="hover:text-blue-600">
-                    Analyze Repo
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Links 2 */}
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
-                Solutions
-              </span>
-              <ul className="mt-3 space-y-2 text-xs">
-                <li>
-                  <a href="#how-it-works" className="hover:text-blue-600">
-                    For Students
-                  </a>
-                </li>
-                <li>
-                  <a href="#colleges" className="hover:text-blue-600">
-                    For Colleges & TPOs
-                  </a>
-                </li>
-                <li>
-                  <Link to="/login" className="hover:text-blue-600">
-                    Recruiter View
-                  </Link>
-                </li>
-                <li>
-                  <a href="#features" className="hover:text-blue-600">
-                    Batch Scoring
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Links 3 */}
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
-                Account
-              </span>
-              <ul className="mt-3 space-y-2 text-xs">
-                <li>
-                  <Link to="/login" className="hover:text-blue-600">
-                    Student Login
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/login" className="hover:text-blue-600">
-                    TPO / Admin Login
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/analyse" className="hover:text-blue-600">
-                    Quick Audit
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
