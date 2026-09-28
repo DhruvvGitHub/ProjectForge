@@ -15,12 +15,13 @@ import {
   FiBarChart2,
   FiUsers,
 } from 'react-icons/fi'
-import logo from '../assets/logo.png'
 import Navbar from '../components/shared/Navbar'
-import Footer from '../components/shared/footer'
+import Footer from '../components/shared/Footer'
 
 const Home = () => {
   return (
+
+
     <div className="min-h-screen bg-[#fafbfc] text-slate-900 selection:bg-blue-100 selection:text-blue-900">
       {/* ─── Navigation Bar ────────────────────────────────────────── */}
       <Navbar />

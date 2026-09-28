@@ -1,24 +1,31 @@
-import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { prisma } from "./db.js";
-import authRoutes from "./routes/auth.routes.js";
+import cookieParser from "cookie-parser";
+import authRoutes from "./src/routes/auth.routes.js";
+import { prisma } from "./src/prisma/client.js";
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// Allow cookies and credentials from frontend ports
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "http://localhost:5175",
+      "http://localhost:5176",
+    ],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
+app.use(cookieParser());
 
-// Auth routes
+// Routes
 app.use("/api/auth", authRoutes);
 
-// Health check endpoint
-app.get("/api/health", (_req, res) => {
-  res.json({ status: "ok", timestamp: new Date().toISOString() });
-});
-
-// Autocomplete universities endpoint
+// Universities Autocomplete API
 app.get("/api/universities", async (req, res) => {
   try {
     const rawQuery = (req.query.q || req.query.query || req.query.search || "") as string;
@@ -48,13 +55,11 @@ app.get("/api/universities", async (req, res) => {
       },
     });
 
-    res.json(universities);
+    return res.json(universities);
   } catch (error) {
-    console.error("Error searching universities:", error);
-    res.status(500).json({ error: "Failed to fetch universities" });
+    console.error("Error fetching universities:", error);
+    return res.status(500).json({ error: "Failed to fetch universities" });
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
-});
+export default app;

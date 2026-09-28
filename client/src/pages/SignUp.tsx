@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {
     FiUser,
     FiCheckCircle,
@@ -48,18 +48,11 @@ const SignUp = () => {
     const [gradYear, setGradYear] = useState('')
     const [agreedToTerms, setAgreedToTerms] = useState(false)
 
-    // Close dropdown on click outside
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-                setIsDropdownOpen(false)
-            }
-        }
-        document.addEventListener('mousedown', handleClickOutside)
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside)
-        }
-    }, [])
+    const navigate = useNavigate()
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [errorMessage, setErrorMessage] = useState('')
+    const [successMessage, setSuccessMessage] = useState('')
+
 
     // Search universities when typing
     useEffect(() => {
@@ -140,6 +133,64 @@ const SignUp = () => {
         }
     }
 
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault()
+        setErrorMessage('')
+        setSuccessMessage('')
+
+        if (!selectedUniversityId) {
+            setErrorMessage('Please select your university from the suggestions list.')
+            return
+        }
+
+        if (password !== confirmPassword) {
+            setErrorMessage('Passwords do not match.')
+            return
+        }
+
+        try {
+            setIsSubmitting(true)
+            const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+            const res = await fetch(`${apiBase}/api/auth/signup`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
+                body: JSON.stringify({
+                    fullName,
+                    email,
+                    password,
+                    role: accountType === 'faculty' ? 'TPO' : 'STUDENT',
+                    universityId: selectedUniversityId,
+                    graduationYear: accountType === 'student' && gradYear ? Number(gradYear) : null,
+                }),
+            })
+
+            const data = await res.json()
+
+            if (!res.ok) {
+                throw new Error(data.message || 'Signup failed')
+            }
+
+            if (data.token) {
+                localStorage.setItem('token', data.token)
+                localStorage.setItem('user', JSON.stringify(data.user))
+            }
+
+            setSuccessMessage('Account created successfully! Redirecting to login...')
+            setTimeout(() => {
+                navigate('/login')
+            }, 1200)
+        } catch (err: unknown) {
+            if (err instanceof Error) {
+                setErrorMessage(err.message)
+            } else {
+                setErrorMessage('Something went wrong. Please try again.')
+            }
+        } finally {
+            setIsSubmitting(false)
+        }
+    }
+
     const isAcademicEmail =
         email.includes('.edu') ||
         email.includes('.ac.') ||
@@ -171,7 +222,18 @@ const SignUp = () => {
                     </p>
                 </div>
 
-                <form className="mt-8 space-y-5" onSubmit={(e) => e.preventDefault()}>
+                <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
+                    {errorMessage && (
+                        <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-xs font-semibold text-rose-700">
+                            {errorMessage}
+                        </div>
+                    )}
+
+                    {successMessage && (
+                        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-xs font-semibold text-emerald-700">
+                            {successMessage}
+                        </div>
+                    )}
                     {/* Account Type Selector */}
                     <div>
                         <label className="block text-[11px] font-bold tracking-wider uppercase text-slate-500">
@@ -525,15 +587,24 @@ const SignUp = () => {
                     <div className="pt-2">
                         <button
                             type="submit"
-                            disabled={!agreedToTerms}
+                            disabled={!agreedToTerms || isSubmitting}
                             className={`flex h-12 w-full items-center justify-center gap-2 rounded-xl text-sm font-semibold transition ${
-                                agreedToTerms
+                                agreedToTerms && !isSubmitting
                                     ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25 hover:bg-blue-700 active:scale-[0.99] cursor-pointer'
                                     : 'bg-slate-200 text-slate-400 cursor-not-allowed'
                             }`}
                         >
-                            Create Account
-                            <FiArrowRight className="h-4 w-4" />
+                            {isSubmitting ? (
+                                <>
+                                    <FiLoader className="h-4 w-4 animate-spin" />
+                                    Creating Account...
+                                </>
+                            ) : (
+                                <>
+                                    Create Account
+                                    <FiArrowRight className="h-4 w-4" />
+                                </>
+                            )}
                         </button>
                     </div>
 
