@@ -4,6 +4,8 @@ import { FaGithub } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
 import { apiFetch } from '../lib/api';
+import Navbar from '../components/shared/Navbar';
+import Footer from '../components/shared/Footer';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -47,77 +49,21 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col bg-slate-100">
       <Navbar />
 
-        {error && (
-          <div className="p-3 mb-4 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-600 font-medium">
-            {error}
-          </div>
-        )}
+      <main className="flex-1 flex items-center justify-center p-5 py-12">
+        <div className="w-full max-w-md bg-white rounded-2xl border border-slate-200 shadow-lg p-8">
+          <h1 className="text-2xl font-bold text-slate-900">Welcome back</h1>
+          <p className="mt-1 mb-6 text-slate-500">Sign in to continue to ProjectForge.</p>
 
-        <form className="space-y-4" onSubmit={handleSignIn}>
-          <label className="block text-sm font-semibold text-slate-800">
-            Email address
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
-              required
-              className="mt-1.5 h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 text-sm outline-none focus:border-blue-300"
-            />
-          </label>
-
-          <label className="block text-sm font-semibold text-slate-800">
-            Password
-            <div className="relative mt-1.5">
-              <input
-                type={showPassword ? 'text' : 'password'}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter your password"
-                required
-                className="h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 pr-14 text-sm outline-none focus:border-blue-300"
-              />
-              <button
-                type="button"
-                onClick={() => setShowPassword((v) => !v)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-slate-500"
-              >
-                {showPassword ? 'Hide' : 'Show'}
-              </button>
+          {error && (
+            <div className="p-3 mb-4 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-600 font-medium">
+              {error}
             </div>
-          </label>
+          )}
 
-          <div className="flex justify-end">
-            <button type="button" className="text-sm font-semibold text-blue-600">
-              Forgot password?
-            </button>
-          </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="h-12 w-full rounded-xl bg-slate-900 text-white font-semibold cursor-pointer disabled:opacity-60"
-          >
-            {loading ? 'Signing in...' : 'Sign In →'}
-          </button>
-        </form>
-
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            {errorMessage && (
-              <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-xs font-semibold text-rose-700">
-                {errorMessage}
-              </div>
-            )}
-
-            {successMessage && (
-              <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-xs font-semibold text-emerald-700">
-                {successMessage}
-              </div>
-            )}
-
+          <form className="space-y-4" onSubmit={handleSignIn}>
             <label className="block text-sm font-semibold text-slate-800">
               Email address
               <input
@@ -134,7 +80,7 @@ const Login = () => {
               Password
               <div className="relative mt-1.5">
                 <input
-                  type={showPassword ? "text" : "password"}
+                  type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
@@ -146,7 +92,7 @@ const Login = () => {
                   onClick={() => setShowPassword((v) => !v)}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-slate-500 cursor-pointer"
                 >
-                  {showPassword ? "Hide" : "Show"}
+                  {showPassword ? 'Hide' : 'Show'}
                 </button>
               </div>
             </label>
@@ -162,13 +108,14 @@ const Login = () => {
 
             <button
               type="submit"
-              disabled={isLoading}
-              className={`h-12 w-full rounded-xl text-white font-semibold transition cursor-pointer ${isLoading
-                  ? "bg-blue-400 cursor-not-allowed"
-                  : "bg-blue-600 hover:bg-blue-700 active:scale-[0.99]"
-                }`}
+              disabled={loading}
+              className={`h-12 w-full rounded-xl text-white font-semibold transition cursor-pointer ${
+                loading
+                  ? 'bg-blue-400 cursor-not-allowed'
+                  : 'bg-blue-600 hover:bg-blue-700 active:scale-[0.99]'
+              }`}
             >
-              {isLoading ? "Signing in..." : "Sign In →"}
+              {loading ? 'Signing in...' : 'Sign In →'}
             </button>
           </form>
 
@@ -196,7 +143,7 @@ const Login = () => {
           </div>
 
           <p className="mt-6 text-center text-sm text-slate-500">
-            Don&apos;t have an account?{" "}
+            Don&apos;t have an account?{' '}
             <Link
               to="/signup"
               className="font-semibold text-blue-600 hover:underline cursor-pointer"
@@ -205,25 +152,8 @@ const Login = () => {
             </Link>
           </p>
         </div>
+      </main>
 
-        <div className="grid grid-cols-2 gap-3">
-          <button type="button" className="h-11 rounded-xl cursor-pointer border border-slate-200 text-sm font-semibold flex items-center justify-center gap-2 ">
-            <FcGoogle />
-            Google
-          </button>
-          <button type="button" className="h-11 rounded-xl cursor-pointer border border-slate-200 text-sm font-semibold flex items-center justify-center gap-2">
-            <FaGithub />
-            GitHub
-          </button>
-        </div>
-
-        <p className="mt-6 text-center text-sm text-slate-500">
-          Don&apos;t have an account?{' '}
-          <Link to="/signup" className="font-semibold text-blue-600 cursor-pointer hover:underline">
-            Create account
-          </Link>
-        </p>
-      </div>
       <Footer />
     </div>
   );
