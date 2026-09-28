@@ -1,2 +1,5 @@
-sync.sh
-client/.gitignore
+node_modules/
+dist/
+.env
+.env.*
+generated/

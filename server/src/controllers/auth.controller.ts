@@ -1,24 +1,60 @@
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
+import { z } from "zod";
 import { prisma } from "../prisma/client.js";
-import { signToken, verifyToken } from "../utils/jwt.js";
+import { signToken } from "../utils/jwt.js";
 
 // Cookie configuration
-const COOKIE_OPTIONS = {
-  httpOnly: true, // Cannot be accessed by client-side JavaScript (prevents XSS attacks)
-  secure: process.env.NODE_ENV === "production", // HTTPS only in production
-  sameSite: "lax" as const, // Prevents CSRF attacks
+export const COOKIE_OPTIONS = {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === "production",
+  sameSite: (process.env.NODE_ENV === "production" ? "none" : "lax") as "none" | "lax",
   maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days in milliseconds
+  path: "/",
 };
+
+export const setAuthCookie = (res: Response, token: string) => {
+  res.cookie("token", token, COOKIE_OPTIONS);
+};
+
+export const clearAuthCookie = (res: Response) => {
+  res.clearCookie("token", {
+    httpOnly: COOKIE_OPTIONS.httpOnly,
+    secure: COOKIE_OPTIONS.secure,
+    sameSite: COOKIE_OPTIONS.sameSite,
+    path: COOKIE_OPTIONS.path,
+  });
+};
+
+const signupSchema = z.object({
+  name: z.string().optional(),
+  fullName: z.string().optional(),
+  email: z.string().email("Invalid email address"),
+  password: z.string().min(6, "Password must be at least 6 characters"),
+  universityId: z.number().optional(),
+  university: z.union([z.string(), z.number()]).optional(),
+  graduationYear: z.number().optional(),
+});
+
+const loginSchema = z.object({
+  email: z.string().email("Invalid credentials"),
+  password: z.string().min(1, "Invalid credentials"),
+});
 
 // SIGNUP CONTROLLER
 export const signup = async (req: Request, res: Response) => {
   try {
-    const { name, fullName, email, password, role, universityId, graduationYear } = req.body;
-    const userName = name || fullName;
+    const parseResult = signupSchema.safeParse(req.body);
+    if (!parseResult.success) {
+      const errorMsg = parseResult.error.issues[0]?.message || "Invalid input";
+      return res.status(400).json({ error: errorMsg });
+    }
 
-    if (!userName || !email || !password || !universityId) {
-      return res.status(400).json({ message: "Please provide all required fields" });
+    const { name, fullName, email, password, universityId, university, graduationYear } = parseResult.data;
+    const userName = (name || fullName)?.trim();
+
+    if (!userName) {
+      return res.status(400).json({ error: "Name is required" });
     }
 
     const normalizedEmail = email.toLowerCase().trim();
@@ -29,148 +65,166 @@ export const signup = async (req: Request, res: Response) => {
     });
 
     if (existingUser) {
-      return res.status(400).json({ message: "User already exists with this email" });
+      return res.status(400).json({ error: "User already exists with this email" });
     }
 
-    // Hash password
+    // Resolve university ID
+    let resolvedUniId: number | null = universityId ? Number(universityId) : null;
+    if (!resolvedUniId && university) {
+      const num = Number(university);
+      if (!isNaN(num) && num > 0) {
+        resolvedUniId = num;
+      } else {
+        const found = await prisma.university.findFirst({
+          where: {
+            name: {
+              contains: String(university).trim(),
+              mode: "insensitive",
+            },
+          },
+        });
+        if (found) {
+          resolvedUniId = found.id;
+        }
+      }
+    }
+
+    if (!resolvedUniId) {
+      const firstUni = await prisma.university.findFirst();
+      if (firstUni) resolvedUniId = firstUni.id;
+    }
+
+    if (!resolvedUniId) {
+      return res.status(400).json({ error: "Please select a valid university" });
+    }
+
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Normalize role: STUDENT or TPO
-    const userRole =
-      role?.toUpperCase() === "TPO" || role?.toLowerCase() === "faculty" || role?.toLowerCase() === "admin"
-        ? "TPO"
-        : "STUDENT";
-
-    // Create user in database
     const user = await prisma.user.create({
       data: {
-        name: userName.trim(),
+        name: userName,
         email: normalizedEmail,
         password: hashedPassword,
-        role: userRole,
-        universityId: Number(universityId),
+        role: "STUDENT",
+        universityId: resolvedUniId,
         graduationYear: graduationYear ? Number(graduationYear) : null,
       },
-      select: {
-        id: true,
-        name: true,
-        email: true,
-        role: true,
-        universityId: true,
-        graduationYear: true,
-        createdAt: true,
+      include: {
+        university: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
       },
     });
 
-    // Generate JWT token and attach it as an httpOnly cookie
     const token = signToken({ userId: user.id, role: user.role });
-    res.cookie("token", token, COOKIE_OPTIONS);
+    setAuthCookie(res, token);
 
     return res.status(201).json({
-      message: "Account created successfully",
-      user,
+      user: {
+        id: user.id,
+        name: user.name,
+        role: user.role,
+        university: user.university,
+      },
     });
   } catch (error) {
     console.error("Signup error:", error);
-    return res.status(500).json({ message: "Server error during signup" });
+    return res.status(500).json({ error: "Server error during signup" });
   }
 };
 
 // LOGIN CONTROLLER
 export const login = async (req: Request, res: Response) => {
   try {
-    const { email, password, role } = req.body;
-
-    if (!email || !password) {
-      return res.status(400).json({ message: "Email and password are required" });
+    const parseResult = loginSchema.safeParse(req.body);
+    if (!parseResult.success) {
+      return res.status(401).json({ error: "Invalid credentials" });
     }
 
+    const { email, password } = parseResult.data;
     const normalizedEmail = email.toLowerCase().trim();
 
-    // Find user
     const user = await prisma.user.findUnique({
       where: { email: normalizedEmail },
+      include: {
+        university: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
+      },
     });
 
     if (!user) {
-      return res.status(400).json({ message: "Invalid email or password" });
+      return res.status(401).json({ error: "Invalid credentials" });
     }
 
-    // Verify password
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      return res.status(400).json({ message: "Invalid email or password" });
+      return res.status(401).json({ error: "Invalid credentials" });
     }
 
-    // Optional role validation if provided by client
-    if (role) {
-      const expectedRole =
-        role.toUpperCase() === "TPO" || role.toLowerCase() === "faculty" || role.toLowerCase() === "admin"
-          ? "TPO"
-          : "STUDENT";
-      if (user.role !== expectedRole) {
-        return res.status(403).json({ message: `Access denied. Please log in as a ${user.role}` });
-      }
-    }
-
-    // Generate JWT token and attach it as an httpOnly cookie
     const token = signToken({ userId: user.id, role: user.role });
-    res.cookie("token", token, COOKIE_OPTIONS);
+    setAuthCookie(res, token);
 
     return res.status(200).json({
-      message: "Login successful",
       user: {
         id: user.id,
         name: user.name,
-        email: user.email,
         role: user.role,
-        universityId: user.universityId,
-        graduationYear: user.graduationYear,
+        university: user.university,
       },
     });
   } catch (error) {
     console.error("Login error:", error);
-    return res.status(500).json({ message: "Server error during login" });
+    return res.status(500).json({ error: "Server error during login" });
   }
 };
 
 // LOGOUT CONTROLLER
 export const logout = (_req: Request, res: Response) => {
-  res.clearCookie("token", {
-    httpOnly: true,
-    sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
-  });
-  return res.status(200).json({ message: "Logged out successfully" });
+  clearAuthCookie(res);
+  return res.status(204).send();
 };
 
 // GET CURRENT AUTHENTICATED USER
 export const getMe = async (req: Request, res: Response) => {
   try {
-    const token = req.cookies?.token;
-    if (!token) {
-      return res.status(401).json({ message: "Not authenticated" });
+    const userId = req.user?.userId;
+    if (!userId) {
+      return res.status(401).json({ error: "Unauthorized" });
     }
 
-    const decoded = verifyToken(token);
     const user = await prisma.user.findUnique({
-      where: { id: decoded.userId },
-      select: {
-        id: true,
-        name: true,
-        email: true,
-        role: true,
-        universityId: true,
-        graduationYear: true,
+      where: { id: userId },
+      include: {
+        university: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
       },
     });
 
     if (!user) {
-      return res.status(401).json({ message: "User not found" });
+      return res.status(401).json({ error: "User no longer exists" });
     }
 
-    return res.status(200).json({ user });
-  } catch {
-    return res.status(401).json({ message: "Invalid or expired session" });
+    return res.status(200).json({
+      user: {
+        id: user.id,
+        name: user.name,
+        role: user.role,
+        university: user.university,
+      },
+    });
+  } catch (error) {
+    console.error("getMe error:", error);
+    return res.status(500).json({ error: "Server error" });
   }
 };

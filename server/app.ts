@@ -6,21 +6,25 @@ import { prisma } from "./src/prisma/client.js";
 
 const app = express();
 
-// Allow cookies and credentials from frontend ports
+if (process.env.NODE_ENV === "production") {
+  app.set("trust proxy", 1);
+}
+
+const FRONTEND_URLS = [
+  "http://localhost:5173",
+  "http://localhost:5174",
+  "http://localhost:5175",
+];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "http://localhost:5174",
-      "http://localhost:5175",
-      "http://localhost:5176",
-    ],
+    origin: FRONTEND_URLS,
     credentials: true,
   })
 );
 
-app.use(express.json());
 app.use(cookieParser());
+app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
@@ -58,7 +62,7 @@ app.get("/api/universities", async (req, res) => {
     return res.json(universities);
   } catch (error) {
     console.error("Error fetching universities:", error);
-    return res.status(500).json({ error: "Failed to fetch universities" });
+    res.status(500).json({ error: "Failed to fetch universities" });
   }
 });
 

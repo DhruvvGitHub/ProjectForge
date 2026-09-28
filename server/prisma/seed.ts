@@ -1,7 +1,7 @@
 import "dotenv/config";
-import { PrismaClient } from "../generated/prisma/client";
+import { PrismaClient } from "../generated/prisma/client.js";
 import { PrismaPg } from "@prisma/adapter-pg";
-import universities from "./universities.json";
+import universities from "./universities.json" with { type: "json" };
 
 const adapter = new PrismaPg({
   connectionString: process.env.DATABASE_URL!,

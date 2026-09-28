@@ -10,14 +10,12 @@ import {
     FiLock,
     FiChevronDown,
     FiArrowRight,
-    FiMapPin,
-    FiLoader,
-    FiX,
 } from 'react-icons/fi'
-import { FaGraduationCap } from 'react-icons/fa'
 import logo from '../assets/logo.png'
+import { useAuthStore } from '../store/authStore'
+import { apiFetch } from '../lib/api'
 
-interface UniversityOption {
+interface UniversityItem {
     id: number
     name: string
     state: string
@@ -25,10 +23,12 @@ interface UniversityOption {
 }
 
 const SignUp = () => {
+    const navigate = useNavigate()
+    const setUser = useAuthStore((state) => state.setUser)
     const currentYear = new Date().getFullYear()
     const gradYears = Array.from({ length: 6 }, (_, i) => currentYear - 1 + i)
+    const accountType = 'student'
 
-    const [accountType, setAccountType] = useState<'student' | 'faculty'>('student')
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -36,158 +36,107 @@ const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false)
     const [showConfirmPassword, setShowConfirmPassword] = useState(false)
     const [university, setUniversity] = useState('')
-    const [selectedUniversityId, setSelectedUniversityId] = useState<number | null>(null)
-    const [searchResults, setSearchResults] = useState<UniversityOption[]>([])
-    const [isLoadingUniversities, setIsLoadingUniversities] = useState(false)
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-    const [highlightedIndex, setHighlightedIndex] = useState(-1)
-    const dropdownRef = useRef<HTMLDivElement>(null)
-    const isSelectingRef = useRef(false)
+    const [selectedUniversity, setSelectedUniversity] = useState<UniversityItem | null>(null)
+    const [universitiesList, setUniversitiesList] = useState<UniversityItem[]>([])
+    const [isSearchingUni, setIsSearchingUni] = useState(false)
+    const [showUniDropdown, setShowUniDropdown] = useState(false)
+    const uniDropdownRef = useRef<HTMLDivElement>(null)
 
     const [department, setDepartment] = useState('')
     const [gradYear, setGradYear] = useState('')
     const [agreedToTerms, setAgreedToTerms] = useState(false)
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(false)
 
-    const navigate = useNavigate()
-    const [isSubmitting, setIsSubmitting] = useState(false)
-    const [errorMessage, setErrorMessage] = useState('')
-    const [successMessage, setSuccessMessage] = useState('')
-
-
-    // Search universities when typing
+    // Fetch university suggestions when user types >= 2 letters
     useEffect(() => {
-        if (isSelectingRef.current) {
-            isSelectingRef.current = false
+        const query = university.trim()
+        if (query.length < 2) {
+            setUniversitiesList([])
+            setShowUniDropdown(false)
             return
         }
 
-        const trimmed = university.trim()
-        if (trimmed.length < 2) {
-            setSearchResults([])
-            setIsDropdownOpen(false)
-            setIsLoadingUniversities(false)
+        // Avoid re-searching if this exact university is already selected
+        if (selectedUniversity && selectedUniversity.name === university) {
             return
         }
 
-        const controller = new AbortController()
-        setIsLoadingUniversities(true)
-
-        const timeoutId = setTimeout(async () => {
+        const timer = setTimeout(async () => {
+            setIsSearchingUni(true)
             try {
-                const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
-                const res = await fetch(`${apiBase}/api/universities?q=${encodeURIComponent(trimmed)}`, {
-                    signal: controller.signal,
-                })
-                if (!res.ok) throw new Error('Failed to fetch')
-                const data: UniversityOption[] = await res.json()
-                setSearchResults(data)
-                setIsDropdownOpen(true)
-                setHighlightedIndex(-1)
-            } catch (err: unknown) {
-                if (err instanceof Error && err.name !== 'AbortError') {
-                    console.error('Error fetching universities:', err)
-                    setSearchResults([])
+                const res = await apiFetch(`/api/universities?q=${encodeURIComponent(query)}`)
+                if (res.ok) {
+                    const data = await res.json()
+                    setUniversitiesList(data)
+                    setShowUniDropdown(true)
                 }
+            } catch (err) {
+                console.error("Error fetching universities:", err)
             } finally {
-                setIsLoadingUniversities(false)
+                setIsSearchingUni(false)
             }
-        }, 250)
+        }, 200)
 
-        return () => {
-            clearTimeout(timeoutId)
-            controller.abort()
-        }
-    }, [university])
+        return () => clearTimeout(timer)
+    }, [university, selectedUniversity])
 
-    const handleSelectUniversity = (item: UniversityOption) => {
-        isSelectingRef.current = true
-        setUniversity(item.name)
-        setSelectedUniversityId(item.id)
-        setIsDropdownOpen(false)
-        setSearchResults([])
-    }
-
-    const handleClearUniversity = () => {
-        setUniversity('')
-        setSelectedUniversityId(null)
-        setSearchResults([])
-        setIsDropdownOpen(false)
-    }
-
-    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (!isDropdownOpen || searchResults.length === 0) return
-
-        if (e.key === 'ArrowDown') {
-            e.preventDefault()
-            setHighlightedIndex((prev) => (prev < searchResults.length - 1 ? prev + 1 : 0))
-        } else if (e.key === 'ArrowUp') {
-            e.preventDefault()
-            setHighlightedIndex((prev) => (prev > 0 ? prev - 1 : searchResults.length - 1))
-        } else if (e.key === 'Enter') {
-            if (highlightedIndex >= 0 && highlightedIndex < searchResults.length) {
-                e.preventDefault()
-                handleSelectUniversity(searchResults[highlightedIndex])
+    // Close dropdown on click outside
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (uniDropdownRef.current && !uniDropdownRef.current.contains(e.target as Node)) {
+                setShowUniDropdown(false)
             }
-        } else if (e.key === 'Escape') {
-            setIsDropdownOpen(false)
         }
-    }
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => document.removeEventListener('mousedown', handleClickOutside)
+    }, [])
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        setErrorMessage('')
-        setSuccessMessage('')
-
-        if (!selectedUniversityId) {
-            setErrorMessage('Please select your university from the suggestions list.')
+        if (!passwordsMatch) {
+            setError('Passwords do not match')
             return
         }
-
-        if (password !== confirmPassword) {
-            setErrorMessage('Passwords do not match.')
+        if (!selectedUniversity) {
+            setError('Please select a university from the suggestion list to proceed.')
             return
         }
-
+        setError('')
+        setLoading(true)
         try {
-            setIsSubmitting(true)
-            const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
-            const res = await fetch(`${apiBase}/api/auth/signup`, {
+            const res = await apiFetch('/api/auth/signup', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                credentials: 'include',
                 body: JSON.stringify({
                     fullName,
                     email,
                     password,
-                    role: accountType === 'faculty' ? 'TPO' : 'STUDENT',
-                    universityId: selectedUniversityId,
-                    graduationYear: accountType === 'student' && gradYear ? Number(gradYear) : null,
+                    universityId: selectedUniversity.id,
+                    university: selectedUniversity.name,
+                    department,
+                    graduationYear: accountType === 'student' && gradYear ? Number(gradYear) : undefined,
                 }),
             })
-
             const data = await res.json()
-
-            if (!res.ok) {
-                throw new Error(data.message || 'Signup failed')
+            if (res.ok && data?.user) {
+                setUser(data.user)
+                if (data.user.role === 'TPO') {
+                    navigate('/tpo-dashboard')
+                } else {
+                    navigate('/dashboard')
+                }
+                return
+            } else {
+                setError(data?.error || 'Signup failed')
             }
-
-            if (data.token) {
-                localStorage.setItem('token', data.token)
-                localStorage.setItem('user', JSON.stringify(data.user))
-            }
-
-            setSuccessMessage('Account created successfully! Redirecting to login...')
-            setTimeout(() => {
-                navigate('/login')
-            }, 1200)
         } catch (err: unknown) {
             if (err instanceof Error) {
-                setErrorMessage(err.message)
+                setError(err.message)
             } else {
-                setErrorMessage('Something went wrong. Please try again.')
+                setError('Unable to connect to server')
             }
         } finally {
-            setIsSubmitting(false)
+            setLoading(false)
         }
     }
 
@@ -222,55 +171,13 @@ const SignUp = () => {
                     </p>
                 </div>
 
-                <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
-                    {errorMessage && (
-                        <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-xs font-semibold text-rose-700">
-                            {errorMessage}
-                        </div>
-                    )}
-
-                    {successMessage && (
-                        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-xs font-semibold text-emerald-700">
-                            {successMessage}
-                        </div>
-                    )}
-                    {/* Account Type Selector */}
-                    <div>
-                        <label className="block text-[11px] font-bold tracking-wider uppercase text-slate-500">
-                            Select Account Type
-                        </label>
-                        <div className="mt-2 grid grid-cols-2 gap-2 rounded-2xl border border-slate-200 bg-slate-50/70 p-1.5">
-                            <button
-                                type="button"
-                                onClick={() => setAccountType('student')}
-                                className={`flex h-11 items-center justify-center gap-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${accountType === 'student'
-                                        ? 'border border-blue-200/80 bg-white text-blue-600 shadow-sm'
-                                        : 'text-slate-600 hover:text-slate-900'
-                                    }`}
-                            >
-                                <div
-                                    className={`flex h-4 w-4 items-center justify-center rounded-full ${accountType === 'student' ? 'bg-blue-600 text-white' : 'border border-slate-300'
-                                        }`}
-                                >
-                                    {accountType === 'student' && <FiCheck className="h-3 w-3 stroke-[3]" />}
-                                </div>
-                                Student
-                            </button>
-
-                            <button
-                                type="button"
-                                onClick={() => setAccountType('faculty')}
-                                className={`flex h-11 items-center justify-center gap-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${accountType === 'faculty'
-                                        ? 'border border-blue-200/80 bg-white text-blue-600 shadow-sm'
-                                        : 'text-slate-600 hover:text-slate-900'
-                                    }`}
-                            >
-                                <FaGraduationCap className="h-4 w-4" />
-                                TPO / Faculty
-                            </button>
-                        </div>
+                {error && (
+                    <div className="mt-4 p-3 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-600 font-medium">
+                        {error}
                     </div>
+                )}
 
+                <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
                     {/* Full Name */}
                     <div>
                         <label className="block text-xs font-semibold text-slate-700">
@@ -382,16 +289,15 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    {/* University Autocomplete */}
-                    <div className="relative" ref={dropdownRef}>
+                    {/* University */}
+                    <div ref={uniDropdownRef} className="relative">
                         <div className="flex items-center justify-between">
                             <label className="block text-xs font-semibold text-slate-700">
                                 University <span className="text-rose-500">*</span>
                             </label>
-                            {selectedUniversityId && (
-                                <span className="flex items-center gap-1 text-[11px] font-medium text-emerald-600">
-                                    <FiCheckCircle className="h-3 w-3" />
-                                    Verified institution
+                            {selectedUniversity && (
+                                <span className="text-[11px] font-medium text-emerald-600 flex items-center gap-1">
+                                    <FiCheck className="h-3 w-3 stroke-[3]" /> Selected
                                 </span>
                             )}
                         </div>
@@ -404,105 +310,64 @@ const SignUp = () => {
                                 value={university}
                                 onChange={(e) => {
                                     setUniversity(e.target.value)
-                                    setSelectedUniversityId(null)
+                                    if (selectedUniversity && selectedUniversity.name !== e.target.value) {
+                                        setSelectedUniversity(null)
+                                    }
                                 }}
                                 onFocus={() => {
-                                    if (searchResults.length > 0) setIsDropdownOpen(true)
+                                    if (university.trim().length >= 2 && universitiesList.length > 0) {
+                                        setShowUniDropdown(true)
+                                    }
                                 }}
-                                onKeyDown={handleKeyDown}
-                                placeholder="Search your university (e.g. IIT Bombay, BITS Pilani, NIT Trichy)"
+                                placeholder="Type at least 2 letters (e.g. Delhi, IIT, Tech)..."
                                 required
-                                autoComplete="off"
-                                className={`h-11 w-full rounded-xl border bg-white pl-10 pr-10 text-sm text-slate-800 placeholder-slate-400 outline-none transition ${
-                                    selectedUniversityId
+                                className={`h-11 w-full rounded-xl border bg-white pl-10 pr-4 text-sm text-slate-800 placeholder-slate-400 outline-none transition ${
+                                    selectedUniversity
                                         ? 'border-emerald-500 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100'
                                         : 'border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100'
                                 }`}
                             />
-
-                            {/* Right action button: Spinner / Clear */}
-                            <div className="absolute right-3 flex items-center gap-1">
-                                {isLoadingUniversities ? (
-                                    <FiLoader className="h-4 w-4 animate-spin text-blue-600" />
-                                ) : university.length > 0 ? (
-                                    <button
-                                        type="button"
-                                        onClick={handleClearUniversity}
-                                        className="rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600 cursor-pointer"
-                                        title="Clear university"
-                                    >
-                                        <FiX className="h-3.5 w-3.5" />
-                                    </button>
-                                ) : null}
-                            </div>
+                            {isSearchingUni && (
+                                <div className="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400 animate-pulse">
+                                    Searching...
+                                </div>
+                            )}
                         </div>
 
-                        {/* Dropdown Results */}
-                        {isDropdownOpen && university.trim().length >= 2 && (
-                            <div className="absolute z-50 mt-1.5 w-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl shadow-slate-300/50">
-                                {isLoadingUniversities && searchResults.length === 0 ? (
-                                    <div className="flex items-center justify-center gap-2.5 py-6 text-xs font-medium text-slate-500">
-                                        <FiLoader className="h-4 w-4 animate-spin text-blue-600" />
-                                        <span>Searching registered universities...</span>
-                                    </div>
-                                ) : searchResults.length === 0 ? (
-                                    <div className="px-4 py-5 text-center">
-                                        <p className="text-xs font-medium text-slate-600">
-                                            No universities found matching "{university}"
-                                        </p>
-                                        <p className="mt-1 text-[11px] text-slate-400">
-                                            You can keep typing to use a custom university name.
-                                        </p>
-                                    </div>
+                        {/* Suggestions Dropdown */}
+                        {showUniDropdown && (
+                            <div className="absolute z-20 mt-1 max-h-56 w-full overflow-y-auto rounded-xl border border-slate-200 bg-white py-1 shadow-lg">
+                                {universitiesList.length > 0 ? (
+                                    universitiesList.map((item) => (
+                                        <button
+                                            key={item.id}
+                                            type="button"
+                                            onClick={() => {
+                                                setSelectedUniversity(item)
+                                                setUniversity(item.name)
+                                                setShowUniDropdown(false)
+                                            }}
+                                            className="w-full px-3.5 py-2.5 text-left text-sm hover:bg-blue-50 transition cursor-pointer flex flex-col border-b border-slate-100 last:border-b-0"
+                                        >
+                                            <span className="font-medium text-slate-800">{item.name}</span>
+                                            {(item.district || item.state) && (
+                                                <span className="text-xs text-slate-500">
+                                                    {[item.district, item.state].filter(Boolean).join(', ')}
+                                                </span>
+                                            )}
+                                        </button>
+                                    ))
                                 ) : (
-                                    <>
-                                        <div className="max-h-60 overflow-y-auto divide-y divide-slate-100">
-                                            {searchResults.map((item, idx) => {
-                                                const isHighlighted = idx === highlightedIndex
-                                                const isSelected = selectedUniversityId === item.id
-
-                                                return (
-                                                    <div
-                                                        key={item.id}
-                                                        onClick={() => handleSelectUniversity(item)}
-                                                        onMouseEnter={() => setHighlightedIndex(idx)}
-                                                        className={`flex items-start justify-between gap-3 px-4 py-3 text-left transition cursor-pointer ${
-                                                            isSelected
-                                                                ? 'bg-blue-50/80'
-                                                                : isHighlighted
-                                                                ? 'bg-slate-50'
-                                                                : 'hover:bg-slate-50/70'
-                                                        }`}
-                                                    >
-                                                        <div className="flex-1 min-w-0">
-                                                            <div className="text-xs sm:text-sm font-semibold text-slate-800 truncate">
-                                                                {item.name}
-                                                            </div>
-                                                            <div className="mt-0.5 flex items-center gap-1.5 text-[11px] text-slate-500">
-                                                                <FiMapPin className="h-3 w-3 shrink-0 text-slate-400" />
-                                                                <span>
-                                                                    {item.district ? `${item.district}, ` : ''}
-                                                                    {item.state}
-                                                                </span>
-                                                            </div>
-                                                        </div>
-
-                                                        {isSelected && (
-                                                            <div className="mt-0.5 shrink-0 rounded-full bg-blue-600 p-0.5 text-white">
-                                                                <FiCheck className="h-3 w-3 stroke-[3]" />
-                                                            </div>
-                                                        )}
-                                                    </div>
-                                                )
-                                            })}
-                                        </div>
-                                        <div className="bg-slate-50/90 px-3.5 py-2 text-[11px] text-slate-400 flex items-center justify-between border-t border-slate-100">
-                                            <span>Found {searchResults.length} universities</span>
-                                            <span className="hidden sm:inline">Use ↑ ↓ to navigate, Enter to select</span>
-                                        </div>
-                                    </>
+                                    <div className="px-3.5 py-3 text-xs text-slate-500 text-center">
+                                        No universities found matching "{university}"
+                                    </div>
                                 )}
                             </div>
+                        )}
+                        {!selectedUniversity && university.trim().length >= 2 && !showUniDropdown && universitiesList.length === 0 && (
+                            <p className="mt-1 text-[11px] text-amber-600">
+                                No matching university found. You must select an official university from the list to sign up.
+                            </p>
                         )}
                     </div>
 
@@ -587,24 +452,15 @@ const SignUp = () => {
                     <div className="pt-2">
                         <button
                             type="submit"
-                            disabled={!agreedToTerms || isSubmitting}
+                            disabled={!agreedToTerms || loading}
                             className={`flex h-12 w-full items-center justify-center gap-2 rounded-xl text-sm font-semibold transition ${
-                                agreedToTerms && !isSubmitting
+                                agreedToTerms && !loading
                                     ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25 hover:bg-blue-700 active:scale-[0.99] cursor-pointer'
                                     : 'bg-slate-200 text-slate-400 cursor-not-allowed'
                             }`}
                         >
-                            {isSubmitting ? (
-                                <>
-                                    <FiLoader className="h-4 w-4 animate-spin" />
-                                    Creating Account...
-                                </>
-                            ) : (
-                                <>
-                                    Create Account
-                                    <FiArrowRight className="h-4 w-4" />
-                                </>
-                            )}
+                            {loading ? 'Creating Account...' : 'Create Account'}
+                            <FiArrowRight className="h-4 w-4" />
                         </button>
                     </div>
 

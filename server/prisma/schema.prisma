@@ -13,12 +13,14 @@ datasource db {
 }
 
 model University {
-  id       Int       @id @default(autoincrement())
+  id       Int    @id @default(autoincrement())
   name     String
   state    String
   district String
 
   users User[]
+
+  @@unique([name, district])
 }
 
 enum Role {
@@ -36,4 +38,6 @@ model User {
   university     University @relation(fields: [universityId], references: [id])
   graduationYear Int?       // only meaningful for STUDENT, null for TPO
   createdAt      DateTime   @default(now())
+
+  @@index([universityId])
 }

@@ -1,6 +1,10 @@
 import "dotenv/config";
-import { PrismaClient } from "../generated/prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
+import { PrismaClient } from "../generated/prisma/client.js";
+import { PrismaNeon } from "@prisma/adapter-neon";
+import { neonConfig } from "@neondatabase/serverless";
+import ws from "ws";
+
+neonConfig.webSocketConstructor = ws;
 
 const connectionString = process.env.DATABASE_URL;
 
@@ -8,7 +12,7 @@ if (!connectionString) {
   throw new Error("DATABASE_URL is not set in environment variables");
 }
 
-const adapter = new PrismaPg({
+const adapter = new PrismaNeon({
   connectionString,
 });
 
