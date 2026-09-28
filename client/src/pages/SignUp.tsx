@@ -10,12 +10,22 @@ import {
     FiLock,
     FiChevronDown,
     FiArrowRight,
+    FiMapPin,
+    FiLoader,
+    FiX,
 } from 'react-icons/fi'
 import logo from '../assets/logo.png'
 import { useAuthStore } from '../store/authStore'
 import { apiFetch } from '../lib/api'
 
 interface UniversityItem {
+    id: number
+    name: string
+    state: string
+    district: string
+}
+
+interface UniversityOption {
     id: number
     name: string
     state: string
@@ -135,6 +145,149 @@ const SignUp = () => {
         }
     }
 
+    const navigate = useNavigate()
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [errorMessage, setErrorMessage] = useState('')
+    const [successMessage, setSuccessMessage] = useState('')
+
+
+    // Search universities when typing
+    useEffect(() => {
+        if (isSelectingRef.current) {
+            isSelectingRef.current = false
+            return
+        }
+
+        const trimmed = university.trim()
+        if (trimmed.length < 2) {
+            setSearchResults([])
+            setIsDropdownOpen(false)
+            setIsLoadingUniversities(false)
+            return
+        }
+
+        const controller = new AbortController()
+        setIsLoadingUniversities(true)
+
+        const timeoutId = setTimeout(async () => {
+            try {
+                const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+                const res = await fetch(`${apiBase}/api/universities?q=${encodeURIComponent(trimmed)}`, {
+                    signal: controller.signal,
+                })
+                if (!res.ok) throw new Error('Failed to fetch')
+                const data: UniversityOption[] = await res.json()
+                setSearchResults(data)
+                setIsDropdownOpen(true)
+                setHighlightedIndex(-1)
+            } catch (err: unknown) {
+                if (err instanceof Error && err.name !== 'AbortError') {
+                    console.error('Error fetching universities:', err)
+                    setSearchResults([])
+                }
+            } finally {
+                setIsLoadingUniversities(false)
+            }
+        }, 250)
+
+        return () => {
+            clearTimeout(timeoutId)
+            controller.abort()
+        }
+    }, [university])
+
+    const handleSelectUniversity = (item: UniversityOption) => {
+        isSelectingRef.current = true
+        setUniversity(item.name)
+        setSelectedUniversityId(item.id)
+        setIsDropdownOpen(false)
+        setSearchResults([])
+    }
+
+    const handleClearUniversity = () => {
+        setUniversity('')
+        setSelectedUniversityId(null)
+        setSearchResults([])
+        setIsDropdownOpen(false)
+    }
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (!isDropdownOpen || searchResults.length === 0) return
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault()
+            setHighlightedIndex((prev) => (prev < searchResults.length - 1 ? prev + 1 : 0))
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault()
+            setHighlightedIndex((prev) => (prev > 0 ? prev - 1 : searchResults.length - 1))
+        } else if (e.key === 'Enter') {
+            if (highlightedIndex >= 0 && highlightedIndex < searchResults.length) {
+                e.preventDefault()
+                handleSelectUniversity(searchResults[highlightedIndex])
+            }
+        } else if (e.key === 'Escape') {
+            setIsDropdownOpen(false)
+        }
+    }
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault()
+        setErrorMessage('')
+        setSuccessMessage('')
+
+        if (!selectedUniversityId) {
+            setErrorMessage('Please select your university from the suggestions list.')
+            return
+        }
+
+        if (password !== confirmPassword) {
+            setErrorMessage('Passwords do not match.')
+            return
+        }
+
+        try {
+            setIsSubmitting(true)
+            const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+            const res = await fetch(`${apiBase}/api/auth/signup`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
+                body: JSON.stringify({
+                    fullName,
+                    email,
+                    password,
+                    role: accountType === 'faculty' ? 'TPO' : 'STUDENT',
+                    universityId: selectedUniversityId,
+                    graduationYear: accountType === 'student' && gradYear ? Number(gradYear) : null,
+                }),
+            })
+
+            const data = await res.json()
+
+            if (!res.ok) {
+                throw new Error(data.message || 'Signup failed')
+            }
+
+            if (data.token) {
+                localStorage.setItem('token', data.token)
+                localStorage.setItem('user', JSON.stringify(data.user))
+            }
+
+            setSuccessMessage('Account created successfully! Redirecting to login...')
+            setTimeout(() => {
+                navigate('/login')
+            }, 1200)
+        } catch (err: unknown) {
+            if (err instanceof Error) {
+                setErrorMessage(err.message)
+            } else {
+                setErrorMessage('Something went wrong. Please try again.')
+            }
+        } finally {
+            setIsSubmitting(false)
+        }
+    }
+
     const isAcademicEmail =
         email.includes('.edu') ||
         email.includes('.ac.') ||
@@ -152,6 +305,8 @@ const SignUp = () => {
                     Project<span className="text-blue-600">Forge</span>
                 </span>
             </Link>
+
+            
 
             {/* Main Card */}
             <div className="w-full max-w-xl rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-10 shadow-xl shadow-slate-200/60">
