@@ -13,31 +13,31 @@ datasource db {
 }
 
 model University {
-  id       Int       @id @default(autoincrement())
+  id       Int    @id @default(autoincrement())
   name     String
   state    String
   district String
 
-  students Student[]
-  tpos     TPO[]
+  users User[]
+
+  @@unique([name, district])
 }
 
-model Student {
+enum Role {
+  STUDENT
+  TPO
+}
+
+model User {
   id             Int        @id @default(autoincrement())
   name           String
   email          String     @unique
   password       String
+  role           Role
   universityId   Int
   university     University @relation(fields: [universityId], references: [id])
-  graduationYear Int
+  graduationYear Int?       // only meaningful for STUDENT, null for TPO
   createdAt      DateTime   @default(now())
-}
 
-model TPO {
-  id           Int        @id @default(autoincrement())
-  name         String
-  email        String     @unique
-  password     String
-  universityId Int
-  university   University @relation(fields: [universityId], references: [id])
+  @@index([universityId])
 }

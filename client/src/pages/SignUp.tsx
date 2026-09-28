@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import {
     FiUser,
     FiCheckCircle,
@@ -11,14 +11,22 @@ import {
     FiChevronDown,
     FiArrowRight,
 } from 'react-icons/fi'
-import { FaGraduationCap } from 'react-icons/fa'
 import logo from '../assets/logo.png'
+import { useAuthStore } from '../store/authStore'
+import { apiFetch } from '../lib/api'
+
+interface UniversityItem {
+    id: number
+    name: string
+    state: string
+    district: string
+}
 
 const SignUp = () => {
     const currentYear = new Date().getFullYear()
     const gradYears = Array.from({ length: 6 }, (_, i) => currentYear - 1 + i)
+    const setUser = useAuthStore((state) => state.setUser)
 
-    const [accountType, setAccountType] = useState<'student' | 'faculty'>('student')
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -26,9 +34,106 @@ const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false)
     const [showConfirmPassword, setShowConfirmPassword] = useState(false)
     const [university, setUniversity] = useState('')
+    const [selectedUniversity, setSelectedUniversity] = useState<UniversityItem | null>(null)
+    const [universitiesList, setUniversitiesList] = useState<UniversityItem[]>([])
+    const [isSearchingUni, setIsSearchingUni] = useState(false)
+    const [showUniDropdown, setShowUniDropdown] = useState(false)
+    const uniDropdownRef = useRef<HTMLDivElement>(null)
+
     const [department, setDepartment] = useState('')
     const [gradYear, setGradYear] = useState('')
     const [agreedToTerms, setAgreedToTerms] = useState(false)
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(false)
+    const navigate = useNavigate()
+
+    // Fetch university suggestions when user types >= 2 letters
+    useEffect(() => {
+        const query = university.trim()
+        if (query.length < 2) {
+            setUniversitiesList([])
+            setShowUniDropdown(false)
+            return
+        }
+
+        // Avoid re-searching if this exact university is already selected
+        if (selectedUniversity && selectedUniversity.name === university) {
+            return
+        }
+
+        const timer = setTimeout(async () => {
+            setIsSearchingUni(true)
+            try {
+                const res = await apiFetch(`/api/universities?q=${encodeURIComponent(query)}`)
+                if (res.ok) {
+                    const data = await res.json()
+                    setUniversitiesList(data)
+                    setShowUniDropdown(true)
+                }
+            } catch (err) {
+                console.error("Error fetching universities:", err)
+            } finally {
+                setIsSearchingUni(false)
+            }
+        }, 200)
+
+        return () => clearTimeout(timer)
+    }, [university, selectedUniversity])
+
+    // Close dropdown on click outside
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (uniDropdownRef.current && !uniDropdownRef.current.contains(e.target as Node)) {
+                setShowUniDropdown(false)
+            }
+        }
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => document.removeEventListener('mousedown', handleClickOutside)
+    }, [])
+
+    const handleSignUp = async (e: React.FormEvent) => {
+        e.preventDefault()
+        if (!passwordsMatch) {
+            setError('Passwords do not match')
+            return
+        }
+        if (!selectedUniversity) {
+            setError('Please select a university from the suggestion list to proceed.')
+            return
+        }
+        setError('')
+        setLoading(true)
+        try {
+            const res = await apiFetch('/api/auth/signup', {
+                method: 'POST',
+                body: JSON.stringify({
+                    fullName,
+                    email,
+                    password,
+                    universityId: selectedUniversity.id,
+                    university: selectedUniversity.name,
+                    department,
+                    graduationYear: gradYear ? Number(gradYear) : undefined,
+                }),
+            })
+            const data = await res.json()
+            if (res.ok && data?.user) {
+                setUser(data.user)
+                if (data.user.role === 'TPO') {
+                    navigate('/tpo-dashboard')
+                } else {
+                    navigate('/dashboard')
+                }
+                return
+            } else {
+                setError(data?.error || 'Signup failed')
+            }
+        } catch {
+            setError('Unable to connect to server')
+        } finally {
+            setLoading(false)
+        }
+    }
 
     const isAcademicEmail =
         email.includes('.edu') ||
@@ -59,44 +164,13 @@ const SignUp = () => {
                     </p>
                 </div>
 
-                <form className="mt-8 space-y-5" onSubmit={(e) => e.preventDefault()}>
-                    {/* Account Type Selector */}
-                    <div>
-                        <label className="block text-[11px] font-bold tracking-wider uppercase text-slate-500">
-                            Select Account Type
-                        </label>
-                        <div className="mt-2 grid grid-cols-2 gap-2 rounded-2xl border border-slate-200 bg-slate-50/70 p-1.5">
-                            <button
-                                type="button"
-                                onClick={() => setAccountType('student')}
-                                className={`flex h-11 items-center justify-center gap-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${accountType === 'student'
-                                        ? 'border border-blue-200/80 bg-white text-blue-600 shadow-sm'
-                                        : 'text-slate-600 hover:text-slate-900'
-                                    }`}
-                            >
-                                <div
-                                    className={`flex h-4 w-4 items-center justify-center rounded-full ${accountType === 'student' ? 'bg-blue-600 text-white' : 'border border-slate-300'
-                                        }`}
-                                >
-                                    {accountType === 'student' && <FiCheck className="h-3 w-3 stroke-[3]" />}
-                                </div>
-                                Student
-                            </button>
-
-                            <button
-                                type="button"
-                                onClick={() => setAccountType('faculty')}
-                                className={`flex h-11 items-center justify-center gap-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${accountType === 'faculty'
-                                        ? 'border border-blue-200/80 bg-white text-blue-600 shadow-sm'
-                                        : 'text-slate-600 hover:text-slate-900'
-                                    }`}
-                            >
-                                <FaGraduationCap className="h-4 w-4" />
-                                TPO / Faculty
-                            </button>
-                        </div>
+                {error && (
+                    <div className="mt-4 p-3 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-600 font-medium">
+                        {error}
                     </div>
+                )}
 
+                <form className="mt-8 space-y-5" onSubmit={handleSignUp}>
                     {/* Full Name */}
                     <div>
                         <label className="block text-xs font-semibold text-slate-700">
@@ -209,10 +283,17 @@ const SignUp = () => {
                     </div>
 
                     {/* University */}
-                    <div>
-                        <label className="block text-xs font-semibold text-slate-700">
-                            University <span className="text-rose-500">*</span>
-                        </label>
+                    <div ref={uniDropdownRef} className="relative">
+                        <div className="flex items-center justify-between">
+                            <label className="block text-xs font-semibold text-slate-700">
+                                University <span className="text-rose-500">*</span>
+                            </label>
+                            {selectedUniversity && (
+                                <span className="text-[11px] font-medium text-emerald-600 flex items-center gap-1">
+                                    <FiCheck className="h-3 w-3 stroke-[3]" /> Selected
+                                </span>
+                            )}
+                        </div>
                         <div className="relative mt-1.5 flex items-center">
                             <div className="pointer-events-none absolute left-3.5 text-slate-400">
                                 <FiSearch className="h-4 w-4" />
@@ -220,12 +301,67 @@ const SignUp = () => {
                             <input
                                 type="text"
                                 value={university}
-                                onChange={(e) => setUniversity(e.target.value)}
-                                placeholder="Search your university (e.g. IIT Bombay, BITS Pilani, NIT Trichy)"
+                                onChange={(e) => {
+                                    setUniversity(e.target.value)
+                                    if (selectedUniversity && selectedUniversity.name !== e.target.value) {
+                                        setSelectedUniversity(null)
+                                    }
+                                }}
+                                onFocus={() => {
+                                    if (university.trim().length >= 2 && universitiesList.length > 0) {
+                                        setShowUniDropdown(true)
+                                    }
+                                }}
+                                placeholder="Type at least 2 letters (e.g. Delhi, IIT, Tech)..."
                                 required
-                                className="h-11 w-full rounded-xl border border-slate-200 bg-white pl-10 pr-4 text-sm text-slate-800 placeholder-slate-400 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                                className={`h-11 w-full rounded-xl border bg-white pl-10 pr-4 text-sm text-slate-800 placeholder-slate-400 outline-none transition ${
+                                    selectedUniversity
+                                        ? 'border-emerald-500 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100'
+                                        : 'border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100'
+                                }`}
                             />
+                            {isSearchingUni && (
+                                <div className="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400 animate-pulse">
+                                    Searching...
+                                </div>
+                            )}
                         </div>
+
+                        {/* Suggestions Dropdown */}
+                        {showUniDropdown && (
+                            <div className="absolute z-20 mt-1 max-h-56 w-full overflow-y-auto rounded-xl border border-slate-200 bg-white py-1 shadow-lg">
+                                {universitiesList.length > 0 ? (
+                                    universitiesList.map((item) => (
+                                        <button
+                                            key={item.id}
+                                            type="button"
+                                            onClick={() => {
+                                                setSelectedUniversity(item)
+                                                setUniversity(item.name)
+                                                setShowUniDropdown(false)
+                                            }}
+                                            className="w-full px-3.5 py-2.5 text-left text-sm hover:bg-blue-50 transition cursor-pointer flex flex-col border-b border-slate-100 last:border-b-0"
+                                        >
+                                            <span className="font-medium text-slate-800">{item.name}</span>
+                                            {(item.district || item.state) && (
+                                                <span className="text-xs text-slate-500">
+                                                    {[item.district, item.state].filter(Boolean).join(', ')}
+                                                </span>
+                                            )}
+                                        </button>
+                                    ))
+                                ) : (
+                                    <div className="px-3.5 py-3 text-xs text-slate-500 text-center">
+                                        No universities found matching "{university}"
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        {!selectedUniversity && university.trim().length >= 2 && !showUniDropdown && universitiesList.length === 0 && (
+                            <p className="mt-1 text-[11px] text-amber-600">
+                                No matching university found. You must select an official university from the list to sign up.
+                            </p>
+                        )}
                     </div>
 
                     {/* Department & Graduation Year */}
@@ -309,14 +445,14 @@ const SignUp = () => {
                     <div className="pt-2">
                         <button
                             type="submit"
-                            disabled={!agreedToTerms}
+                            disabled={!agreedToTerms || loading}
                             className={`flex h-12 w-full items-center justify-center gap-2 rounded-xl text-sm font-semibold transition ${
-                                agreedToTerms
+                                agreedToTerms && !loading
                                     ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25 hover:bg-blue-700 active:scale-[0.99] cursor-pointer'
                                     : 'bg-slate-200 text-slate-400 cursor-not-allowed'
                             }`}
                         >
-                            Create Account
+                            {loading ? 'Creating Account...' : 'Create Account'}
                             <FiArrowRight className="h-4 w-4" />
                         </button>
                     </div>

@@ -1,11 +1,50 @@
-import { useState } from 'react'
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { FcGoogle } from 'react-icons/fc';
+import { FaGithub } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuthStore } from '../store/authStore';
+import { apiFetch } from '../lib/api';
 
 const Login = () => {
-  const [role, setRole] = useState<'student' | 'admin'>('student')
-  const [showPassword, setShowPassword] = useState(false)
+  const navigate = useNavigate();
+  const setUser = useAuthStore((state) => state.setUser);
+
+  const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleSignIn = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError('');
+    setLoading(true);
+
+    try {
+      const res = await apiFetch('/api/auth/login', {
+        method: 'POST',
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data?.user) {
+        setUser(data.user);
+        if (data.user.role === 'TPO') {
+          navigate('/tpo-dashboard');
+        } else {
+          navigate('/dashboard');
+        }
+        return;
+      } else {
+        setError(data?.error || 'Invalid credentials');
+      }
+    } catch {
+      setError('Unable to connect to server');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-5">
@@ -13,37 +52,19 @@ const Login = () => {
         <h1 className="text-2xl font-bold text-slate-900">Welcome back</h1>
         <p className="mt-1 mb-6 text-slate-500">Sign in to continue to ProjectForge.</p>
 
-        <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-100 p-1">
-          <button
-            type="button"
-            onClick={() => setRole('student')}
-            className={`h-10 rounded-lg text-sm font-semibold ${
-              role === 'student' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500'
-            }`}
-          >
-            Student
-          </button>
-          <button
-            type="button"
-            onClick={() => setRole('admin')}
-            className={`h-10 rounded-lg text-sm font-semibold ${
-              role === 'admin' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500'
-            }`}
-          >
-            TPO / Admin
-          </button>
-        </div>
+        {error && (
+          <div className="p-3 mb-4 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-600 font-medium">
+            {error}
+          </div>
+        )}
 
-        <p className="mt-4 mb-5 flex items-center gap-2 text-sm font-semibold text-blue-600">
-          <span className="h-2 w-2 rounded-full bg-blue-500" />
-          Logging in as {role === 'student' ? 'Student' : 'TPO / Admin'}
-        </p>
-
-        <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+        <form className="space-y-4" onSubmit={handleSignIn}>
           <label className="block text-sm font-semibold text-slate-800">
             Email address
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
               required
               className="mt-1.5 h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 text-sm outline-none focus:border-blue-300"
@@ -55,6 +76,8 @@ const Login = () => {
             <div className="relative mt-1.5">
               <input
                 type={showPassword ? 'text' : 'password'}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter your password"
                 required
                 className="h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 pr-14 text-sm outline-none focus:border-blue-300"
@@ -77,9 +100,10 @@ const Login = () => {
 
           <button
             type="submit"
-            className="h-12 w-full rounded-xl bg-slate-900 text-white font-semibold cursor-pointer"
+            disabled={loading}
+            className="h-12 w-full rounded-xl bg-slate-900 text-white font-semibold cursor-pointer disabled:opacity-60"
           >
-            Sign In →
+            {loading ? 'Signing in...' : 'Sign In →'}
           </button>
         </form>
 
@@ -102,13 +126,13 @@ const Login = () => {
 
         <p className="mt-6 text-center text-sm text-slate-500">
           Don&apos;t have an account?{' '}
-          <button type="button" className="font-semibold text-blue-600 cursor-pointer">
-            <Link to="/signup">Create account</Link>
-          </button>
+          <Link to="/signup" className="font-semibold text-blue-600 cursor-pointer hover:underline">
+            Create account
+          </Link>
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
