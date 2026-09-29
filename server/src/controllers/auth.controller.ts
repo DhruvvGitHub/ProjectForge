@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import { z } from "zod";
-import { prisma } from "../prisma/client.js";
+import { prisma } from "../db.js";
 import { signToken } from "../utils/jwt.js";
 
 // Cookie configuration

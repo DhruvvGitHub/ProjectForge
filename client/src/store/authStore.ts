@@ -6,6 +6,8 @@ export interface User {
   name: string;
   role: 'STUDENT' | 'TPO';
   university: { id: number; name: string };
+  readinessScore: number,
+  auditedProjects: number
 }
 
 interface AuthState {

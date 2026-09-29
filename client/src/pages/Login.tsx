@@ -119,23 +119,16 @@ const Login = () => {
             </button>
           </form>
 
-          <div className="my-6 flex items-center gap-3 text-[11px] font-bold tracking-widest text-slate-400">
+          <div className="my-4 flex items-center gap-3 text-[11px] font-bold tracking-widest text-slate-400">
             <span className="h-px flex-1 bg-slate-200" />
             OR CONTINUE WITH
             <span className="h-px flex-1 bg-slate-200" />
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="flex justify-center">
             <button
               type="button"
-              className="h-11 rounded-xl cursor-pointer border border-slate-200 text-sm font-semibold flex items-center justify-center gap-2 hover:bg-slate-50 transition"
-            >
-              <FcGoogle />
-              Google
-            </button>
-            <button
-              type="button"
-              className="h-11 rounded-xl cursor-pointer border border-slate-200 text-sm font-semibold flex items-center justify-center gap-2 hover:bg-slate-50 transition"
+              className="h-11 rounded-xl cursor-pointer border border-slate-200 text-sm font-semibold flex items-center justify-center gap-2 hover:bg-slate-50 transition px-6 py-2"
             >
               <FaGithub />
               GitHub
