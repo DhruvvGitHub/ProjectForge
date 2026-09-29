@@ -16,7 +16,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, requir
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="flex flex-col items-center gap-3">
           <div className="h-8 w-8 animate-spin rounded-full border-3 border-blue-600 border-t-transparent" />
-          <span className="text-xs font-medium text-slate-500">Checking authentication...</span>
+          <span className="text-xs font-medium text-slate-500">Please wait...</span>
         </div>
       </div>
     );
