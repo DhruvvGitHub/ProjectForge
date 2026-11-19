@@ -194,7 +194,7 @@ const Navbar = ({
 
                 <div className="hidden text-left sm:block">
                   <span className="block text-xs font-semibold text-slate-800 leading-tight">
-                    {currentUser.name}
+                    {currentUser.name.split(" ")[0]}
                   </span>
                   <span className="block text-[10px] text-slate-400 font-medium">
                     {currentUser.role || 'Student'}

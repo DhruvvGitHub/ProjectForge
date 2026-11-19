@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
@@ -50,8 +49,6 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-100">
-      <Navbar />
-
       <main className="flex-1 flex items-center justify-center p-5 py-12">
         <div className="w-full max-w-md bg-white rounded-2xl border border-slate-200 shadow-lg p-8">
           <h1 className="text-2xl font-bold text-slate-900">Welcome back</h1>
@@ -147,7 +144,6 @@ const Login = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };
