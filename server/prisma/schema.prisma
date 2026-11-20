@@ -29,15 +29,49 @@ enum Role {
 }
 
 model User {
-  id             Int        @id @default(autoincrement())
+  id             Int          @id @default(autoincrement())
   name           String
-  email          String     @unique
+  email          String       @unique
   password       String
   role           Role
   universityId   Int
-  university     University @relation(fields: [universityId], references: [id])
-  graduationYear Int?       // only meaningful for STUDENT, null for TPO
-  createdAt      DateTime   @default(now())
+  university     University   @relation(fields: [universityId], references: [id])
+  graduationYear Int?         // only meaningful for STUDENT, null for TPO
+  createdAt      DateTime     @default(now())
+  submissions    Submission[]
 
   @@index([universityId])
+}
+
+enum SubmissionStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum Badge {
+  GOLD
+  SILVER
+  BRONZE
+  NEEDS_WORK
+}
+
+model Submission {
+  id           Int              @id @default(autoincrement())
+  repoUrl      String
+  status       SubmissionStatus @default(PENDING)
+  score        Int?
+  badge        Badge?
+  metricsJson  Json?
+  feedbackJson Json?
+  errorMessage String?
+  userId       Int
+  user         User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+
+  @@index([userId])
+  @@index([status])
+  @@index([score])
 }

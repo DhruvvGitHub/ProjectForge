@@ -5,6 +5,7 @@ import AnalyseProject from './pages/AnalyseProject';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import AnalysedProjects from './pages/AnalysedProjects';
+import ProjectReport from './pages/ProjectReport';
 import Profile from './pages/Profile';
 import Unauthorized from './pages/Unauthorized';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -71,6 +72,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <AnalysedProjects />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path='/report/:id'
+          element={
+            <ProtectedRoute>
+              <ProjectReport />
             </ProtectedRoute>
           }
         />
