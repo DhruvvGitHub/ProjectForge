@@ -11,6 +11,7 @@ import Unauthorized from './pages/Unauthorized';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useAuthStore } from './store/authStore';
 import { apiFetch } from './lib/api';
+import SmoothScroll from './components/shared/SmoothScroll';
 
 const App = () => {
   const setUser = useAuthStore((state) => state.setUser);
@@ -38,61 +39,63 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Homee />} />
-        <Route path='/homee' element={<Homee />} />
-        <Route
-          path='/analyse'
-          element={
-            <ProtectedRoute>
-              <AnalyseProject />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path='/dashboard'
-          element={
-            <ProtectedRoute requiredRole="STUDENT">
-              <Homee />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path='/tpo-dashboard'
-          element={
-            <ProtectedRoute requiredRole="TPO">
-              <Homee />
-            </ProtectedRoute>
-          }
-        />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route
-          path='/analysedprojects'
-          element={
-            <ProtectedRoute>
-              <AnalysedProjects />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path='/report/:id'
-          element={
-            <ProtectedRoute>
-              <ProjectReport />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path='/profile'
-          element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
-          }
-        />
-        <Route path='/unauthorized' element={<Unauthorized />} />
-      </Routes>
+      <SmoothScroll>
+        <Routes>
+          <Route path='/' element={<Homee />} />
+          <Route path='/homee' element={<Homee />} />
+          <Route
+            path='/analyse'
+            element={
+              <ProtectedRoute>
+                <AnalyseProject />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='/dashboard'
+            element={
+              <ProtectedRoute requiredRole="STUDENT">
+                <Homee />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='/tpo-dashboard'
+            element={
+              <ProtectedRoute requiredRole="TPO">
+                <Homee />
+              </ProtectedRoute>
+            }
+          />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route
+            path='/analysedprojects'
+            element={
+              <ProtectedRoute>
+                <AnalysedProjects />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='/report/:id'
+            element={
+              <ProtectedRoute>
+                <ProjectReport />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='/profile'
+            element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+            }
+          />
+          <Route path='/unauthorized' element={<Unauthorized />} />
+        </Routes>
+      </SmoothScroll>
     </BrowserRouter>
   );
 };
