@@ -3,6 +3,7 @@ import {
   createSubmission,
   getSubmissionStatus,
   getMySubmissions,
+  getLeaderboard,
   submissionCallback,
 } from "../controllers/submission.controller.js";
 import { requireAuth, requireRole } from "../middlewares/requireAuth.js";
@@ -14,6 +15,9 @@ router.post("/", requireAuth, requireRole(["STUDENT"]), createSubmission);
 
 // List user's submissions
 router.get("/mine", requireAuth, getMySubmissions);
+
+// University-wise Leaderboard
+router.get("/leaderboard", requireAuth, getLeaderboard);
 
 // Submission status polling (authenticated)
 router.get("/:id", requireAuth, getSubmissionStatus);

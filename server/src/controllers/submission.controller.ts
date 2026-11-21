@@ -133,6 +133,78 @@ export const getMySubmissions = async (req: Request, res: Response) => {
   }
 };
 
+// GET /api/submissions/leaderboard (University-wise Student Leaderboard)
+export const getLeaderboard = async (req: Request, res: Response) => {
+  try {
+    const userId = req.user?.userId;
+    if (!userId) {
+      return res.status(401).json({ error: "Unauthorized" });
+    }
+
+    // Get user's university
+    const currentUser = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { universityId: true, university: { select: { id: true, name: true } } },
+    });
+
+    if (!currentUser?.universityId) {
+      return res.status(400).json({ error: "User is not linked to any university" });
+    }
+
+    // Query highest scored completed submission per student for this university
+    const submissions = await prisma.submission.findMany({
+      where: {
+        status: "COMPLETED",
+        score: { not: null },
+        user: {
+          universityId: currentUser.universityId,
+          role: "STUDENT",
+        },
+      },
+      orderBy: { score: "desc" },
+      include: {
+        user: {
+          select: {
+            id: true,
+            name: true,
+            graduationYear: true,
+          },
+        },
+      },
+      take: 50,
+    });
+
+    // Group to keep best submission per student
+    const seenUsers = new Set<number>();
+    const leaderboard = [];
+
+    for (const sub of submissions) {
+      if (!seenUsers.has(sub.userId)) {
+        seenUsers.add(sub.userId);
+        leaderboard.push({
+          rank: leaderboard.length + 1,
+          submissionId: sub.id,
+          studentName: sub.user.name,
+          studentId: sub.user.id,
+          graduationYear: sub.user.graduationYear,
+          repoUrl: sub.repoUrl,
+          score: sub.score,
+          badge: sub.badge,
+          createdAt: sub.createdAt,
+        });
+      }
+    }
+
+    return res.status(200).json({
+      university: currentUser.university,
+      leaderboard,
+    });
+  } catch (error) {
+    console.error("getLeaderboard error:", error);
+    return res.status(500).json({ error: "Failed to fetch leaderboard" });
+  }
+};
+
 // POST /api/submissions/:id/callback
 export const submissionCallback = async (req: Request, res: Response) => {
   try {
