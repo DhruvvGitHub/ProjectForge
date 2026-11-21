@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import authRoutes from "./src/routes/auth.routes.js";
+import submissionRoutes from "./src/routes/submission.routes.js";
 import { prisma } from "./src/prisma/client.js";
 
 const app = express();
@@ -28,6 +29,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/submissions", submissionRoutes);
 
 // Universities Autocomplete API
 app.get("/api/universities", async (req, res) => {

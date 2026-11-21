@@ -11,6 +11,7 @@ import {
     FiChevronDown,
     FiArrowRight,
 } from 'react-icons/fi'
+import { RxCross2 } from "react-icons/rx";
 import logo from '../assets/logo.png'
 import { useAuthStore } from '../store/authStore'
 import { apiFetch } from '../lib/api'
@@ -94,10 +95,6 @@ const SignUp = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        if (!passwordsMatch) {
-            setError('Passwords do not match')
-            return
-        }
         if (!selectedUniversity) {
             setError('Please select a university from the suggestion list to proceed.')
             return
@@ -216,12 +213,6 @@ const SignUp = () => {
                                 <FiCheckCircle className="h-4 w-4" />
                             </div>
                         </div>
-                        {isAcademicEmail && (
-                            <p className="mt-1.5 flex items-center gap-1.5 text-xs font-medium text-emerald-600">
-                                <FiCheckCircle className="h-3.5 w-3.5 shrink-0" />
-                                Eligible academic domain detected
-                            </p>
-                        )}
                     </div>
 
                     {/* Password & Confirm Password Row */}
@@ -283,6 +274,12 @@ const SignUp = () => {
                                     <p className="flex items-center gap-1.5 text-[11px] font-medium text-emerald-600">
                                         <FiCheck className="h-3.5 w-3.5 stroke-[2.5]" />
                                         Passwords match perfectly
+                                    </p>
+                                )}
+                                {!passwordsMatch && (
+                                    <p className="flex items-center gap-1.5 text-[11px] font-medium text-red-600">
+                                        <RxCross2 className="h-3.5 w-3.5" />
+                                        Passwords do not match
                                     </p>
                                 )}
                             </div>

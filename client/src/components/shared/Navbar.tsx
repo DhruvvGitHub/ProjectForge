@@ -154,17 +154,17 @@ const Navbar = ({
 
         {/* Navigation Links */}
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
-          <a href="#features" className="transition-colors hover:text-blue-600">
+          <Link to="/leaderboard" className="transition-colors hover:text-blue-600 font-semibold text-blue-600">
+            Leaderboard
+          </Link>
+          <a href="/#features" className="transition-colors hover:text-blue-600">
             Features
           </a>
-          <a href="#how-it-works" className="transition-colors hover:text-blue-600">
+          <a href="/#how-it-works" className="transition-colors hover:text-blue-600">
             How it Works
           </a>
-          <a href="#dimensions" className="transition-colors hover:text-blue-600">
+          <a href="/#dimensions" className="transition-colors hover:text-blue-600">
             Rubric
-          </a>
-          <a href="#colleges" className="transition-colors hover:text-blue-600">
-            For Colleges
           </a>
         </nav>
 
@@ -194,7 +194,7 @@ const Navbar = ({
 
                 <div className="hidden text-left sm:block">
                   <span className="block text-xs font-semibold text-slate-800 leading-tight">
-                    {currentUser.name}
+                    {currentUser.name.split(" ")[0]}
                   </span>
                   <span className="block text-[10px] text-slate-400 font-medium">
                     {currentUser.role || 'Student'}
