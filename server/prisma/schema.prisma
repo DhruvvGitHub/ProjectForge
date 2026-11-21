@@ -51,6 +51,7 @@ enum SubmissionStatus {
 }
 
 enum Badge {
+  ELITE
   GOLD
   SILVER
   BRONZE

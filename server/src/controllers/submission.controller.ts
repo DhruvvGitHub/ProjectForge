@@ -14,7 +14,7 @@ const createSubmissionSchema = z.object({
 const callbackSchema = z.object({
   status: z.enum(["COMPLETED", "FAILED"]),
   score: z.number().int().min(0).max(100).optional(),
-  badge: z.enum(["GOLD", "SILVER", "BRONZE", "NEEDS_WORK"]).optional(),
+  badge: z.enum(["ELITE", "GOLD", "SILVER", "BRONZE", "NEEDS_WORK"]).optional(),
   metrics: z.record(z.string(), z.any()).optional(),
   feedback: z.record(z.string(), z.any()).optional(),
   errorMessage: z.string().optional(),

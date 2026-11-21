@@ -2,7 +2,7 @@
 CREATE TYPE "SubmissionStatus" AS ENUM ('PENDING', 'PROCESSING', 'COMPLETED', 'FAILED');
 
 -- CreateEnum
-CREATE TYPE "Badge" AS ENUM ('GOLD', 'SILVER', 'BRONZE', 'NEEDS_WORK');
+CREATE TYPE "Badge" AS ENUM ('ELITE', 'GOLD', 'SILVER', 'BRONZE', 'NEEDS_WORK');
 
 -- CreateTable
 CREATE TABLE "Submission" (
