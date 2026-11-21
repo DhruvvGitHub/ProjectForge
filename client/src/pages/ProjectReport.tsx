@@ -20,6 +20,7 @@ import Footer from '@/components/shared/Footer'
 import { apiFetch } from '@/lib/api'
 
 const badgeColors: Record<string, { bg: string; text: string; border: string }> = {
+  ELITE: { bg: 'bg-cyan-50', text: 'text-cyan-800', border: 'border-cyan-300' },
   GOLD: { bg: 'bg-amber-50', text: 'text-amber-800', border: 'border-amber-300' },
   SILVER: { bg: 'bg-slate-100', text: 'text-slate-800', border: 'border-slate-300' },
   BRONZE: { bg: 'bg-orange-50', text: 'text-orange-800', border: 'border-orange-300' },

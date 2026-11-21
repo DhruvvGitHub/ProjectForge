@@ -154,17 +154,17 @@ const Navbar = ({
 
         {/* Navigation Links */}
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
-          <a href="#features" className="transition-colors hover:text-blue-600">
+          <Link to="/leaderboard" className="transition-colors hover:text-blue-600 font-semibold text-blue-600">
+            Leaderboard
+          </Link>
+          <a href="/#features" className="transition-colors hover:text-blue-600">
             Features
           </a>
-          <a href="#how-it-works" className="transition-colors hover:text-blue-600">
+          <a href="/#how-it-works" className="transition-colors hover:text-blue-600">
             How it Works
           </a>
-          <a href="#dimensions" className="transition-colors hover:text-blue-600">
+          <a href="/#dimensions" className="transition-colors hover:text-blue-600">
             Rubric
-          </a>
-          <a href="#colleges" className="transition-colors hover:text-blue-600">
-            For Colleges
           </a>
         </nav>
 

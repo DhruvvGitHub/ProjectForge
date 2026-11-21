@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import AnalysedProjects from './pages/AnalysedProjects';
 import ProjectReport from './pages/ProjectReport';
+import Leaderboard from './pages/Leaderboard';
 import Profile from './pages/Profile';
 import Unauthorized from './pages/Unauthorized';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -82,6 +83,14 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <ProjectReport />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='/leaderboard'
+            element={
+              <ProtectedRoute>
+                <Leaderboard />
               </ProtectedRoute>
             }
           />
