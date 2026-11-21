@@ -28,15 +28,15 @@ def analyze_git_history(repo_dir: Path) -> Dict[str, Any]:
         commit_count = 0
 
     observations = []
-    if commit_count > 15:
+    if commit_count > 20:
         score = 95
-        observations.append(f"Strong iterative commit history detected ({commit_count} commits).")
-    elif commit_count >= 5:
+        observations.append(f"Strong iterative commit history detected with({commit_count} commits).")
+    elif commit_count >= 10:
         score = 75
-        observations.append(f"Moderate commit progression detected ({commit_count} commits).")
-    elif commit_count >= 1:
+        observations.append(f"Moderate commit progression detected with({commit_count} commits).")
+    elif commit_count >= 5:
         score = 50
-        observations.append(f"Low commit count ({commit_count} commits); looks like an initial bulk dump.")
+        observations.append(f"Low commit count with ({commit_count} commits); looks like an initial bulk dump.")
     else:
         score = 30
         observations.append("Unable to determine commit count.")
@@ -94,10 +94,10 @@ def analyze_architecture_and_structure(repo_dir: Path) -> Dict[str, Any]:
     modular_indicators = {"src", "client", "server", "routes", "controllers", "models", "services", "api", "components", "lib", "utils"}
     found_modular = dir_names.intersection(modular_indicators)
 
-    if len(found_modular) >= 3:
+    if len(found_modular) >= 5:
         score += 20
         observations.append(f"Well-structured modular organization: {', '.join(sorted(found_modular))}.")
-    elif len(found_modular) >= 1:
+    elif len(found_modular) >= 3:
         score += 10
         observations.append(f"Basic directory separation present ({', '.join(sorted(found_modular))}).")
     else:
@@ -218,11 +218,13 @@ def run_deterministic_inspection(repo_dir: Path) -> Dict[str, Any]:
 
     total_score = max(0, min(100, total_score))
 
-    if total_score >= 80:
+    if total_score >= 90:
+        badge = "ELITE"
+    elif total_score >= 80:
         badge = "GOLD"
-    elif total_score >= 60:
+    elif total_score >= 70:
         badge = "SILVER"
-    elif total_score >= 40:
+    elif total_score >= 50:
         badge = "BRONZE"
     else:
         badge = "NEEDS_WORK"
