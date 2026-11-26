@@ -140,12 +140,6 @@ const SignUp = () => {
         }
     }
 
-    const isAcademicEmail =
-        email.includes('.edu') ||
-        email.includes('.ac.') ||
-        email.includes('stanford') ||
-        email.includes('iit') ||
-        email.includes('mit')
     const passwordsMatch = password.length > 0 && password === confirmPassword
 
     return (

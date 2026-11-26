@@ -3,8 +3,6 @@ import { FaGithub } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
 import { apiFetch } from '../lib/api';
-import Navbar from '../components/shared/Navbar';
-import Footer from '../components/shared/Footer';
 
 const Login = () => {
   const navigate = useNavigate();

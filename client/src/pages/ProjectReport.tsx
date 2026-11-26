@@ -12,8 +12,7 @@ import {
   FiExternalLink,
   FiLoader,
 } from 'react-icons/fi'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Navbar from '@/components/shared/Navbar'
 import Footer from '@/components/shared/Footer'
@@ -64,9 +63,9 @@ const ProjectReport = () => {
           <p className="mt-2 text-sm text-slate-500">
             Could not retrieve evaluation details for submission #{id}.
           </p>
-          <Button asChild className="mt-6">
-            <Link to="/analyse">Return to Analyze</Link>
-          </Button>
+          <Link to="/analyse" className={buttonVariants({ className: 'mt-6' })}>
+            Return to Analyze
+          </Link>
         </div>
         <Footer />
       </div>

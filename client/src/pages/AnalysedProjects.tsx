@@ -11,7 +11,7 @@ import {
   FiCode,
 } from 'react-icons/fi'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Navbar from '@/components/shared/Navbar'
 import Footer from '@/components/shared/Footer'
@@ -60,11 +60,12 @@ const AnalysedProjects = () => {
             </p>
           </div>
 
-          <Button asChild className="gap-2 shadow-sm shadow-blue-600/20">
-            <Link to="/analyse">
-              <FiPlus className="h-4 w-4" /> Analyze New Repo
-            </Link>
-          </Button>
+          <Link
+            to="/analyse"
+            className={buttonVariants({ className: 'gap-2 shadow-sm shadow-blue-600/20' })}
+          >
+            <FiPlus className="h-4 w-4" /> Analyze New Repo
+          </Link>
         </div>
 
         {isLoading ? (
@@ -83,9 +84,9 @@ const AnalysedProjects = () => {
             <p className="mx-auto mt-1 max-w-sm text-xs text-slate-500">
               Analyze your first GitHub repository to measure its architecture, test suite, and get placement interview questions.
             </p>
-            <Button asChild className="mt-5">
-              <Link to="/analyse">Start First Analysis</Link>
-            </Button>
+            <Link to="/analyse" className={buttonVariants({ className: 'mt-5' })}>
+              Start First Analysis
+            </Link>
           </Card>
         ) : (
           <div className="mt-8 space-y-4">
@@ -152,12 +153,16 @@ const AnalysedProjects = () => {
                       )}
                     </div>
 
-                    <Button asChild size="sm" variant={isCompleted ? 'default' : 'outline'}>
-                      <Link to={isCompleted ? `/report/${sub.id}` : '/analyse'}>
-                        {isCompleted ? 'View Report' : 'Check Status'}
-                        <FiArrowRight className="ml-1.5 h-3.5 w-3.5" />
-                      </Link>
-                    </Button>
+                    <Link
+                      to={isCompleted ? `/report/${sub.id}` : '/analyse'}
+                      className={buttonVariants({
+                        size: 'sm',
+                        variant: isCompleted ? 'default' : 'outline',
+                      })}
+                    >
+                      {isCompleted ? 'View Report' : 'Check Status'}
+                      <FiArrowRight className="ml-1.5 h-3.5 w-3.5" />
+                    </Link>
                   </div>
                 </Card>
               )
