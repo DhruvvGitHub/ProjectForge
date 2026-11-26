@@ -4,6 +4,7 @@ import {
   getSubmissionStatus,
   getMySubmissions,
   getLeaderboard,
+  getTpoDashboardAnalytics,
   submissionCallback,
 } from "../controllers/submission.controller.js";
 import { requireAuth, requireRole } from "../middlewares/requireAuth.js";
@@ -18,6 +19,9 @@ router.get("/mine", requireAuth, getMySubmissions);
 
 // University-wise Leaderboard
 router.get("/leaderboard", requireAuth, getLeaderboard);
+
+// TPO Dashboard Analytics (Protected for TPO role only)
+router.get("/tpo/dashboard", requireAuth, requireRole(["TPO"]), getTpoDashboardAnalytics);
 
 // Submission status polling (authenticated)
 router.get("/:id", requireAuth, getSubmissionStatus);

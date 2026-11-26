@@ -154,9 +154,14 @@ const Navbar = ({
 
         {/* Navigation Links */}
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
-          <Link to="/leaderboard" className="transition-colors hover:text-blue-600 font-semibold text-blue-600">
+          <Link to="/leaderboard" className="transition-colors hover:text-blue-600">
             Leaderboard
           </Link>
+          {currentUser?.role === 'TPO' && (
+            <Link to="/tpo-dashboard" className="transition-colors font-bold text-blue-600 hover:text-blue-700">
+              TPO Dashboard
+            </Link>
+          )}
           <a href="/#features" className="transition-colors hover:text-blue-600">
             Features
           </a>

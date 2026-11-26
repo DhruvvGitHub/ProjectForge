@@ -22,6 +22,7 @@ export const clearAuthCookie = (res: Response) => {
     httpOnly: COOKIE_OPTIONS.httpOnly,
     secure: COOKIE_OPTIONS.secure,
     sameSite: COOKIE_OPTIONS.sameSite,
+    maxAge: COOKIE_OPTIONS.maxAge,
     path: COOKIE_OPTIONS.path,
   });
 };
@@ -31,6 +32,8 @@ const signupSchema = z.object({
   fullName: z.string().optional(),
   email: z.string().email("Invalid email address"),
   password: z.string().min(6, "Password must be at least 6 characters"),
+  role: z.enum(["STUDENT", "TPO"]).optional().default("STUDENT"),
+  tpoInviteCode: z.string().optional(),
   universityId: z.number().optional(),
   university: z.union([z.string(), z.number()]).optional(),
   graduationYear: z.number().optional(),
@@ -50,16 +53,25 @@ export const signup = async (req: Request, res: Response) => {
       return res.status(400).json({ error: errorMsg });
     }
 
-    const { name, fullName, email, password, universityId, university, graduationYear } = parseResult.data;
+    const { name, fullName, email, password, role, tpoInviteCode, universityId, university, graduationYear } = parseResult.data;
     const userName = (name || fullName)?.trim();
 
     if (!userName) {
       return res.status(400).json({ error: "Name is required" });
     }
 
-    const normalizedEmail = email.toLowerCase().trim();
+    // Gate TPO Registration: require valid TPO Passcode
+    const assignedRole = role === "TPO" ? "TPO" : "STUDENT";
+    if (assignedRole === "TPO") {
+      const validTpoSecret = process.env.TPO_INVITE_CODE || "TPO_CAMPUS_2026";
+      if (!tpoInviteCode || tpoInviteCode.trim() !== validTpoSecret) {
+        return res.status(403).json({ error: "Invalid TPO verification code" });
+      }
+    }
 
     // Check if user already exists
+    const normalizedEmail = email.toLowerCase().trim();
+
     const existingUser = await prisma.user.findUnique({
       where: { email: normalizedEmail },
     });
@@ -105,9 +117,9 @@ export const signup = async (req: Request, res: Response) => {
         name: userName,
         email: normalizedEmail,
         password: hashedPassword,
-        role: "STUDENT",
+        role: assignedRole,
         universityId: resolvedUniId,
-        graduationYear: graduationYear ? Number(graduationYear) : null,
+        graduationYear: assignedRole === "STUDENT" && graduationYear ? Number(graduationYear) : null,
       },
       include: {
         university: {
@@ -160,12 +172,12 @@ export const login = async (req: Request, res: Response) => {
     });
 
     if (!user) {
-      return res.status(401).json({ error: "Invalid credentials" });
+      return res.status(401).json({ error: "Invalid user" });
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      return res.status(401).json({ error: "Invalid credentials" });
+      return res.status(401).json({ error: "Invalid password" });
     }
 
     const token = signToken({ userId: user.id, role: user.role });

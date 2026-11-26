@@ -1,12 +1,7 @@
 import os
 import json
 from typing import Dict, Any, Optional
-
-try:
-    from google import genai
-    from google.genai import types
-except ImportError:
-    genai = None
+import httpx
 
 EVALUATION_SYSTEM_PROMPT = """You are a senior engineering hiring director and technical evaluator reviewing a candidate's GitHub repository for campus placements.
 You are provided with:
@@ -30,9 +25,12 @@ Output strictly valid JSON with this exact schema:
 """
 
 def generate_ai_feedback(metrics: Dict[str, Any], readme_snippet: str = "") -> Optional[Dict[str, Any]]:
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key or not genai:
-        # Graceful fallback to deterministic synthesis if API key is not yet set
+    api_key = os.getenv("GROQ_API_KEY")
+    base_url = os.getenv("GROQ_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
+    model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+
+    # Graceful fallback to deterministic synthesis if API key is not yet set
+    if not api_key:
         return {
             "summary": f"Automated static audit completed with readiness score of {metrics['score']}/100.",
             "strengths": metrics["metrics"]["architecture"].get("observations", []) + metrics["metrics"]["testing"].get("observations", []),
@@ -46,8 +44,7 @@ def generate_ai_feedback(metrics: Dict[str, Any], readme_snippet: str = "") -> O
         }
 
     try:
-        client = genai.Client(api_key=api_key)
-        prompt = f"""
+        user_prompt = f"""
 Repository Audit Evidence:
 - Overall Deterministic Score: {metrics['score']}/100
 - Badge: {metrics['badge']}
@@ -60,19 +57,30 @@ README Excerpt:
 {readme_snippet[:3000] if readme_snippet else "No README available."}
 """
 
-        response = client.models.generate_content(
-            model="gemini-3.5-flash-lite",
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                system_instruction=EVALUATION_SYSTEM_PROMPT,
-                response_mime_type="application/json",
-                temperature=0.2,
-            ),
-        )
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
 
-        return json.loads(response.text)
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": EVALUATION_SYSTEM_PROMPT},
+                {"role": "user", "content": user_prompt},
+            ],
+            "response_format": {"type": "json_object"},
+            "temperature": 0.2,
+        }
+
+        with httpx.Client(timeout=45.0) as client:
+            response = client.post(f"{base_url}/chat/completions", headers=headers, json=payload)
+            response.raise_for_status()
+            data = response.json()
+            content = data["choices"][0]["message"]["content"]
+            return json.loads(content)
+
     except Exception as e:
-        print(f"[Gemini Feedback Error]: {e}")
+        print(f"[Groq Feedback Error]: {e}")
         return {
             "summary": f"Audit completed with score {metrics['score']}/100. (LLM synthesis fallback: {str(e)[:80]})",
             "strengths": metrics["metrics"]["architecture"].get("observations", []),

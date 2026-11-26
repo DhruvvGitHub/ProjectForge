@@ -205,6 +205,95 @@ export const getLeaderboard = async (req: Request, res: Response) => {
   }
 };
 
+// GET /api/submissions/tpo/analytics (TPO University-wide Project Audit Overview)
+export const getTpoDashboardAnalytics = async (req: Request, res: Response) => {
+  try {
+    const userId = req.user?.userId;
+    if (!userId) {
+      return res.status(401).json({ error: "Unauthorized" });
+    }
+
+    const tpoUser = await prisma.user.findUnique({
+      where: { id: userId },
+      include: {
+        university: {
+          select: { id: true, name: true, state: true, district: true },
+        },
+      },
+    });
+
+    if (!tpoUser || tpoUser.role !== "TPO") {
+      return res.status(403).json({ error: "Forbidden: TPO access required" });
+    }
+
+    // All student submissions from this university
+    const submissions = await prisma.submission.findMany({
+      where: {
+        user: {
+          universityId: tpoUser.universityId,
+          role: "STUDENT",
+        },
+      },
+      orderBy: { createdAt: "desc" },
+      include: {
+        user: {
+          select: {
+            id: true,
+            name: true,
+            email: true,
+            graduationYear: true,
+          },
+        },
+      },
+    });
+
+    // Compute key TPO KPIs
+    const totalSubmissions = submissions.length;
+    const completedSubmissions = submissions.filter((s) => s.status === "COMPLETED");
+    const avgScore =
+      completedSubmissions.length > 0
+        ? Math.round(
+            completedSubmissions.reduce((acc, curr) => acc + (curr.score || 0), 0) /
+              completedSubmissions.length
+          )
+        : 0;
+
+    // Badges distribution
+    const badgeDistribution = {
+      GOLD: submissions.filter((s) => s.badge === "GOLD").length,
+      SILVER: submissions.filter((s) => s.badge === "SILVER").length,
+      BRONZE: submissions.filter((s) => s.badge === "BRONZE").length,
+      NEEDS_WORK: submissions.filter((s) => s.badge === "NEEDS_WORK").length,
+    };
+
+    // Unique students audited
+    const uniqueStudents = new Set(submissions.map((s) => s.userId)).size;
+
+    return res.status(200).json({
+      university: tpoUser.university,
+      stats: {
+        totalSubmissions,
+        completedAudits: completedSubmissions.length,
+        uniqueStudents,
+        averageScore: avgScore,
+        badgeDistribution,
+      },
+      submissions: submissions.map((s) => ({
+        id: s.id,
+        repoUrl: s.repoUrl,
+        status: s.status,
+        score: s.score,
+        badge: s.badge,
+        createdAt: s.createdAt,
+        student: s.user,
+      })),
+    });
+  } catch (error) {
+    console.error("getTpoDashboardAnalytics error:", error);
+    return res.status(500).json({ error: "Failed to fetch TPO analytics" });
+  }
+};
+
 // POST /api/submissions/:id/callback
 export const submissionCallback = async (req: Request, res: Response) => {
   try {
