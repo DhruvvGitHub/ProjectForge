@@ -28,7 +28,8 @@ const SignUp = () => {
     const setUser = useAuthStore((state) => state.setUser)
     const currentYear = new Date().getFullYear()
     const gradYears = Array.from({ length: 6 }, (_, i) => currentYear - 1 + i)
-    const accountType = 'student'
+    const [accountRole, setAccountRole] = useState<'STUDENT' | 'TPO'>('STUDENT')
+    const [tpoInviteCode, setTpoInviteCode] = useState('')
 
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
@@ -108,10 +109,12 @@ const SignUp = () => {
                     fullName,
                     email,
                     password,
+                    role: accountRole,
+                    tpoInviteCode: accountRole === 'TPO' ? tpoInviteCode : undefined,
                     universityId: selectedUniversity.id,
                     university: selectedUniversity.name,
                     department,
-                    graduationYear: accountType === 'student' && gradYear ? Number(gradYear) : undefined,
+                    graduationYear: accountRole === 'STUDENT' && gradYear ? Number(gradYear) : undefined,
                 }),
             })
             const data = await res.json()
@@ -175,6 +178,61 @@ const SignUp = () => {
                 )}
 
                 <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
+                    {/* Role Selection Tabs */}
+                    <div>
+                        <label className="block text-xs font-semibold text-slate-700 mb-1.5">
+                            Account Type
+                        </label>
+                        <div className="grid grid-cols-2 gap-2 rounded-xl bg-slate-100 p-1">
+                            <button
+                                type="button"
+                                onClick={() => setAccountRole('STUDENT')}
+                                className={`rounded-lg py-2 text-xs font-bold transition ${
+                                    accountRole === 'STUDENT'
+                                        ? 'bg-white text-blue-600 shadow-xs'
+                                        : 'text-slate-600 hover:text-slate-900'
+                                }`}
+                            >
+                                Student Candidate
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => setAccountRole('TPO')}
+                                className={`rounded-lg py-2 text-xs font-bold transition ${
+                                    accountRole === 'TPO'
+                                        ? 'bg-white text-blue-600 shadow-xs'
+                                        : 'text-slate-600 hover:text-slate-900'
+                                }`}
+                            >
+                                TPO / Placement Officer
+                            </button>
+                        </div>
+                    </div>
+
+                    {accountRole === 'TPO' && (
+                        <div>
+                            <label className="block text-xs font-semibold text-slate-700">
+                                Official TPO Passcode <span className="text-rose-500">*</span>
+                            </label>
+                            <div className="relative mt-1.5">
+                                <input
+                                    type="password"
+                                    value={tpoInviteCode}
+                                    onChange={(e) => setTpoInviteCode(e.target.value)}
+                                    placeholder="Enter campus verification code (e.g. TPO_CAMPUS_2026)"
+                                    required
+                                    className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3.5 pr-10 text-sm text-slate-800 placeholder-slate-400 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                                />
+                                <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400">
+                                    <FiLock className="h-4 w-4" />
+                                </div>
+                            </div>
+                            <p className="mt-1 text-[11px] text-slate-400">
+                                Passcode is required to prevent unauthorized student access to university placement records.
+                            </p>
+                        </div>
+                    )}
+
                     {/* Full Name */}
                     <div>
                         <label className="block text-xs font-semibold text-slate-700">
@@ -269,14 +327,14 @@ const SignUp = () => {
                             </div>
 
                             {/* Passwords Match indicator */}
-                            <div className="mt-2.5">
-                                {passwordsMatch && (
+                            <div className="mt-2.5 min-h-[18px]">
+                                {confirmPassword.length > 0 && passwordsMatch && (
                                     <p className="flex items-center gap-1.5 text-[11px] font-medium text-emerald-600">
                                         <FiCheck className="h-3.5 w-3.5 stroke-[2.5]" />
                                         Passwords match perfectly
                                     </p>
                                 )}
-                                {!passwordsMatch && (
+                                {confirmPassword.length > 0 && !passwordsMatch && (
                                     <p className="flex items-center gap-1.5 text-[11px] font-medium text-red-600">
                                         <RxCross2 className="h-3.5 w-3.5" />
                                         Passwords do not match
@@ -368,59 +426,61 @@ const SignUp = () => {
                         )}
                     </div>
 
-                    {/* Department & Graduation Year */}
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                        {/* Department */}
-                        <div>
-                            <label className="block text-xs font-semibold text-slate-700">
-                                Department <span className="text-rose-500">*</span>
-                            </label>
-                            <div className="relative mt-1.5">
-                                <select
-                                    value={department}
-                                    onChange={(e) => setDepartment(e.target.value)}
-                                    required
-                                    className="h-11 w-full appearance-none rounded-xl border border-slate-200 bg-white px-3.5 pr-10 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 cursor-pointer"
-                                >
-                                    <option value="" disabled>Select department</option>
-                                    <option value="Computer Science">Computer Science</option>
-                                    <option value="Computer Applications">Computer Applications</option>
-                                    <option value="Information Technology">Information Technology</option>
-                                    <option value="Electrical & Electronics">Electrical & Electronics</option>
-                                    <option value="Data Science & AI">Data Science & AI</option>
-                                    <option value="Software Engineering">Software Engineering</option>
-                                </select>
-                                <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400">
-                                    <FiChevronDown className="h-4 w-4" />
+                    {/* Department & Graduation Year (Students Only) */}
+                    {accountRole === 'STUDENT' && (
+                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            {/* Department */}
+                            <div>
+                                <label className="block text-xs font-semibold text-slate-700">
+                                    Department <span className="text-rose-500">*</span>
+                                </label>
+                                <div className="relative mt-1.5">
+                                    <select
+                                        value={department}
+                                        onChange={(e) => setDepartment(e.target.value)}
+                                        required
+                                        className="h-11 w-full appearance-none rounded-xl border border-slate-200 bg-white px-3.5 pr-10 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 cursor-pointer"
+                                    >
+                                        <option value="" disabled>Select department</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Computer Applications">Computer Applications</option>
+                                        <option value="Information Technology">Information Technology</option>
+                                        <option value="Electrical & Electronics">Electrical & Electronics</option>
+                                        <option value="Data Science & AI">Data Science & AI</option>
+                                        <option value="Software Engineering">Software Engineering</option>
+                                    </select>
+                                    <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400">
+                                        <FiChevronDown className="h-4 w-4" />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        {/* Graduation Year */}
-                        <div>
-                            <label className="block text-xs font-semibold text-slate-700">
-                                Graduation Year <span className="text-rose-500">*</span>
-                            </label>
-                            <div className="relative mt-1.5">
-                                <select
-                                    value={gradYear}
-                                    onChange={(e) => setGradYear(e.target.value)}
-                                    required
-                                    className="h-11 w-full appearance-none rounded-xl border border-slate-200 bg-white px-3.5 pr-10 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 cursor-pointer"
-                                >
-                                    <option value="" disabled>Select graduation year</option>
-                                    {gradYears.map((year) => (
-                                        <option key={year} value={year}>
-                                            {year}
-                                        </option>
-                                    ))}
-                                </select>
-                                <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400">
-                                    <FiChevronDown className="h-4 w-4" />
+                            {/* Graduation Year */}
+                            <div>
+                                <label className="block text-xs font-semibold text-slate-700">
+                                    Graduation Year <span className="text-rose-500">*</span>
+                                </label>
+                                <div className="relative mt-1.5">
+                                    <select
+                                        value={gradYear}
+                                        onChange={(e) => setGradYear(e.target.value)}
+                                        required
+                                        className="h-11 w-full appearance-none rounded-xl border border-slate-200 bg-white px-3.5 pr-10 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 cursor-pointer"
+                                    >
+                                        <option value="" disabled>Select graduation year</option>
+                                        {gradYears.map((year) => (
+                                            <option key={year} value={year}>
+                                                {year}
+                                            </option>
+                                        ))}
+                                    </select>
+                                    <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400">
+                                        <FiChevronDown className="h-4 w-4" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    )}
 
                     {/* Terms and Conditions Checkbox */}
                     <div className="pt-1">

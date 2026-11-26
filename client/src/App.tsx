@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp';
 import AnalysedProjects from './pages/AnalysedProjects';
 import ProjectReport from './pages/ProjectReport';
 import Leaderboard from './pages/Leaderboard';
+import TpoDashboard from './pages/TpoDashboard';
 import Profile from './pages/Profile';
 import Unauthorized from './pages/Unauthorized';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -64,7 +65,7 @@ const App = () => {
             path='/tpo-dashboard'
             element={
               <ProtectedRoute requiredRole="TPO">
-                <Homee />
+                <TpoDashboard />
               </ProtectedRoute>
             }
           />
